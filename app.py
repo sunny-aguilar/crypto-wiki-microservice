@@ -12,6 +12,10 @@ from flask import Flask, render_template
 
 
 #-------------------------------------------------------------------------
+# create the flask app & set app configurations
+app = Flask(__name__, static_url_path='/static')
+
+#-------------------------------------------------------------------------
 # Start Web App
 if __name__ == "__main__":
     app.run(host='localhost', port=55055, debug=True)
