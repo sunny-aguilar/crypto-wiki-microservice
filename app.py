@@ -9,3 +9,9 @@
 
 #-------------------------------------------------------------------------
 from flask import Flask, render_template
+
+
+#-------------------------------------------------------------------------
+# Start Web App
+if __name__ == "__main__":
+    app.run(host='localhost', port=44041, debug=True)
