@@ -11,6 +11,7 @@
 from flask import Flask, render_template
 
 
+
 #-------------------------------------------------------------------------
 # create the flask app & set app configurations
 app = Flask(__name__, static_url_path='/static')
