@@ -12,7 +12,7 @@ from mod_index.index import index
 from flask import Flask, render_template
 
 # import blueprints
-
+from mod_index.index import index_bp
 
 
 #-------------------------------------------------------------------------
