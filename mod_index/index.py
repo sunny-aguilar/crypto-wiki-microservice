@@ -13,4 +13,5 @@ from flask import redirect, url_for, request, render_template, Blueprint
 index_bp = Blueprint('index_bp', __name__)
 
 # blueprint routes
+index_bp.route('/', methods=['GET'])
 
