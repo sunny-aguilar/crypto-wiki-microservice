@@ -8,7 +8,10 @@
 #                                         write.
 
 #-------------------------------------------------------------------------
+from mod_index.index import index
 from flask import Flask, render_template
+
+# import blueprints
 
 
 
@@ -19,7 +22,7 @@ app = Flask(__name__, static_url_path='/static')
 
 #-------------------------------------------------------------------------
 # register blueprint modules
-
+app.register_blueprint(index_bp)
 
 
 #-------------------------------------------------------------------------
