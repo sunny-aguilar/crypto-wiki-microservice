@@ -14,4 +14,5 @@ index_bp = Blueprint('index_bp', __name__)
 
 # blueprint routes
 index_bp.route('/', methods=['GET'])
-
+def index():
+  return 'Hello World!'
