@@ -10,7 +10,7 @@
 from flask import redirect, url_for, request, render_template, Blueprint
 
 # create a blueprint module
-index_bp = Blueprint('index_bp', __name__)
+index_bp = Blueprint('index_bp', __name__, template_folder='templates')
 
 # blueprint routes
 index_bp.route('/', methods=['GET'])
