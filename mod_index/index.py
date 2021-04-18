@@ -15,5 +15,4 @@ index_bp = Blueprint('index_bp', __name__, template_folder='templates')
 # blueprint routes
 @index_bp.route('/', methods=['GET'])
 def index():
-  # return render_template('index.html')
-  return 'Hello World!'
+  return render_template('index.html')
