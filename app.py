@@ -20,6 +20,9 @@ app = Flask(__name__, static_url_path='/static')
 
 #-------------------------------------------------------------------------
 # routes in blueprints
+
+
+
 # route errors -----
 @app.errorhandler(404)
 def page_not_found(error):
