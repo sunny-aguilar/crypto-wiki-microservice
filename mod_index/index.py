@@ -13,6 +13,6 @@ from flask import redirect, url_for, request, render_template, Blueprint
 index_bp = Blueprint('index_bp', __name__, template_folder='templates')
 
 # blueprint routes
-index_bp.route('/', methods=['GET'])
+@index_bp.route('/', methods=['GET'])
 def index():
   return render_template('index.html')
