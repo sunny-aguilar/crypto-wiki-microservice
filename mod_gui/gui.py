@@ -14,4 +14,4 @@ gui_bp = Blueprint('gui_bp', __name__, template_folder='templates')
 
 # blueprint routes
 @gui_bp.route('/gui', methods=['GET'])
-
+def gui():
