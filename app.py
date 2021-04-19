@@ -13,6 +13,7 @@ from flask import Flask, render_template
 
 # import blueprints
 from mod_index.index import index_bp
+from mod_gui.gui import gui_bp
 
 
 #-------------------------------------------------------------------------
