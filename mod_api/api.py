@@ -13,7 +13,7 @@ from flask import redirect, url_for, request, render_template, Blueprint
 api_bp = Blueprint('api_bp', __name__, template_folder='templates')
 
 # blueprint routes
-@api_bp.route('/api', methods=['GET'])
+@api_bp.route('/api?', methods=['GET'])
 def api():
   if request.method == 'GET':
     print('GET REQUEST RECEIVED')
