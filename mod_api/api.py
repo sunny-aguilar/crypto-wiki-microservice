@@ -7,7 +7,7 @@
 
 #-------------------------------------------------------------------------
 # import the required libraries for the web app and other modules
-from flask import redirect, url_for, request, render_template, Blueprint
+from flask import redirect, url_for, request, render_template, Blueprint, jsonify
 
 # create a blueprint module
 api_bp = Blueprint('api_bp', __name__, template_folder='templates')
@@ -23,6 +23,11 @@ def api():
   print('API endpoint accessed!')
 
   msg = 'GUI page.'
+  books = {
+    1: "Sandro",
+    2: "Aguilar"
+  }
   # return redirect('/')
-  return render_template('/', msg=msg)
-  # return render_template('gui.html', msg=msg)
+  # return render_template('/', msg=msg)
+  return jsonify(books)
+  return render_template('gui.html', msg=msg)
