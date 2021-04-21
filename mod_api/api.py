@@ -24,4 +24,5 @@ def api():
 
   msg = 'GUI page.'
   return redirect('/')
+  return render_template('/', msg=msg)
   # return render_template('gui.html', msg=msg)
