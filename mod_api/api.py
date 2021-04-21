@@ -18,6 +18,6 @@ def api():
   if request.method == 'GET':
     print('GET REQUEST RECEIVED')
 
-
+  print('API endpoint accessed!')
 
   return render_template('gui.html')
