@@ -25,7 +25,8 @@ def api():
   msg = 'GUI page.'
   books = {
     1: "Sandro",
-    2: "Aguilar"
+    2: "Aguilar",
+    'motto': 'Do or do not do.'
   }
   # return redirect('/')
   # return render_template('/', msg=msg)
