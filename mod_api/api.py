@@ -15,4 +15,9 @@ api_bp = Blueprint('api_bp', __name__, template_folder='templates')
 # blueprint routes
 @api_bp.route('/api', methods=['GET'])
 def api():
+  if request.method == 'GET':
+    print('GET REQUEST RECEIVED')
+
+
+
   return render_template('gui.html')
