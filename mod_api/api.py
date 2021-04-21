@@ -8,6 +8,7 @@
 #-------------------------------------------------------------------------
 # import the required libraries for the web app and other modules
 from flask import redirect, url_for, request, render_template, Blueprint, jsonify
+import wikipediaapi
 
 # create a blueprint module
 api_bp = Blueprint('api_bp', __name__, template_folder='templates')
