@@ -17,7 +17,7 @@ api_bp = Blueprint('api_bp', __name__, template_folder='templates')
 def api():
   if request.method == 'GET':
     print('GET REQUEST RECEIVED')
-  else request.method == 'POST':
+  elif request.method == 'POST':
     print('POST REQUEST RECEIVED')
 
   print('API endpoint accessed!')
