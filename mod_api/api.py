@@ -19,6 +19,9 @@ def api():
   if request.method == 'GET':
     print('API end-point accessed------------------------------')
 
+    wiki_wiki = wikipediaapi.Wikipedia('en')
+    page_py = wiki_wiki.page('Python_(programming_language)')
+    print(page_py)
 
     books = [
       {'id': 0,
