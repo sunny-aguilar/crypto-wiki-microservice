@@ -16,6 +16,7 @@ from mod_index.index import index_bp
 from mod_gui.gui import gui_bp
 
 
+
 #-------------------------------------------------------------------------
 # create the flask app & set app configurations
 app = Flask(__name__, static_url_path='/static')
