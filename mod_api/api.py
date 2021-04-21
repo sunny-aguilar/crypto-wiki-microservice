@@ -21,4 +21,5 @@ def api():
   print('API endpoint accessed!')
 
   msg = 'GUI page.'
-  return render_template('gui.html', msg=msg)
+  return redirect('/gui')
+  # return render_template('gui.html', msg=msg)
