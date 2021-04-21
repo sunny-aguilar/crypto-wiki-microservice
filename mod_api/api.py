@@ -12,3 +12,4 @@ from flask import redirect, url_for, request, render_template, Blueprint
 # create a blueprint module
 api_bp = Blueprint('api_bp', __name__, template_folder='templates')
 
+# blueprint routes
