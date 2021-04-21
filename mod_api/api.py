@@ -19,7 +19,7 @@ def api():
   if request.method == 'GET':
     print('API end-point accessed------------------------------')
 
-    msg = 'GUI page.'
+
     books = [
       {'id': 0,
         'title': 'A Fire Upon the Deep',
