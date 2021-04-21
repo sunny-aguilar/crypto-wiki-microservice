@@ -31,4 +31,4 @@ def api():
   # return redirect('/')
   # return render_template('/', msg=msg)
   return jsonify(books)
-  return render_template('gui.html', msg=msg)
+  # return render_template('gui.html', msg=msg)
