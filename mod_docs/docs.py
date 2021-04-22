@@ -16,7 +16,7 @@ docs_bp = Blueprint('gui_docs', __name__, template_folder='templates')
 @docs_bp.route('/docs', methods=['GET'])
 def gui():
   docs = 'active'
-  return render_template('gui.html', docs_menu=docs)
+  return render_template('docs.html', docs_menu=docs)
 
 
 
