@@ -86,16 +86,17 @@ def api():
         print(page_data)
 
       # get links to other pages
-      def print_links(page):
-        links = page.links
-        print('Links:')
+      def print_links(links):
+        link_arr = []
         for title in sorted(links.keys()):
-          # print("%s: %s" % (title, links[title]))
           print("%s" % (title))
-      print_links(page)
+          link_arr.append(title)
+        return link_arr
+      # print_links(page)
 
-      # if links:
-      #   page_data['links'] = page.links
+      if links:
+        page_data['links'] = print_links(page.links)
+        print(page_data)
 
     books = [
       {'id': 0,
