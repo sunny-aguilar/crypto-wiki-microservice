@@ -15,7 +15,7 @@ from flask import Flask, render_template
 from mod_index.index import index_bp
 from mod_gui.gui import gui_bp
 from mod_api.api import api_bp
-from mod_docs.docs import mod_docs
+from mod_docs.docs import docs_bp
 
 
 #-------------------------------------------------------------------------
@@ -28,7 +28,7 @@ app = Flask(__name__, static_url_path='/static')
 app.register_blueprint(index_bp)
 app.register_blueprint(gui_bp)
 app.register_blueprint(api_bp)
-app.register_blueprint(mod_docs)
+app.register_blueprint(docs_bp)
 
 
 #-------------------------------------------------------------------------
