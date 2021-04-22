@@ -47,9 +47,9 @@ def api():
       print(page.text)
 
       # create dictionary to store page data
+      page_data = {}
 
 
-      
 
       # get page sections
       def print_sections(sections, level=0):
