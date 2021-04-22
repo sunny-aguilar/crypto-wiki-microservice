@@ -22,8 +22,13 @@ def api():
     # get parameters
     print(request.form)
     req = request.args
-    url = req.get('url')
     search_term = req.get('search_term')
+    url = req.get('url')
+    title = req.get('title')
+    summary = req.get('summary')
+    sections = req.get('sections')
+    text = req.get('text')
+    links = req.get('links')
     print(f'URL: {url} and terms: {search_term}')
 
     # set up wikipedia search API
