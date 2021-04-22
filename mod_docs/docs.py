@@ -13,7 +13,7 @@ from flask import redirect, url_for, request, render_template, Blueprint
 gui_docs = Blueprint('gui_docs', __name__, template_folder='templates')
 
 # blueprint routes
-@gui_docs.route('/gui', methods=['GET'])
+@gui_docs.route('/docs', methods=['GET'])
 def gui():
   gui = 'active'
   return render_template('gui.html', gui_menu=gui)
