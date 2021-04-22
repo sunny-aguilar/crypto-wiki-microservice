@@ -74,21 +74,16 @@ def api():
         print(page_data)
 
       # get page sections
-      print('SECTIONS -----')
       def get_sections(sections, level=0):
         section_arr = []
         for s in sections:
-          # print("%s: %s" % ("*" * (level + 1), s.title))
-          # print_sections(s.sections, level + 1)
-          print(s.title)
-          # section_arr.append(s.sections, level + 1)
           section_arr.append(s.title)
         return section_arr
       sections = get_sections(page.sections)
-      print(sections)
 
-      # if sections:
-      #   page_data['sections'] = 3
+      if sections:
+        page_data['sections'] = sections
+        print(page_data)
 
       # get links to other pages
       def print_links(page):
