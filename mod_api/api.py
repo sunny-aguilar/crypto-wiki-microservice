@@ -74,7 +74,7 @@ def api():
         print(page_data)
 
       # get page sections
-      def get_sections(sections, level=0):
+      def get_sections(sections):
         section_arr = []
         for s in sections:
           section_arr.append(s.title)
