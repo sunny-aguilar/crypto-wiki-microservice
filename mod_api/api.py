@@ -63,15 +63,12 @@ def api():
       # store data in dictionary
       if url:
         page_data['url'] = page.fullurl
-        print(page_data)
 
       if title:
         page_data['title'] = page.title
-        print(page_data)
 
       if summary:
         page_data['summary'] = page.summary
-        print(page_data)
 
       # get page sections
       def get_sections(sections):
@@ -82,11 +79,11 @@ def api():
 
       if sections:
         page_data['sections'] = get_sections(page.sections)
-        print(page_data)
 
       # get page text
       if text:
         page_data[text] = page.text
+        print(page_data)
 
       # get links to other pages
       def print_links(page):
