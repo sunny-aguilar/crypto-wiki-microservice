@@ -15,7 +15,7 @@ from flask import Flask, render_template
 from mod_index.index import index_bp
 from mod_gui.gui import gui_bp
 from mod_api.api import api_bp
-from mod_docs.docs import
+from mod_docs.docs import 
 
 
 #-------------------------------------------------------------------------
