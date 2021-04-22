@@ -26,9 +26,9 @@ def api():
     print('URL: ${url} and terms: ${search_term}]')
 
     wiki_wiki = wikipediaapi.Wikipedia('en')
-    page_py = wiki_wiki.page('Dog')
+    page = wiki_wiki.page('Dog')
     print(page_py)
-    print('Page Exists: %s' % page_py.exists())
+    print('Page Exists: %s' % page.exists())
 
     books = [
       {'id': 0,
