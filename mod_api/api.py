@@ -54,6 +54,7 @@ def api():
       links = page.links
       for title in sorted(links.keys()):
         print("%s: %s" % (title, links[title]))
+    print_links(page)
 
     books = [
       {'id': 0,
