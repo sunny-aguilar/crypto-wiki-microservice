@@ -26,7 +26,7 @@ def api():
     search_term = req.get('search_term')
     print(f'URL: {url} and terms: {search_term}')
 
-    # wiki_wiki = wikipediaapi.Wikipedia('en')
+    # set up wikipedia search API
     wiki_wiki = wikipediaapi.Wikipedia(
         language='en',
         extract_format=wikipediaapi.ExtractFormat.WIKI
