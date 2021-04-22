@@ -65,6 +65,10 @@ def api():
         page_data['url'] = page.fullurl
         print(page_data)
 
+      if title:
+        page_data['title'] = page.title
+        print(page_data)
+
 
       # get page sections
       def print_sections(sections, level=0):
