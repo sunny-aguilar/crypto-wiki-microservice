@@ -2,8 +2,9 @@
 # Date:                                   April 20, 2021
 # Class:                                  CS 361
 # Description:                            This module holds the api endpoint for the web app
-#                                         and is a separate blueprint module.
-#
+#                                         and is a separate blueprint module. This API
+#                                         end-point is to access a Wikipedia webscraper.
+# Base URL:                               http://localhost:55055/api
 
 #-------------------------------------------------------------------------
 # import the required libraries for the web app and other modules
