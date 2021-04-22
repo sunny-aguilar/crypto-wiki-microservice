@@ -31,8 +31,10 @@ def api():
         language='en',
         extract_format=wikipediaapi.ExtractFormat.WIKI
     )
+
+    # scrape page and save in object
     page = wiki_wiki.page(search_term)
-    print(page)
+
 
     # check if page exists to continue with web scraper
     if (page.exists()):
