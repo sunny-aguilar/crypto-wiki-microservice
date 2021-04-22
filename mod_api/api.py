@@ -75,14 +75,17 @@ def api():
 
       # get page sections
       print('SECTIONS -----')
-      def print_sections(sections, level=0):
+      def get_sections(sections, level=0):
         section_arr = []
         for s in sections:
           # print("%s: %s" % ("*" * (level + 1), s.title))
           # print_sections(s.sections, level + 1)
           print(s.title)
           # section_arr.append(s.sections, level + 1)
-      print_sections(page.sections)
+          section_arr.append(s.title)
+          return section_arr
+      sections = get_sections(page.sections)
+      print(sections)
 
       # if sections:
       #   page_data['sections'] = 3
