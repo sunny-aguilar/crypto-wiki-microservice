@@ -20,7 +20,10 @@ def api():
     print('API end-point accessed------------------------------')
 
     # get parameters
-    search_term = 
+    req = request.form
+    url = req. get('url')
+    search_term = req.get('search_term')
+    print('URL: ${url} and terms: ${search_term}]')
 
     wiki_wiki = wikipediaapi.Wikipedia('en')
     page_py = wiki_wiki.page('Dog')
