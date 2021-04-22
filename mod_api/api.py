@@ -30,7 +30,9 @@ def api():
     print(page)
 
     # check if page exists to continue with web scraper
-    print('Page Exists: %s' % page.exists())
+    if (page.exists()):
+      print('PAGE EXISTS!')
+      print('Page Exists: %s' % page.exists())
 
 
 
