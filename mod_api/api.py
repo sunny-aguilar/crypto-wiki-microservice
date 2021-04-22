@@ -32,6 +32,7 @@ def api():
         extract_format=wikipediaapi.ExtractFormat.WIKI
     )
 
+
     # scrape page and save in object
     page = wiki_wiki.page(search_term)
 
