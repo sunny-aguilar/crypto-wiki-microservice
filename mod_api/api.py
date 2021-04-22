@@ -69,7 +69,7 @@ def api():
         page_data['title'] = page.title
         print(page_data)
 
-      if sections:
+      if summary:
         page_data['summary'] = page.summary
         print(page_data)
 
