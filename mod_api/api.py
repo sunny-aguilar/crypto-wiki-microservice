@@ -74,9 +74,9 @@ def api():
         print(page_data)
 
       # get page sections
+      print('SECTIONS -----')
       def print_sections(sections, level=0):
         section_arr = []
-        print('SECTIONS -----')
         for s in sections:
           print("%s: %s - %s" % ("*" * (level + 1), s.title, s.text[0:40]))
           print_sections(s.sections, level + 1)
