@@ -28,6 +28,7 @@ app = Flask(__name__, static_url_path='/static')
 app.register_blueprint(index_bp)
 app.register_blueprint(gui_bp)
 app.register_blueprint(api_bp)
+app.register_blueprint(mod_docs)
 
 
 #-------------------------------------------------------------------------

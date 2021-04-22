@@ -10,10 +10,10 @@
 from flask import redirect, url_for, request, render_template, Blueprint
 
 # create a blueprint module
-mod_docs = Blueprint('gui_docs', __name__, template_folder='templates')
+docs_bp = Blueprint('gui_docs', __name__, template_folder='templates')
 
 # blueprint routes
-@mod_docs.route('/docs', methods=['GET'])
+@docs_bp.route('/docs', methods=['GET'])
 def gui():
   docs = 'active'
   return render_template('gui.html', docs_menu=docs)
