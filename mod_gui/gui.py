@@ -15,5 +15,5 @@ gui_bp = Blueprint('gui_bp', __name__, template_folder='templates')
 # blueprint routes
 @gui_bp.route('/gui', methods=['GET'])
 def gui():
-  msg = 'GUI page.'
-  return render_template('gui.html', msg=msg)
+  gui = 'active'
+  return render_template('gui.html', gui_menu=gui)
