@@ -33,8 +33,8 @@ def api():
     if (page.exists()):
       print('PAGE EXISTS!')
       print('Page Exists: %s' % page.exists())
-      print(page.title())
-      print(page.summary())
+      print(page.title)
+      print(page.summary)
 
 
 
