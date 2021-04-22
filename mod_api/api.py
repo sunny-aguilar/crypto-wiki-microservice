@@ -83,7 +83,7 @@ def api():
           print(s.title)
           # section_arr.append(s.sections, level + 1)
           section_arr.append(s.title)
-          return section_arr
+        return section_arr
       sections = get_sections(page.sections)
       print(sections)
 
