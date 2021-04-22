@@ -2,3 +2,4 @@ env
 mod_index/__pycache__
 mod_gui/__pycache__
 mod_api/__pycache__
+.DS_Store
