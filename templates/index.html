@@ -20,14 +20,17 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-link active" aria-current="page" href="/">Home</a>
-          <a class="nav-link" href="/gui">Scraper GUI</a>
+          <a class="nav-link {% if home_menu %} active {% endif %}" aria-current="page" href="/">Home</a>
+          <a class="nav-link {% if gui_menu %} active {% endif %}" href="/gui">Scraper GUI</a>
         </div>
       </div>
     </div>
   </nav>
 
-  <h1>Home Page</h1>
+  <div class="container text-center">
+    <img src="/static/img/bitcoin-roller-coaster.gif" alt="">
+    Under Construction
+  </div>
 
 
 
