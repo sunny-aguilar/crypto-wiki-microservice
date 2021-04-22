@@ -30,7 +30,7 @@ def api():
         language='en',
         extract_format=wikipediaapi.ExtractFormat.WIKI
     )
-    page = wiki_wiki.page('Dog')
+    page = wiki_wiki.page('Optical character recognition')
     print(page)
 
     # check if page exists to continue with web scraper
