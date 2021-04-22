@@ -25,7 +25,11 @@ def api():
     search_term = req.get('search_term')
     print('URL: ${url} and terms: ${search_term}]')
 
-    wiki_wiki = wikipediaapi.Wikipedia('en')
+    # wiki_wiki = wikipediaapi.Wikipedia('en')
+    wiki_wiki = wikipediaapi.Wikipedia(
+        language='en',
+        extract_format=wikipediaapi.ExtractFormat.WIKI
+    )
     page = wiki_wiki.page('Dog')
     print(page)
 
@@ -33,6 +37,7 @@ def api():
     if (page.exists()):
       print('PAGE EXISTS!')
       print('Page Exists: %s' % page.exists())
+      print(page.fullurl)
       print(page.title)
       print(page.summary)
 
