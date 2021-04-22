@@ -17,6 +17,7 @@ from mod_gui.gui import gui_bp
 from mod_api.api import api_bp
 
 
+
 #-------------------------------------------------------------------------
 # create the flask app & set app configurations
 app = Flask(__name__, static_url_path='/static')
