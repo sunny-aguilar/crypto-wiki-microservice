@@ -82,7 +82,7 @@ def api():
 
       # get page text
       if text:
-        page_data[text] = page.text
+        page_data['text'] = page.text
         print(page_data)
 
       # get links to other pages
