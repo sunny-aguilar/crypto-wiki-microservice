@@ -29,13 +29,7 @@ def api():
     sections = req.get('sections')
     text = req.get('text')
     links = req.get('links')
-    # print(f'Search term: {search_term}')
-    # print(f'URL: {url}')
-    # print(f'Title: {title}')
-    # print(f'Summary: {summary}')
-    # print(f'Sections: {sections}')
-    # print(f'Text: {text}')
-    # print(f'Links: {links}')
+
 
     # set up wikipedia search API
     wiki_wiki = wikipediaapi.Wikipedia(
