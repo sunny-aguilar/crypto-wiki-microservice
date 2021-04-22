@@ -46,19 +46,21 @@ def api():
       print(page.summary)
       print(page.text)
 
-    # get page sections
-    def print_sections(sections, level=0):
-      for s in sections:
-        print("%s: %s - %s" % ("*" * (level + 1), s.title, s.text[0:40]))
-        print_sections(s.sections, level + 1)
-    print_sections(page.sections)
+      
 
-    # get links to other pages
-    def print_links(page):
-      links = page.links
-      for title in sorted(links.keys()):
-        print("%s: %s" % (title, links[title]))
-    print_links(page)
+      # get page sections
+      def print_sections(sections, level=0):
+        for s in sections:
+          print("%s: %s - %s" % ("*" * (level + 1), s.title, s.text[0:40]))
+          print_sections(s.sections, level + 1)
+      print_sections(page.sections)
+
+      # get links to other pages
+      def print_links(page):
+        links = page.links
+        for title in sorted(links.keys()):
+          print("%s: %s" % (title, links[title]))
+      print_links(page)
 
     books = [
       {'id': 0,
