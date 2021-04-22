@@ -69,8 +69,8 @@ def api():
         page_data['title'] = page.title
         print(page_data)
 
-      if summary:
-        page_data['sections'] = page.section_by_title
+      if sections:
+        page_data['sections'] = page.sections
         print(page_data)
 
 
