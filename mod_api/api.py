@@ -40,7 +40,7 @@ def api():
       print(page.fullurl)
       print(page.title)
       print(page.summary)
-      print(p_wiki.text)
+      print(wiki.text)
 
 
 
