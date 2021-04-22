@@ -27,7 +27,7 @@ def api():
 
     wiki_wiki = wikipediaapi.Wikipedia('en')
     page = wiki_wiki.page('Dog')
-    print(page_py)
+    print(page)
     print('Page Exists: %s' % page.exists())
 
     books = [
