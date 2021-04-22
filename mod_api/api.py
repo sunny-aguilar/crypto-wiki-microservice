@@ -80,7 +80,7 @@ def api():
         for s in sections:
           # print("%s: %s" % ("*" * (level + 1), s.title))
           # print_sections(s.sections, level + 1)
-          print(s)
+          print(s.title)
           # section_arr.append(s.sections, level + 1)
       print_sections(page.sections)
 
