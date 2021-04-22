@@ -79,11 +79,14 @@ def api():
         for s in sections:
           section_arr.append(s.title)
         return section_arr
-      sections = get_sections(page.sections)
 
       if sections:
-        page_data['sections'] = sections
+        page_data['sections'] = get_sections(page.sections)
         print(page_data)
+
+      # get page text
+      if text:
+        page_data[text] = page.text
 
       # get links to other pages
       def print_links(page):
