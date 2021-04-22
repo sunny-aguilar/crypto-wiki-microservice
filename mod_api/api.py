@@ -34,6 +34,7 @@ def api():
       print('PAGE EXISTS!')
       print('Page Exists: %s' % page.exists())
       print(page.title())
+      print(page.summary())
 
 
 
