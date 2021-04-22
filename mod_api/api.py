@@ -28,7 +28,11 @@ def api():
     wiki_wiki = wikipediaapi.Wikipedia('en')
     page = wiki_wiki.page('Dog')
     print(page)
+
+    # check if page exists to continue with web scraper
     print('Page Exists: %s' % page.exists())
+
+
 
     books = [
       {'id': 0,
