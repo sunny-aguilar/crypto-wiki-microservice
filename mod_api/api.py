@@ -62,7 +62,7 @@ def api():
 
       # store data in dictionary
       if url:
-        page_data['url'] = url
+        page_data['url'] = page.fullurl
         print(page_data)
 
 
