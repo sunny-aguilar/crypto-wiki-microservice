@@ -89,9 +89,9 @@ def api():
       def print_links(page):
         links = page.links
         print('Links:')
-        print(links)
         for title in sorted(links.keys()):
-          print("%s: %s" % (title, links[title]))
+          # print("%s: %s" % (title, links[title]))
+          print("%s" % (title))
       print_links(page)
 
       # if links:
