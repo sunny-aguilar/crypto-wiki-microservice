@@ -49,6 +49,12 @@ def api():
         print_sections(s.sections, level + 1)
     print_sections(page.sections)
 
+    # get links to other pages
+    def print_links(page):
+      links = page.links
+      for title in sorted(links.keys()):
+        print("%s: %s" % (title, links[title]))
+
     books = [
       {'id': 0,
         'title': 'A Fire Upon the Deep',
