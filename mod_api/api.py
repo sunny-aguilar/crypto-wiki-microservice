@@ -88,6 +88,8 @@ def api():
       # get links to other pages
       def print_links(page):
         links = page.links
+        print('Links:')
+        print(links)
         for title in sorted(links.keys()):
           print("%s: %s" % (title, links[title]))
       print_links(page)
