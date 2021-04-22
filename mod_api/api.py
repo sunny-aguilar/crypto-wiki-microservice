@@ -19,9 +19,13 @@ def api():
   if request.method == 'GET':
     print('API end-point accessed------------------------------')
 
+    # get parameters
+    search_term = 
+
     wiki_wiki = wikipediaapi.Wikipedia('en')
-    page_py = wiki_wiki.page('Python_(programming_language)')
+    page_py = wiki_wiki.page('Dog')
     print(page_py)
+    print('Page Exists: %s' % page_py.exists())
 
     books = [
       {'id': 0,
