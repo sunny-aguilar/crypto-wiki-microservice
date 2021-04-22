@@ -55,11 +55,15 @@ def api():
       print(page.fullurl)
       print(page.title)
       print(page.summary)
-      print(page.text)
+      # print(page.text)
 
       # create dictionary to store page data
       page_data = {}
 
+      # store data in dictionary
+      if url:
+        page_data.url = url
+        print(page_data)
 
 
       # get page sections
@@ -67,14 +71,14 @@ def api():
         for s in sections:
           print("%s: %s - %s" % ("*" * (level + 1), s.title, s.text[0:40]))
           print_sections(s.sections, level + 1)
-      print_sections(page.sections)
+      # print_sections(page.sections)
 
       # get links to other pages
       def print_links(page):
         links = page.links
         for title in sorted(links.keys()):
           print("%s: %s" % (title, links[title]))
-      print_links(page)
+      # print_links(page)
 
     books = [
       {'id': 0,
