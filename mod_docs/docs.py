@@ -18,5 +18,3 @@ def gui():
   docs = 'active'
   return render_template('docs.html', docs_menu=docs)
 
-
-
