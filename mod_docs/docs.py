@@ -17,4 +17,3 @@ docs_bp = Blueprint('gui_docs', __name__, template_folder='templates')
 def gui():
   docs = 'active'
   return render_template('docs.html', docs_menu=docs)
-
