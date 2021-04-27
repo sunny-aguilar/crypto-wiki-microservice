@@ -92,7 +92,7 @@ def api():
         page_data['links'] = print_links(page.links)
         print(page_data)
 
-
+      # return scraper data via JSON notation
       return jsonify(page_data)
 
   # if page does not exist, return an empty JSON object
