@@ -94,5 +94,6 @@ def api():
 
 
       return jsonify(page_data)
+
   # if page does not exist, return an empty JSON object
   return jsonify({})
