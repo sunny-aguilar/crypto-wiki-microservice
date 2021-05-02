@@ -6,5 +6,9 @@ document.addEventListener("DOMContentLoaded", runScript, false);
 // function that adds an event listener for click events
 function runScript(event) {
   const parent = document.body;
-  parent.addEventListener("click", addRow, false);
+  parent.addEventListener("click", expandRow, false);
+}
+
+function expandRow(event) {
+  
 }
