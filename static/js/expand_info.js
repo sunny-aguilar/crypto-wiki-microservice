@@ -11,5 +11,8 @@ function runScript(event) {
 
 function expandRow(event) {
   const ele = event.target;
-  console.log(ele);
+  console.log(event.target);
+  if (ele.value === '<i class="lni lni-arrow-down-circle">') {
+    console.log('Target found!');
+  }
 }
