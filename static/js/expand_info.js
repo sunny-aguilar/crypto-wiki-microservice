@@ -10,5 +10,6 @@ function runScript(event) {
 }
 
 function expandRow(event) {
-  
+  const ele = event.target;
+  console.log(ele);
 }
