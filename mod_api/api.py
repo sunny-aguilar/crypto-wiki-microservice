@@ -37,7 +37,7 @@ def api():
     text = req.get('text')
     links = req.get('links')
 
-    # handle empty parameters
+    # handle all-empty parameters
     # if '' in (url, title, summary, sections, text, links):
     #   msg = 'Enter at least one search parameters.'
     #   return render_template('gui.html', msg=msg)
