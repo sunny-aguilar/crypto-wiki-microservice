@@ -12,7 +12,6 @@ import requests
 # implement function
 #-------------------------------------------------------------------------
 def pdf_links(url):
-  print('URL ------')
-  print(url)
+  print('URL:', url)
   URL = url
   # r = requests.get(URL)
