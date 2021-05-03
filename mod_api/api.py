@@ -24,6 +24,9 @@ def api():
     print(request.form)
     req = request.args
     search_term = req.get('search_term')
+    # handle empty search term
+    
+
     url = req.get('url')
     title = req.get('title')
     summary = req.get('summary')
