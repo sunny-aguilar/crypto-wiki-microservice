@@ -14,4 +14,8 @@ import requests
 def pdf_links(url):
   print('URL:', url)
   URL = url
-  # r = requests.get(URL)
+  r = requests.get(URL)
+
+  content = r.content
+
+  soup = BeautifulSoup(content)
