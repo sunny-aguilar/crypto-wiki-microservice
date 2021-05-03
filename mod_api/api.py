@@ -24,7 +24,6 @@ def api():
     print(request.form)
     req = request.args
     search_term = req.get('search_term')
-    print('------------------------')
     # handle empty search term
     if search_term is '':
       msg = 'Enter a search term.'
