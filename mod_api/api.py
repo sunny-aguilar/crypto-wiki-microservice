@@ -39,15 +39,17 @@ def api():
     links = req.get('links')
 
     # handle empty parameters
-    # if None in (url, title, summary, sections, text, links):
-    if url is '':
-      if title is '':
-        if summary is '':
-          if sections is '':
-            if text is '':
-              if links is '':
-                msg = 'Enter at least one search parameters.'
-                return render_template('gui.html', msg=msg)
+    if '' in (url, title, summary, sections, text, links):
+      msg = 'Enter at least one search parameters.'
+      return render_template('gui.html', msg=msg)
+    # if url is '':
+    #   if title is '':
+    #     if summary is '':
+    #       if sections is '':
+    #         if text is '':
+    #           if links is '':
+    #             msg = 'Enter at least one search parameters.'
+    #             return render_template('gui.html', msg=msg)
 
 
 
