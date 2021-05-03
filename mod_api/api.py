@@ -43,6 +43,10 @@ def api():
       return render_template('gui.html', msg=msg)
 
 
+    # if PDF links are requested, call helper function
+    
+
+
     # set up wikipedia search API
     wiki_wiki = wikipediaapi.Wikipedia(
         language='en',
