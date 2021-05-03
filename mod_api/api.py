@@ -41,20 +41,10 @@ def api():
     # if '' in (url, title, summary, sections, text, links):
     #   msg = 'Enter at least one search parameters.'
     #   return render_template('gui.html', msg=msg)
-    print('Search Params:')
-    print(f'URL: {url}, title: {title}, summary: {summary}, Sections: {sections}, Text: {text}, Links: {links}')
-
     if url is None and title is None and summary is None and sections is None and text is None and links is None:
       msg = 'Select at least one search parameters.'
       return render_template('gui.html', msg=msg)
-    # if url is '':
-    #   if title is '':
-    #     if summary is '':
-    #       if sections is '':
-    #         if text is '':
-    #           if links is '':
-    #             msg = 'Enter at least one search parameters.'
-    #             return render_template('gui.html', msg=msg)
+
 
 
 
