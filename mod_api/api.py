@@ -23,10 +23,9 @@ def api():
     print('API end-point accessed------------------------------')
 
     # get parameters
-    print(request.form)
     req = request.args
     search_term = req.get('search_term')
-    # handle empty search term
+    # handle empty search_term
     if search_term is '':
       msg = 'Enter a search term.'
       return render_template('gui.html', msg=msg)
@@ -39,12 +38,12 @@ def api():
     links = req.get('links')
 
     # handle empty parameters
-    if '' in (url, title, summary, sections, text, links):
-      msg = 'Enter at least one search parameters.'
-      return render_template('gui.html', msg=msg)
+    # if '' in (url, title, summary, sections, text, links):
+    #   msg = 'Enter at least one search parameters.'
+    #   return render_template('gui.html', msg=msg)
 
     if url is '' and title is '' and summary is '' and sections is '' and text is '' and links is '':
-      msg = 'Enter at least one search parameters.'
+      msg = 'Select at least one search parameters.'
       return render_template('gui.html', msg=msg)
     # if url is '':
     #   if title is '':
