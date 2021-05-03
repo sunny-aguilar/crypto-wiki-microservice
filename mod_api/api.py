@@ -26,7 +26,7 @@ def api():
     search_term = req.get('search_term')
     print('------------------------')
     # handle empty search term
-    if search_term == None:
+    if search_term is '':
       print('NONE RETURNED!')
 
     url = req.get('url')
