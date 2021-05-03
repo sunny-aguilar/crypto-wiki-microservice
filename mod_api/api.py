@@ -9,6 +9,7 @@
 #-------------------------------------------------------------------------
 # import the required libraries for the web app and other modules
 from flask import redirect, url_for, request, render_template, Blueprint, jsonify
+from mod_api.api_helper import pdf_links
 import wikipediaapi
 
 
@@ -44,7 +45,9 @@ def api():
 
 
     # if PDF links are requested, call helper function
-    
+    pdf_links(url)
+
+
 
 
     # set up wikipedia search API

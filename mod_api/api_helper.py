@@ -11,6 +11,8 @@ import requests
 
 # implement function
 #-------------------------------------------------------------------------
-def get_pdf_links():
-  URL = "http://www.values.com/inspirational-quotes"
+def pdf_links(url):
+  print('URL ------')
+  print(url)
+  URL = url
   r = requests.get(URL)
