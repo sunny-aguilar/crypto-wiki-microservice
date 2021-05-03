@@ -37,7 +37,7 @@ def api():
     links = req.get('links')
 
     # handle empty parameters
-    if None in is '':
+    if None in (url, title, summary, sections, text, links):
       msg = 'Enter at least one search parameters.'
       return render_template('gui.html', msg=msg)
 
