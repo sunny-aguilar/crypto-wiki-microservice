@@ -50,11 +50,6 @@ def api():
                 return render_template('gui.html', msg=msg)
 
 
-    # if PDF links are requested, call helper function
-    pdf_links(url)
-
-
-
 
     # set up wikipedia search API
     wiki_wiki = wikipediaapi.Wikipedia(
@@ -73,8 +68,15 @@ def api():
       print('Page Exists: %s' % page.exists())
       print(page.fullurl)
       print(page.title)
-      print(page.summary)
+      # print(page.summary)
       # print(page.text)
+
+
+
+
+      # if PDF links are requested, call helper function
+      pdf_links(url)
+
 
       # create dictionary to store page data
       page_data = {}
