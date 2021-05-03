@@ -37,7 +37,7 @@ def api():
     text = req.get('text')
     links = req.get('links')
 
-    # handle all-empty parameters
+    # warn user that they must select at least one parameter
     if all(params is None for params in (url, title, summary, sections, text, links)):
       msg = 'Select at least one search parameters.'
       return render_template('gui.html', msg=msg)
