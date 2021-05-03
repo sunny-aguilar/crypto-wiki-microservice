@@ -75,7 +75,7 @@ def api():
 
 
       # if PDF links are requested, call helper function
-      pdf_links(url)
+      pdf_links(page.fullurl)
 
 
       # create dictionary to store page data
