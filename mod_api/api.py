@@ -38,7 +38,8 @@ def api():
 
     # handle empty parameters
     if url is '':
-      
+      msg = 'Enter at least one search parameters.'
+      return render_template('gui.html', msg=msg)
 
 
     # set up wikipedia search API
