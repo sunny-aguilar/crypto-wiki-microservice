@@ -46,7 +46,8 @@ def api():
     #   return render_template('gui.html', msg=msg)
 
     if all(v is None for v in (url, title, summary, sections, text, links)):
-      print('All params are empty!')
+      msg = 'Select at least one search parameters.'
+      return render_template('gui.html', msg=msg)
 
 
     # set up wikipedia search API
