@@ -42,6 +42,10 @@ def api():
     if '' in (url, title, summary, sections, text, links):
       msg = 'Enter at least one search parameters.'
       return render_template('gui.html', msg=msg)
+
+    if url is '' and title is '' and summary is '' and sections is '' and text is '' and links is '':
+      msg = 'Enter at least one search parameters.'
+      return render_template('gui.html', msg=msg)
     # if url is '':
     #   if title is '':
     #     if summary is '':
