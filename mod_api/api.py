@@ -27,7 +27,8 @@ def api():
     print('------------------------')
     # handle empty search term
     if search_term is '':
-      print('NONE RETURNED!')
+      msg = 'Enter a search term.'
+      return render_template('gui.html', msg=msg)
 
     url = req.get('url')
     title = req.get('title')
