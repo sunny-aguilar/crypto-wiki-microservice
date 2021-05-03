@@ -42,7 +42,7 @@ def api():
     #   msg = 'Enter at least one search parameters.'
     #   return render_template('gui.html', msg=msg)
     print('Search Params:')
-    print('URL: {url}, title: {title}, summary: {summary}')
+    print(f'URL: {url}, title: {title}, summary: {summary}')
 
     if url is '' and title is '' and summary is '' and sections is '' and text is '' and links is '':
       msg = 'Select at least one search parameters.'
