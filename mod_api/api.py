@@ -36,6 +36,10 @@ def api():
     text = req.get('text')
     links = req.get('links')
 
+    # handle empty parameters
+    if url is '':
+      
+
 
     # set up wikipedia search API
     wiki_wiki = wikipediaapi.Wikipedia(
