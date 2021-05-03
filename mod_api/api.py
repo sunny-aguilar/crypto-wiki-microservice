@@ -40,12 +40,12 @@ def api():
 
     # handle empty parameters
     # if None in (url, title, summary, sections, text, links):
-    if '' in url:
-      if '' in title:
-        if '' in summary:
-          if '' in sections:
-            if '' in text:
-              if '' in links:
+    if url is '':
+      if title is '':
+        if summary is '':
+          if sections is '':
+            if text is '':
+              if links is '':
                 msg = 'Enter at least one search parameters.'
                 return render_template('gui.html', msg=msg)
 
