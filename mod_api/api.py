@@ -40,9 +40,14 @@ def api():
 
     # handle empty parameters
     # if None in (url, title, summary, sections, text, links):
-    if None in url and None in title and None in summary and None in sections and None in text and None in links:
-      msg = 'Enter at least one search parameters.'
-      return render_template('gui.html', msg=msg)
+    if None in url:
+      if None in title:
+        if None in summary:
+          if None in sections:
+            if None in text:
+              if None in links:
+                msg = 'Enter at least one search parameters.'
+                return render_template('gui.html', msg=msg)
 
 
     # if PDF links are requested, call helper function
