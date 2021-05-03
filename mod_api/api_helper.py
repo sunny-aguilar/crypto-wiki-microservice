@@ -15,4 +15,4 @@ def pdf_links(url):
   print('URL ------')
   print(url)
   URL = url
-  r = requests.get(URL)
+  # r = requests.get(URL)
