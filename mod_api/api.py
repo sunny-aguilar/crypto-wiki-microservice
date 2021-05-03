@@ -25,7 +25,7 @@ def api():
     req = request.args
     search_term = req.get('search_term')
     # handle empty search term
-    
+    # if search_term
 
     url = req.get('url')
     title = req.get('title')
