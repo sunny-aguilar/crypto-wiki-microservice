@@ -18,4 +18,5 @@ def pdf_links(url):
 
   content = r.content
 
-  soup = BeautifulSoup(content)
+  print(content)
+  # soup = BeautifulSoup(content)
