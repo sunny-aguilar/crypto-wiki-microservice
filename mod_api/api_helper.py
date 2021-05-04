@@ -28,7 +28,6 @@ def pdf_links(url):
   for link in links:
     current_link = link.get('href')
     if current_link.endswith('pdf'):
-      print('PDF Link found')
       pdf_links.append(link['href'])
 
 
