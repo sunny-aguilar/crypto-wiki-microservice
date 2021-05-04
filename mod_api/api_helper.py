@@ -24,4 +24,4 @@ def pdf_links(url):
   links = soup.find_all('a', href=True)
 
   for link in links:
-    print(link)
+    print(link['href'])
