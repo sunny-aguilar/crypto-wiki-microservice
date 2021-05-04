@@ -31,6 +31,7 @@ def pdf_links(url):
     current_link = link.get('href')
     if current_link.endswith('pdf'):
       print('PDF Link found')
+      pdf_links.append(link['href'])
 
     if link['href'][-5:] == '.pdf/':
       print(link['href'])
