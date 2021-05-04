@@ -36,6 +36,7 @@ def api():
     sections = req.get('sections')
     text = req.get('text')
     links = req.get('links')
+    pdf_links = req.get('pdf_links')
 
     # warn user that they must select at least one parameter
     if all(params is None for params in (url, title, summary, sections, text, links)):
@@ -62,11 +63,6 @@ def api():
       print(page.title)
       # print(page.summary)
       # print(page.text)
-
-
-
-
-
 
 
       # create dictionary to store page data
@@ -107,11 +103,12 @@ def api():
 
       if links:
         page_data['links'] = print_links(page.links)
-        print(page_data)
+        # print(page_data)
 
 
       # if PDF links are requested, call helper function
-      page_data['pdf_links'] = pdf_links(page.fullurl)
+      if pdf_links:
+        page_data['pdf_links'] = pdf_links(page.fullurl)
 
 
       # return scraper data via JSON notation

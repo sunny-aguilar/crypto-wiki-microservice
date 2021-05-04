@@ -12,9 +12,8 @@ import requests
 # implement function
 #-------------------------------------------------------------------------
 def pdf_links(url):
-  # print('URL:', url)        # test to see if URL was received
   URL = url
-  r = requests.get(URL)
+  r = requests.get(url)
 
   content = r.content
 
