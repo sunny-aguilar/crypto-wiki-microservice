@@ -20,6 +20,6 @@ def pdf_links(url):
 
   soup = BeautifulSoup(content, 'html.parser')
 
-  ref = soup.find("span", {"id": "References"})
+  ref = soup.find("ol", {"class": "references"})
 
   print(ref)
