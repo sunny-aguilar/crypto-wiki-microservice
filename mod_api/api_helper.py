@@ -25,11 +25,12 @@ def pdf_links(url):
 
   pdf_links = [];
 
+  # search for PDF links and save thim in a list
   for link in links:
     current_link = link.get('href')
     if current_link.endswith('pdf'):
       pdf_links.append(link['href'])
 
-  print(pdf_links)
-
+  # print(pdf_links)
+  # return pdf links
   return pdf_links
