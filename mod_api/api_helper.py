@@ -30,5 +30,6 @@ def pdf_links(url):
     if current_link.endswith('pdf'):
       pdf_links.append(link['href'])
 
-
   print(pdf_links)
+
+  return pdf_links

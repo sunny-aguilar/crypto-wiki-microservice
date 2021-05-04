@@ -66,8 +66,7 @@ def api():
 
 
 
-      # if PDF links are requested, call helper function
-      pdf_links(page.fullurl)
+
 
 
       # create dictionary to store page data
@@ -109,6 +108,11 @@ def api():
       if links:
         page_data['links'] = print_links(page.links)
         print(page_data)
+
+
+      # if PDF links are requested, call helper function
+      page_data['pdf_links'] = pdf_links(page.fullurl)
+
 
       # return scraper data via JSON notation
       return jsonify(page_data)
