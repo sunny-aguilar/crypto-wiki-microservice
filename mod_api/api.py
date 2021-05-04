@@ -107,7 +107,7 @@ def api():
 
 
       # if PDF links are requested, call helper function
-      if pdf_links:
+      if pdf_links == 'on':
         page_data['pdf_links'] = pdf_links(page.fullurl)
 
 
