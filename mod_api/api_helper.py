@@ -19,3 +19,7 @@ def pdf_links(url):
   content = r.content
 
   soup = BeautifulSoup(content)
+
+  ref = soup.find("span", {"id": "References"})
+
+  print(ref)
