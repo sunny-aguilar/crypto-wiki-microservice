@@ -23,6 +23,7 @@ def pdf_links(url):
   # ref = soup.find("a")
   links = soup.find_all('a', href=True)
 
+  # list to hold PDF links
   pdf_links = [];
 
   # search for PDF links and save thim in a list
