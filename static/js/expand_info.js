@@ -1,12 +1,12 @@
 // author:   Sandro Aguilar
 
 // event listener to wait for DOM to load before running script
-// document.addEventListener("DOMContentLoaded", runScript, false);
+document.addEventListener("DOMContentLoaded", runScript, false);
 
 // function that adds an event listener for click events
 function runScript(event) {
   const parent = document.body;
-  // parent.addEventListener("click", expandRow, false);
+  parent.addEventListener("click", expandRow, false);
 }
 
 // toggles additional info for coins
@@ -23,8 +23,12 @@ function expandRow(event) {
   console.log(info_node);
 
   // toggle info section
-  if (info_node.style.display === "none") { info_node.style.display = "block"; }
-  else { info_node.style.display = "none"; }
+  // if (info_node.style.display === "none") { info_node.style.display = "block"; }
+  // else { info_node.style.display = "none"; }
+
+  $("input").click(function(){
+    $(".hide-me").toggle(300);
+  });
 
 }
 
