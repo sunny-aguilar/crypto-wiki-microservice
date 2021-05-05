@@ -30,3 +30,12 @@ function expandRow(event) {
 
 
 }
+
+$(document).ready(function(){
+  $("#hide-me").click(function(){
+    $("input").hide();
+  });
+  $("#hide-me").click(function(){
+    $("input").show();
+  });
+});
