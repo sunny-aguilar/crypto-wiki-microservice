@@ -18,17 +18,17 @@ function expandRow(event) {
   console.log("Expand Section Button Clicked >>>>>>>>>");
 
   // get node
-  // const info_node = ele.parentNode.parentNode.nextElementSibling;
-  const info_node = document.getElementById('hide-me');
+  const info_node = ele.parentNode.parentNode.nextElementSibling;
+  // const info_node = document.getElementById('hide-me');
   console.log(info_node);
 
   // toggle info section
   // if (info_node.style.display === "none") { info_node.style.display = "block"; }
   // else { info_node.style.display = "none"; }
 
-  $("input").click(function(){
-    $(".hide-me").toggle(300);
-  });
+  // $("input").click(function(){
+  //   $(".hide-me").toggle(300);
+  // });
 
 }
 
@@ -36,7 +36,7 @@ function expandRow(event) {
 
 $(document).ready(function(){
   $("input").click(function(){
-    $(".hide-me").toggle(300);
+    $(".hide_info").toggle(400);
   });
 });
 
