@@ -32,10 +32,10 @@ function expandRow(event) {
 }
 
 $(document).ready(function(){
-  $("#hide-me").click(function(){
-    $("input").hide();
+  $("button").click(function(){
+    $("#hide-me").hide();
   });
-  $("#hide-me").click(function(){
-    $("input").show();
+  $("button").click(function(){
+    $("#hide-me").show();
   });
 });
