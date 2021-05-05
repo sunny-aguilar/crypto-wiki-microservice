@@ -9,13 +9,30 @@ function runScript(event) {
   parent.addEventListener("click", expandRow, false);
 }
 
+// toggles additional info for coins
 function expandRow(event) {
   const ele = event.target;
-  console.log(event.target.value);
-  if (ele != '<i class="lni lni-arrow-down-circle"></i>') {
-    console.log('Wrong target!');
-    return;
-  }
+  // filter more button clicks
+  if (ele.value != "more") { return; }
 
   console.log("Target found!");
+
+  // get node
+  const info_node = ele.parentNode.parentNode.nextElementSibling;
+  console.log(info_node);
+
+  info_node.style.display == "block";
+
+  if (info_node.style.display == "none") {
+    info_node.style.display === "block";
+    console.log(info_node.style.display);
+  }
+  else {
+    info_node.style.display == "none";
+    console.log(info_node.style.display);
+  }
+
+
+
+
 }
