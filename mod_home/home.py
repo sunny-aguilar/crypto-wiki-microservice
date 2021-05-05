@@ -13,7 +13,7 @@ from flask import redirect, url_for, request, render_template, Blueprint
 home_bp = Blueprint('home_bp', __name__, template_folder='templates')
 
 # blueprint routes
-@home_bp.route('/gui', methods=['GET'])
-def gui():
-  home = 'active'
-  return render_template('home.html', home_menu=gui)
+# @home_bp.route('/gui', methods=['GET'])
+# def gui():
+#   home = 'active'
+#   return render_template('home.html', home_menu=gui)
