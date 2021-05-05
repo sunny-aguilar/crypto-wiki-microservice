@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", runScript, false);
 // function that adds an event listener for click events
 function runScript(event) {
   const parent = document.body;
-  parent.addEventListener("click", expandRow, false);
+  // parent.addEventListener("click", expandRow, false);
 }
 
 // toggles additional info for coins
