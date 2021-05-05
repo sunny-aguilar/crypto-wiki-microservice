@@ -1,7 +1,7 @@
 // author:   Sandro Aguilar
 
 // event listener to wait for DOM to load before running script
-document.addEventListener("DOMContentLoaded", runScript, false);
+// document.addEventListener("DOMContentLoaded", runScript, false);
 
 // function that adds an event listener for click events
 function runScript(event) {
@@ -26,22 +26,13 @@ function expandRow(event) {
   if (info_node.style.display === "none") { info_node.style.display = "block"; }
   else { info_node.style.display = "none"; }
 
-
-
-
 }
+
+
 
 $(document).ready(function(){
   $("input").click(function(){
-    $("#hide-me").hide();
-  });
-  $("input").click(function(){
-    $("#hide-me").show();
+    $(".hide-me").toggle(400);
   });
 });
 
-// $(document).ready(function(){
-//   $("input").click(function(){
-//     $("p").hide(1000);
-//   });
-// });
