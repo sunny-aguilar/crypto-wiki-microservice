@@ -28,7 +28,6 @@ function expandRow(event) {
   }
   else {
     info_node.style.display = "none";
-    console.log(info_node.style.display);
   }
 
 
