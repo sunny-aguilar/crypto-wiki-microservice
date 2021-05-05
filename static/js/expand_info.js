@@ -18,7 +18,8 @@ function expandRow(event) {
   console.log("Target found!");
 
   // get node
-  const info_node = ele.parentNode.parentNode.nextElementSibling;
+  // const info_node = ele.parentNode.parentNode.nextElementSibling;
+  const info_node = document.getElementById('hide-me');
   console.log(info_node);
 
   info_node.style.display == "block";
