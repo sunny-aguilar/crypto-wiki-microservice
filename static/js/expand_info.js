@@ -25,7 +25,6 @@ function expandRow(event) {
 
   if (info_node.style.display === "none") {
     info_node.style.display = "block";
-    console.log(info_node.style.display);
   }
   else {
     info_node.style.display = "none";
