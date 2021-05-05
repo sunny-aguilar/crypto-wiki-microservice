@@ -35,7 +35,7 @@ $(document).ready(function(){
   $("input").click(function(){
     $("#hide-me").hide();
   });
-  $("button").click(function(){
+  $("input").click(function(){
     $("#hide-me").show();
   });
 });
