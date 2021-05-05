@@ -32,7 +32,7 @@ function expandRow(event) {
 
 $(document).ready(function(){
   $("input").click(function(){
-    $(".hide-me").toggle(400);
+    $(".hide-me").toggle(300);
   });
 });
 
