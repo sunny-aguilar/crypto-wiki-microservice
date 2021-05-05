@@ -15,7 +15,7 @@ function expandRow(event) {
   // filter more button clicks
   if (ele.value != "more") { return; }
 
-  console.log("Target found!");
+  console.log("Expand Section Button Clicked >>>>>>>>>");
 
   // get node
   // const info_node = ele.parentNode.parentNode.nextElementSibling;
