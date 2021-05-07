@@ -23,8 +23,7 @@ function expandRow(event) {
   console.log(info_node);
 
   // toggle info section
-  // if (info_node.style.display === "none") { info_node.style.display = "block"; }
-  // else { info_node.style.display = "none"; }
+
 
 
 }
