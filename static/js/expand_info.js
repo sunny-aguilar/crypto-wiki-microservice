@@ -26,9 +26,6 @@ function expandRow(event) {
   // if (info_node.style.display === "none") { info_node.style.display = "block"; }
   // else { info_node.style.display = "none"; }
 
-  // $("input").click(function(){
-  //   $(".hide-me").toggle(300);
-  // });
 
 }
 
