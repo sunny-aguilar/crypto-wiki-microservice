@@ -1,10 +1,8 @@
 //  Authors:                                Sandro Aguilar
-//  Date:                                   April 20, 2021
+//  Date:                                   May 8, 2021
 //  Class:                                  CS 361
-//  Description:                            This module holds the api endpoint for the web app
-//                                          and is a separate blueprint module. This API
-//                                          end-point is to access a Wikipedia webscraper.
-//  Base URL:                               http://localhost:55055/api
+//  Description:                            This JS file is used to add interactivity to
+//                                          the Crypto Asset list GUI.
 
 // -------------------------------------------------------------------------
 
