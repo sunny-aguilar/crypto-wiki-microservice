@@ -1,12 +1,12 @@
- Authors:                                Sandro Aguilar
- Date:                                   April 20, 2021
- Class:                                  CS 361
- Description:                            This module holds the api endpoint for the web app
-                                         and is a separate blueprint module. This API
-                                         end-point is to access a Wikipedia webscraper.
- Base URL:                               http://localhost:55055/api
+//  Authors:                                Sandro Aguilar
+//  Date:                                   April 20, 2021
+//  Class:                                  CS 361
+//  Description:                            This module holds the api endpoint for the web app
+//                                          and is a separate blueprint module. This API
+//                                          end-point is to access a Wikipedia webscraper.
+//  Base URL:                               http://localhost:55055/api
 
--------------------------------------------------------------------------
+// -------------------------------------------------------------------------
 
 // event listener to wait for DOM to load before running script
 document.addEventListener("DOMContentLoaded", runScript, false);
