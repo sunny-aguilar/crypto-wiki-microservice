@@ -5,5 +5,6 @@
 //                                          crypto assets that will be listed.
 
 // -------------------------------------------------------------------------
-
+// event listener to wait for DOM to load before running script
+document.addEventListener("DOMContentLoaded", runScript, false);
 
