@@ -16,4 +16,5 @@ const cryptoData = {
   chainlink: {},
   uniswap: {},
   pancakeswap: {},
+  pancakebunny: {},
 }
