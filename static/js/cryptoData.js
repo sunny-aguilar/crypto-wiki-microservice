@@ -6,4 +6,4 @@
 
 // -------------------------------------------------------------------------
 
-const cryptoNames = [];
+const cryptoNames = ["Bitcoin", "Ethereum", "Litecoin", "Dai", "USDT", "Chainlink", "Uniswap", "PancakeSwap", "Pancake Bunny", "BNB"];
