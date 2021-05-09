@@ -15,7 +15,7 @@ const cryptoData = {
   usdt: {name: "", image: "/static/img/.png", supply: 0},
   chainlink: {name: "", image: "/static/img/.png", supply: 0},
   uniswap: {name: "", image: "/static/img/.png", supply: 0},
-  pancakeswap: {},
+  pancakeswap: {name: "", image: "/static/img/.png", supply: 0},
   pancakebunny: {},
   bnb: {}
 }
