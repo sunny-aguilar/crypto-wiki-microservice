@@ -12,9 +12,9 @@ const cryptoData = {
   ethereum: {name: "", image: "/static/img/.png", supply: 0},
   litecoin: {name: "", image: "/static/img/.png", supply: 0},
   dai: {name: "", image: "/static/img/.png", supply: 0},
-  usdt: {},
-  chainlink: {},
-  uniswap: {},
+  usdt: {name: "", image: "/static/img/.png", supply: 0},
+  chainlink: {name: "", image: "/static/img/.png", supply: 0},
+  uniswap: {name: "", image: "/static/img/.png", supply: 0},
   pancakeswap: {},
   pancakebunny: {},
   bnb: {}
