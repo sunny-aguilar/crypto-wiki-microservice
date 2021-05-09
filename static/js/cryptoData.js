@@ -14,4 +14,5 @@ const cryptoData = {
   dai: {},
   usdt: {},
   chainlink: {},
+  uniswap: {},
 }
