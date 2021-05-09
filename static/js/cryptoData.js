@@ -12,5 +12,5 @@ const cryptoData = {
   ethereum: {},
   litecoin: {},
   dai: {},
-  
+  usdt: {},
 }
