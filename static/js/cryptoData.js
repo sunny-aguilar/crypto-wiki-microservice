@@ -17,4 +17,5 @@ const cryptoData = {
   uniswap: {},
   pancakeswap: {},
   pancakebunny: {},
+  bnb: {}
 }
