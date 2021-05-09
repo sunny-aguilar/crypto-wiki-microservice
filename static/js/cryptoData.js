@@ -7,3 +7,8 @@
 // -------------------------------------------------------------------------
 
 const cryptoNames = ["Bitcoin", "Ethereum", "Litecoin", "Dai", "USDT", "Chainlink", "Uniswap", "PancakeSwap", "Pancake Bunny", "BNB"];
+const cryptoData = {
+  name: "Bitcoin",
+  image: "/static/img/btc.png",
+  supply: 18696643
+}
