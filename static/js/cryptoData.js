@@ -11,4 +11,5 @@ const cryptoData = {
   bitcoin:{name: "Bitcoin", image: "/static/img/btc.png", supply: 18696643},
   ethereum: {},
   litecoin: {},
+  dai: {},
 }
