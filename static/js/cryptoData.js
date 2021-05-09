@@ -12,4 +12,5 @@ const cryptoData = {
   ethereum: {},
   litecoin: {},
   dai: {},
+  
 }
