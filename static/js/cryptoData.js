@@ -10,7 +10,7 @@ const cryptoNames = ["Bitcoin", "Ethereum", "Litecoin", "Dai", "USDT", "Chainlin
 const cryptoData = {
   bitcoin:{name: "Bitcoin", image: "/static/img/btc.png", supply: 18696643},
   ethereum: {name: "", image: "/static/img/.png", supply: 0},
-  litecoin: {},
+  litecoin: {name: "", image: "/static/img/.png", supply: 0},
   dai: {},
   usdt: {},
   chainlink: {},
