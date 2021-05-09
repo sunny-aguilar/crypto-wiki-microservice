@@ -15,4 +15,5 @@ const cryptoData = {
   usdt: {},
   chainlink: {},
   uniswap: {},
+  pancakeswap: {},
 }
