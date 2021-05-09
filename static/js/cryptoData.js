@@ -9,7 +9,7 @@
 const cryptoNames = ["Bitcoin", "Ethereum", "Litecoin", "Dai", "USDT", "Chainlink", "Uniswap", "PancakeSwap", "Pancake Bunny", "BNB"];
 const cryptoData = {
   bitcoin:{name: "Bitcoin", image: "/static/img/btc.png", supply: 18696643},
-  ethereum: {},
+  ethereum: {name: "", image: "/static/img/.png", supply: 0},
   litecoin: {},
   dai: {},
   usdt: {},
