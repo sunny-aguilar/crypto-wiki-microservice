@@ -13,7 +13,7 @@ const cryptoData = {
   litecoin: {name: "Litecoin", image: "/static/img/ltc.png", supply: 66752415},
   dai: {name: "Dai", image: "/static/img/dai.png", supply: 0},
   usdt: {name: "USDT", image: "/static/img/usdt.png", supply: 0},
-  chainlink: {name: "Chainlink", image: "/static/img/link.png", supply: 0},
+  chainlink: {name: "Chainlink", image: "/static/img/link.png", supply: 419009556},
   uniswap: {name: "Uniswap", image: "/static/img/uni.png", supply: 523384244},
   pancakeswap: {name: "Pancake Swap", image: "/static/img/cake.png", supply: 164396771},
   pancakebunny: {name: "Pancake Bunny", image: "/static/img/bunny.png", supply: 0},
