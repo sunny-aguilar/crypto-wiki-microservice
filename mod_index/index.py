@@ -18,4 +18,5 @@ index_bp = Blueprint('index_bp', __name__, template_folder='templates')
 def index():
   home = 'active'
   json_crypto_data = get_crypto_data()
+  
   return render_template('home.html', home_menu=home)
