@@ -28,7 +28,9 @@
         </blockquote>
         <p>To connect to the Wiki scraper API, you must be logged on to OSU VPN and use the base URL as the starting point. This is where GET requests can be sent along with parameters to obtained the desired information.</p>
         <h5 class="mt-5">URL Parameters</h5>
-        <p>URL parameters are passed via the URL to the endpoint to specify the data to be obtained from the Wiki scraping service. An example of the usage where you are searching for a term and want the Wiki scraper to return the URL of the page as well as a page summary, your HTTP request would look like this:</p>
+        <p>URL parameters are passed via the URL to the endpoint to specify the data to be obtained from the Wiki scraping service.</p>
+        <p>All parameters (other than the search_term) have only one setting: "on". When specifying that you want a parameter, you </p>
+        <p>An example of the usage where you are searching for a term and want the Wiki scraper to return the URL of the page as well as a page summary, your HTTP request would look like this:</p>
         <!-- <p>http://localhost:55055/api?search_term=dog&title=on&summary=on</p> -->
         <blockquote class="blockquote">
           <span class="text-primary">http://localhost:55055/api?</span><span class="text-warning">search_term=dog</span><span class="text-muted">&</span><span class="text-warning">title=on</span><span class="text-muted">&</span><span class="text-warning">summary=on</span>
