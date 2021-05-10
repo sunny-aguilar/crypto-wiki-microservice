@@ -11,3 +11,8 @@
 
 #-------------------------------------------------------------------------
 # import the required libraries for the web app and other modules
+
+
+def clean_data():
+  data = {}
+  return data
