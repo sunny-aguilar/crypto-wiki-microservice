@@ -9,7 +9,7 @@
 # import the required libraries for the web app and other modules
 from flask import redirect, url_for, request, render_template, Blueprint
 from mod_index.cryptoData import get_crypto_data
-from mod_index.cryptoProcessData import
+from mod_index.cryptoProcessData import clean_data
 
 # create a blueprint module
 index_bp = Blueprint('index_bp', __name__, template_folder='templates')
@@ -19,5 +19,6 @@ index_bp = Blueprint('index_bp', __name__, template_folder='templates')
 def index():
   home = 'active'
   json_crypto_data = get_crypto_data()
+  data = clean_data(json_crypto_data)
 
   return render_template('home.html', home_menu=home)
