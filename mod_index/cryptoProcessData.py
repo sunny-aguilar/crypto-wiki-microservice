@@ -13,6 +13,6 @@
 # import the required libraries for the web app and other modules
 
 
-def clean_data():
+def clean_data(raw_data):
   data = {}
   return data
