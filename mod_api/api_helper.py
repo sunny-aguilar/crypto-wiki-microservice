@@ -55,13 +55,6 @@ def get_links(url, get_pdfs = False):
   # search for PDF links and save thim in a list
   for link in links:
     current_link = link.get('href')
-    # if current_link.endswith('pdf'):
-    #   if get_pdfs is True:
-    #     print('Get PDF links triggered.')
-    #     link_list.append(link['href'])
-    #     continue
-
-    # link_list.append(link['href'])
 
     if get_pdfs:
       if current_link.endswith('pdf'):
@@ -71,5 +64,4 @@ def get_links(url, get_pdfs = False):
     else:
       link_list.append(link['href'])
 
-  # print(pdf_links)
   return link_list

@@ -110,7 +110,7 @@ def api():
       if pdfLinks:
         # if PDF links are requested, call helper function
         # page_data['pdf_links'] = pdf_links(page.fullurl)
-        page_data['pdf_links'] = get_links(page.fullurl, True)
+        page_data['pdf_links'] = get_links(page.fullurl)
 
 
       # return scraper data via JSON notation
