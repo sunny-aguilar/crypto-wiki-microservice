@@ -9,7 +9,8 @@
 from bs4 import BeautifulSoup
 import requests
 
-# implement function
+
+# implement function that returns pdf links
 #-------------------------------------------------------------------------
 def pdf_links(url):
   URL = url
@@ -23,7 +24,7 @@ def pdf_links(url):
   links = soup.find_all('a', href=True)
 
   # list to hold PDF links
-  pdf_links = [];
+  pdf_links = []
 
   # search for PDF links and save thim in a list
   for link in links:
@@ -34,3 +35,38 @@ def pdf_links(url):
   # print(pdf_links)
   # return pdf links
   return pdf_links
+
+
+# implement function that returns links
+#-------------------------------------------------------------------------
+def get_links(url, get_pdfs = False):
+  URL = url
+  r = requests.get(url)
+
+  content = r.content
+
+  soup = BeautifulSoup(content, 'html.parser')
+
+  links = soup.find_all('a', href=True)
+
+  # list to hold PDF links
+  link_list = []
+
+  # search for PDF links and save thim in a list
+  for link in links:
+    current_link = link.get('href')
+    # if current_link.endswith('pdf'):
+    #   if get_pdfs is True:
+    #     print('Get PDF links triggered.')
+    #     link_list.append(link['href'])
+    #     continue
+
+    link_list.append(link['href'])
+
+    if get_pdfs and current_link.endswith('pdf'):
+      link_list.append(link['href'])
+    else:
+      link_list.append(link['href'])
+
+  # print(pdf_links)
+  return link_list
