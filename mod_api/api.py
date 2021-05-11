@@ -41,7 +41,7 @@ def api():
     pdfLinks = req.get('pdf_links')
 
     # warn user that they must select at least one parameter
-    if all(params is None for params in (url, title, summary, sections, text, links)):
+    if all(params is None for params in (url, title, summary, sections, text, links, pdfLinks)):
       msg = 'Select at least one search parameters.'
       return render_template('gui.html', msg=msg)
 
@@ -107,7 +107,6 @@ def api():
       # gets links from Wiki page
       get_pdf_links = False
       if links:
-        # page_data['links'] = print_links(page.links)
         page_data['links'] = get_links(page.fullurl, get_pdf_links)
 
 
