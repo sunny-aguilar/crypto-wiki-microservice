@@ -57,11 +57,13 @@ def get_links(url, get_pdfs = False):
     current_link = link.get('href')
 
     if get_pdfs:
+      # get pdf links if option selected
       if current_link.endswith('pdf'):
         link_list.append(link['href'])
       else:
         continue
     else:
+      # get all links if option is not selected
       link_list.append(link['href'])
 
   return link_list

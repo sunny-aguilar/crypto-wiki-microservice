@@ -103,14 +103,19 @@ def api():
           link_arr.append(title)
         return link_arr
 
+
+      # gets links from Wiki page
+      get_pdf_links = False
       if links:
-        page_data['links'] = print_links(page.links)
-        print(page_data)
+        # page_data['links'] = print_links(page.links)
+        page_data['links'] = get_links(page.fullurl, get_pdf_links)
+        # print(page_data)
 
       if pdfLinks:
         # if PDF links are requested, call helper function
         # page_data['pdf_links'] = pdf_links(page.fullurl)
-        page_data['pdf_links'] = get_links(page.fullurl)
+        get_pdf_links = True
+        page_data['pdf_links'] = get_links(page.fullurl, get_pdf_links)
 
 
       # return scraper data via JSON notation
