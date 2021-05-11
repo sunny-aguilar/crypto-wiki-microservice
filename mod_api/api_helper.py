@@ -12,29 +12,29 @@ import requests
 
 # implement function that returns pdf links
 #-------------------------------------------------------------------------
-def pdf_links(url):
-  URL = url
-  r = requests.get(url)
+# def pdf_links(url):
+#   URL = url
+#   r = requests.get(url)
 
-  content = r.content
+#   content = r.content
 
-  soup = BeautifulSoup(content, 'html.parser')
+#   soup = BeautifulSoup(content, 'html.parser')
 
-  # ref = soup.find("a")
-  links = soup.find_all('a', href=True)
+#   # ref = soup.find("a")
+#   links = soup.find_all('a', href=True)
 
-  # list to hold PDF links
-  pdf_links = []
+#   # list to hold PDF links
+#   pdf_links = []
 
-  # search for PDF links and save thim in a list
-  for link in links:
-    current_link = link.get('href')
-    if current_link.endswith('pdf'):
-      pdf_links.append(link['href'])
+#   # search for PDF links and save thim in a list
+#   for link in links:
+#     current_link = link.get('href')
+#     if current_link.endswith('pdf'):
+#       pdf_links.append(link['href'])
 
-  # print(pdf_links)
-  # return pdf links
-  return pdf_links
+#   # print(pdf_links)
+#   # return pdf links
+#   return pdf_links
 
 
 # implement function that returns links
