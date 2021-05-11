@@ -63,8 +63,11 @@ def get_links(url, get_pdfs = False):
 
     # link_list.append(link['href'])
 
-    if get_pdfs and current_link.endswith('pdf'):
-      link_list.append(link['href'])
+    if get_pdfs:
+      if current_link.endswith('pdf'):
+        link_list.append(link['href'])
+      else:
+        continue
     else:
       link_list.append(link['href'])
 
