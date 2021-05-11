@@ -9,7 +9,7 @@
 #-------------------------------------------------------------------------
 # import the required libraries for the web app and other modules
 from flask import redirect, url_for, request, render_template, Blueprint, jsonify
-from mod_api.api_helper import pdf_links, get_links
+from mod_api.api_helper import get_links
 import wikipediaapi
 
 
@@ -109,11 +109,10 @@ def api():
       if links:
         # page_data['links'] = print_links(page.links)
         page_data['links'] = get_links(page.fullurl, get_pdf_links)
-        # print(page_data)
+
 
       if pdfLinks:
         # if PDF links are requested, call helper function
-        # page_data['pdf_links'] = pdf_links(page.fullurl)
         get_pdf_links = True
         page_data['pdf_links'] = get_links(page.fullurl, get_pdf_links)
 
