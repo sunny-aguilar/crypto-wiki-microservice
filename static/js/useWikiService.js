@@ -28,7 +28,6 @@ function useWikiService(event) {
   const summary = "summary=on";
 
   const urlRequest = base_url + btc + summary;
-  xhr.setRequestHeader('Content-type', "application/x-www-form-urlencoded");
   console.log(urlRequest);
 
   // AJAX request
@@ -46,6 +45,7 @@ function useWikiService(event) {
 
   // send GET request
   xhr.open("GET", urlRequest, true);
+  xhr.setRequestHeader('Content-type', "application/x-www-form-urlencoded");
   xhr.send(null);
 
 }
