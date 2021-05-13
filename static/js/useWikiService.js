@@ -31,11 +31,17 @@ function useWikiService(event) {
   // AJAX request
   const xhr = new XMLHttpRequest();
 
+  // even listener for request
   xhr.addEventListener("load", () => {
     if (xhr.status === 200 && xhr.readyState == 4) {
       console.log("<<---- XHR SERVER RESPONDED");
     }
-  })
+    else {
+      
+    }
+  });
+
+
 
   // xhr.addEventListener("load", () => {
   //   if (xhr.status === 200 && xhr.readyState == 4) {
