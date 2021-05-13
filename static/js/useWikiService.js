@@ -43,7 +43,7 @@ function useWikiService(event) {
 
   // send GET request
   xhr.open("GET", urlRequest, true);
-  xhr.setRequestHeader('Content-type', "application/x-www-form-urlencoded");
-  
+  xhr.send(null);
+
 }
 
