@@ -23,7 +23,7 @@ function useWikiService(event) {
   const base_url = "http://flip3.engr.oregonstate.edu:55055/api?";
 
   // URL parameter settings
-  const btc = ""
+  const btc = "search_term=bitcoin&";
 
   // AJAX request
   const xhr = new XMLHttpRequest();
