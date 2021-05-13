@@ -41,7 +41,7 @@ function useWikiService(event) {
     }
   });
 
-
+  // send GET request
 
 
 }
