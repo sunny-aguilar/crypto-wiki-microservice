@@ -37,19 +37,12 @@ function useWikiService(event) {
       console.log("<<---- XHR SERVER RESPONDED");
     }
     else {
-      
+      console.log("ERROR in executing AJAX");
     }
   });
 
 
 
-  // xhr.addEventListener("load", () => {
-  //   if (xhr.status === 200 && xhr.readyState == 4) {
-  //     console.log("<<---- XHR SERVER RESPONDED");
-  //   }
-  //   else {
-  //     console.log("ERROR in executing AJAX");
-  //   }
-  // });
+
 }
 
