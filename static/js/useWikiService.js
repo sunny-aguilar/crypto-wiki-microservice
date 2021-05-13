@@ -35,9 +35,10 @@ function useWikiService(event) {
 
   // even listener for request
   xhr.addEventListener("load", () => {
-    if (xhr.status === 200 && xhr.readyState == 4) {
+    if (this.status === 200 && this.readyState == 4) {
       console.log("<<---- XHR SERVER RESPONDED");
-      console.log(xhr.responseText);
+      const summary = JSON.parent(this.responseText)
+      console.log(this.responseText);
     }
     else {
       console.log("ERROR in executing AJAX");
