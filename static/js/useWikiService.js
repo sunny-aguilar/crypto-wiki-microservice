@@ -8,5 +8,18 @@
 //                                          script.
 // -------------------------------------------------------------------------
 
+// event listener to wait for DOM to load before running script
+document.addEventListener("DOMContentLoaded", runScript, false);
 
+// function that adds an event listener for click events
+function runScript(event) {
+  const parent = document.body;
+  parent.addEventListener("click", useWikiService, false);
+}
+
+// function that calls Wiki Scraper service
+function useWikiService(event) {
+  // url for AJAX request
+  const url = "";
+}
 
