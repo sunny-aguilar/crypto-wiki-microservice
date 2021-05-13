@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", runScript, false);
 function runScript(event) {
   console.log('Script connected!');
   const parent = document.body;
-  parent.addEventListener("click", useWikiService, false);
+  parent.addEventListener("DOMContentLoaded", useWikiService, false);
 }
 
 // function that calls Wiki Scraper service
