@@ -19,6 +19,7 @@ function runScript(event) {
 
 // function that calls Wiki Scraper service
 function useWikiService(event) {
+  console.log('useWikiService connected!');
   // url for AJAX request
   const base_url = "http://flip3.engr.oregonstate.edu:55055/api?";
 
