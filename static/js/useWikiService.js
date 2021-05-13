@@ -20,6 +20,6 @@ function runScript(event) {
 // function that calls Wiki Scraper service
 function useWikiService(event) {
   // url for AJAX request
-  const url = "";
+  const base_url = "";
 }
 
