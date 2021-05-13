@@ -21,7 +21,8 @@ function runScript(event) {
 // function that calls Wiki Scraper service
 function useWikiService(event) {
   // url for AJAX request
-  const base_url = "http://flip3.engr.oregonstate.edu:55055/api?";
+  // const base_url = "http://flip3.engr.oregonstate.edu:55055/api?";
+  const base_url = "http://localhost:55055/api?";
 
   // URL parameter settings
   const btc = "search_term=bitcoin&";
