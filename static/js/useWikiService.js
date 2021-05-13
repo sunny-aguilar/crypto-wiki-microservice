@@ -42,7 +42,7 @@ function useWikiService(event) {
   });
 
   // send GET request
-  xhr.open()
+  xhr.open("GET", urlRequest, true);
 
 }
 
