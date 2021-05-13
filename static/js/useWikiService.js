@@ -27,7 +27,7 @@ function useWikiService(event) {
 
   xhr.addEventListener("load", () => {
     if (xhr.status === 200 && xhr.readyState == 4) {
-      console.log();
+      console.log("<<---- XHR SERVER RESPONDED");
     }
   })
 
