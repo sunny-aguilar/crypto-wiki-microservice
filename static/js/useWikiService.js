@@ -24,6 +24,7 @@ function useWikiService(event) {
 
   // URL parameter settings
   const btc = "search_term=bitcoin&";
+  const summary = "summary=on";
 
   // AJAX request
   const xhr = new XMLHttpRequest();
