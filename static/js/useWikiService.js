@@ -14,7 +14,8 @@ document.addEventListener("DOMContentLoaded", runScript, false);
 // function that adds an event listener for click events
 function runScript(event) {
   const parent = document.body;
-  parent.addEventListener("DOMContentLoaded", useWikiService, false);
+  // parent.addEventListener("load", useWikiService, false);
+  useWikiService(event);
 }
 
 // function that calls Wiki Scraper service
