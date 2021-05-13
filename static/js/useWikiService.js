@@ -41,7 +41,7 @@ function useWikiService(event) {
       const summary = JSON.parse(xhr.responseText)
       console.log(summary);
       console.log(summary["summary"]);
-      document.getElementById("summary").innerText = summary["summary"];
+      document.getElementById("btc_summary").innerText = summary["summary"];
     }
     else {
       console.log("ERROR in executing AJAX");
