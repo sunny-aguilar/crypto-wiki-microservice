@@ -25,7 +25,7 @@ function useWikiService(event) {
   // AJAX request
   const xhr = new XMLHttpRequest();
 
-    \// xhr.addEventListener("load", () => {
+  // xhr.addEventListener("load", () => {
   //   if (xhr.status === 200 && xhr.readyState == 4) {
   //     console.log("<<---- XHR SERVER RESPONDED");
   //   }
