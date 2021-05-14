@@ -33,7 +33,7 @@
         <p>An example of the usage where you are searching for a term and want the Wiki scraper to return the URL of the page as well as a page summary, your HTTP request would look like this:</p>
         <!-- <p>http://localhost:55055/api?search_term=dog&title=on&summary=on</p> -->
         <blockquote class="blockquote">
-          <span class="text-primary">http://localhost:55055/api?</span><span class="text-warning">search_term=dog</span><span class="text-muted">&</span><span class="text-warning">title=on</span><span class="text-muted">&</span><span class="text-warning">summary=on</span>
+          <span class="text-primary">https://crypto-wiki.herokuapp.com/api?</span><span class="text-muted">search_term=dog</span><span class="text-warning">&</span><span class="text-muted">title=on</span><span class="text-warning">&</span><span class="text-muted">summary=on</span>
         </blockquote>
         <h5 class="mt-5">search_term</h5>
         <p><span class="badge bg-secondary">search_term</span> is a parameter that is passed to the API based on the text entered into the search box. If no search term is provided, the API will return JSON containing an error message <span class="badge bg-secondary">{"error": "no search term was provided to the wiki scraper"}</span></p>
