@@ -30,7 +30,7 @@ function useWikiService(event) {
   const summary = "summary=on";
 
   const url = base_url + btc + summary;
-  console.log(urlRequest);
+  console.log(url);
 
   makeRequest(url);
 
