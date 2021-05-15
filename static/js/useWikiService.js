@@ -35,6 +35,10 @@ function useWikiService(event) {
   makeRequest(url);
 }
 
+// -------------------------------------------------------------------------
+//  Name:       makeRequest(url)
+//  Purpose:    makes AJAX requests
+// -------------------------------------------------------------------------
 function makeRequest(url) {
   // AJAX request
   const xhr = new XMLHttpRequest();
