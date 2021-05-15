@@ -63,6 +63,7 @@ function makeRequest(url) {
   xhr.addEventListener("load", () => {
     if (xhr.status === 200 && xhr.readyState == 4) {
       console.log("<<---- XHR SERVER RESPONDED");
+
       const summary = JSON.parse(xhr.responseText)
       console.log(summary);
       console.log(summary["summary"]);
@@ -73,4 +74,8 @@ function makeRequest(url) {
     }
   });
 
+
+  // send GET request
+  xhr.open("GET", urlRequest, true);
+  xhr.send(null);
 }
