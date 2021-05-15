@@ -79,7 +79,7 @@ function buildURL(asset) {
   // URL parameter settings
   const search_term = `search_term=${asset}&`;
   const summary_param = "summary=on";
-  const url = base_url + search_term + summary;
+  const url = base_url + search_term + summary_param;
   console.log(url);
   return url;
 }
