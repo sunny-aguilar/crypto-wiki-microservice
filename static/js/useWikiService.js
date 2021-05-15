@@ -23,7 +23,9 @@ function useWikiService(event) {
   // url for AJAX request
 
 
-  let url = buildURL("bitcoin")
+  // let url = buildURL("bitcoin")
+  // let url = buildURL("ethereum")
+  let url = buildURL("ethereum")
 
   makeRequest(url);
 }
