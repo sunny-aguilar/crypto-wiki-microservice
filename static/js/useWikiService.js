@@ -29,10 +29,10 @@ function useWikiService(event) {
   const btc = "search_term=bitcoin&";
   const summary = "summary=on";
 
-  const urlRequest = base_url + btc + summary;
+  const url = base_url + btc + summary;
   console.log(urlRequest);
 
-  makeRequest();
+  makeRequest(url);
 
   // AJAX request
   // const xhr = new XMLHttpRequest();
