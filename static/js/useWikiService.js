@@ -33,12 +33,6 @@ function useWikiService(event) {
   console.log(url);
 
   makeRequest(url);
-
-  // AJAX request
-  // const xhr = new XMLHttpRequest();
-
-
-
 }
 
 function makeRequest(url) {
