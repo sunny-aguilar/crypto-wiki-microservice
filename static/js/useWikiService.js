@@ -78,6 +78,6 @@ function makeRequest(url) {
 
 
   // send GET request
-  xhr.open("GET", urlRequest, true);
+  xhr.open("GET", url, true);
   xhr.send(null);
 }
