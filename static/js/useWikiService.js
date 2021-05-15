@@ -28,7 +28,6 @@ function useWikiService(event) {
   // URL parameter settings
   const btc = "search_term=bitcoin&";
   const summary = "summary=on";
-
   const url = base_url + btc + summary;
   console.log(url);
 
