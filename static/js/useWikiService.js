@@ -21,15 +21,7 @@ function runScript(event) {
 // function that calls Wiki Scraper service
 function useWikiService(event) {
   // url for AJAX request
-  // const base_url = "http://flip3.engr.oregonstate.edu:55055/api?";  // use this URL when saving to OSU servers
-  // const base_url = "https://crypto-wiki.herokuapp.com/api?";   // for Heroku
-  // const base_url = "http://localhost:55055/api?";   // update to heroku
 
-  // URL parameter settings
-  // const btc = "search_term=bitcoin&";
-  // const summary = "summary=on";
-  // const url = base_url + btc + summary;
-  // console.log(url);
 
   let url = buildURL("bitcoin")
 
