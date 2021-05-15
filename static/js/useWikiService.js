@@ -77,9 +77,9 @@ function buildURL(asset) {
   const base_url = "http://localhost:55055/api?";   // update to heroku
 
   // URL parameter settings
-  const btc = `search_term=${asset}&`;
-  const summary = "summary=on";
-  const url = base_url + btc + summary;
+  const search_term = `search_term=${asset}&`;
+  const summary_param = "summary=on";
+  const url = base_url + search_term + summary;
   console.log(url);
   return url;
 }
