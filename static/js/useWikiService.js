@@ -31,7 +31,7 @@ function useWikiService(event) {
   // const url = base_url + btc + summary;
   // console.log(url);
 
-  buildURL("bitcoin")
+  let url = buildURL("bitcoin")
 
   makeRequest(url);
 }
