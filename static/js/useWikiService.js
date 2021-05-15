@@ -34,6 +34,7 @@ function useWikiService(event) {
   makeRequest(url);
 }
 
+
 // -------------------------------------------------------------------------
 //  Name:       makeRequest(url)
 //  Purpose:    makes AJAX requests
@@ -62,3 +63,8 @@ function makeRequest(url) {
   xhr.open("GET", url, true);
   xhr.send(null);
 }
+
+
+
+
+
