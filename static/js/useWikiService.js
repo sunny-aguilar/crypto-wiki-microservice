@@ -58,4 +58,7 @@ function useWikiService(event) {
 function makeRequest(url) {
   // AJAX request
   const xhr = new XMLHttpRequest();
+
+
+  
 }
