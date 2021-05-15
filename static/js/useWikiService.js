@@ -28,7 +28,7 @@ function useWikiService(event) {
   // let url = buildURL("litecoin")
   // let url = buildURL("Dai_(cryptocurrency)")
   // let url = buildURL("tether_(cryptocurrency)")
-  let url = buildURL("chainlink")
+  let url = buildURL("Chainlink_(cryptocurrency)")
 
   makeRequest(url);
 }
