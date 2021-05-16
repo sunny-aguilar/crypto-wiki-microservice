@@ -91,5 +91,5 @@ function makeRequest(url) {
 //              based on data returned from wiki scraper service.
 // -------------------------------------------------------------------------
 function updateSummary(text, coin_id) {
-  document.getElementById(coin_id).innerText = summary["summary"];
+  document.getElementById(coin_id).innerText = text;
 }
