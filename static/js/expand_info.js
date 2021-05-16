@@ -21,7 +21,7 @@ function getElement(event) {
   // filter more button clicks
   if (ele.value != "more") { return; }
 
-  console.log("Expand Section Button Clicked >>>>>>>>>");
+  // console.log("Expand Section Button Clicked >>>>>>>>>");
 
   // get node
   const info_node_id = ele.parentNode.parentNode.nextElementSibling.id;
@@ -33,6 +33,14 @@ function getElement(event) {
 
 
 $(document).ready(function(){
+  const parent = document.body;
+  parent.addEventListener("click", getButton, false);
+  function getButton(event) {
+    console.log(event);
+  }
+
+
+
   $("#btc_button").click(function(){
     $("#bitcoin_info_section").toggle(400);
   });
