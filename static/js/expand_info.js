@@ -27,8 +27,6 @@ function getElement(event) {
   const info_node_id = ele.parentNode.parentNode.nextElementSibling.id;
   console.log(info_node_id);
 
-  // toggle info section
-  // toggle();
 
 
 }
@@ -37,5 +35,8 @@ function getElement(event) {
 $(document).ready(function(){
   $("#btc_button").click(function(){
     $("#bitcoin_info_section").toggle(400);
+  });
+  $("#ethereum_button").click(function(){
+    $("#ethereum_info_section").toggle(400);
   });
 });
