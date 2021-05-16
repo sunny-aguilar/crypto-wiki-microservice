@@ -37,7 +37,7 @@ function useWikiService(event) {
 
 
 // -------------------------------------------------------------------------
-//  Name:       buildURL(url)
+//  Name:       buildURL(asset)
 //  Purpose:    makes AJAX requests
 // -------------------------------------------------------------------------
 function buildURL(asset) {
