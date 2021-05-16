@@ -35,7 +35,8 @@ function useWikiService(event) {
   makeRequest(url, "usdt_summary");
   url = buildURL("Chainlink_(cryptocurrency)")
   makeRequest(url, "chainlink_summary");
-  // let url = buildURL("uniswap")
+  url = buildURL("uniswap")
+  makeRequest(url, "uniswap_summary");
 }
 
 
