@@ -85,7 +85,7 @@ function makeRequest(url) {
 
 
 // -------------------------------------------------------------------------
-//  Name:       makeRequest(url)
+//  Name:       updateSummary(text)
 //  Purpose:    makes AJAX requests
 // -------------------------------------------------------------------------
 function updateSummary(text) {
