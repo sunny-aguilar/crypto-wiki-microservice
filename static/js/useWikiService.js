@@ -24,7 +24,9 @@ function useWikiService(event) {
 
 
   let url = buildURL("bitcoin")
-  // let url = buildURL("ethereum")
+  makeRequest(url, "bitcoin");
+  url = buildURL("ethereum")
+  makeRequest(url, "ethereum");
   // let url = buildURL("litecoin")
   // let url = buildURL("Dai_(cryptocurrency)")
   // let url = buildURL("tether_(cryptocurrency)")
@@ -32,7 +34,6 @@ function useWikiService(event) {
   // let url = buildURL("uniswap")
 
 
-  makeRequest(url);
 }
 
 
