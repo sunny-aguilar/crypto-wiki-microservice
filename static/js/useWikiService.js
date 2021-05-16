@@ -33,7 +33,7 @@ function useWikiService(event) {
   makeRequest(url, "dai_summary");
   url = buildURL("tether_(cryptocurrency)")
   makeRequest(url, "usdt_summary");
-  // let url = buildURL("Chainlink_(cryptocurrency)")
+  url = buildURL("Chainlink_(cryptocurrency)")
   // let url = buildURL("uniswap")
 }
 
