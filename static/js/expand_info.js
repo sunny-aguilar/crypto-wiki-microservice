@@ -44,7 +44,7 @@ $(document).ready(function(){
 
 
 
-  $(`#${ele}`).click(function(){
+  $(`#${mytarget}`).click(function(){
     $("#bitcoin_info_section").toggle(400);
   });
   // $("#btc_button").click(function(){
