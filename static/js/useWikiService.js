@@ -86,7 +86,8 @@ function makeRequest(url) {
 
 // -------------------------------------------------------------------------
 //  Name:       updateSummary(text)
-//  Purpose:    makes AJAX requests
+//  Purpose:    uses DOM manipulation to add text to crypto asset list
+//              based on data returned from wiki scraper service.
 // -------------------------------------------------------------------------
 function updateSummary(text) {
 
