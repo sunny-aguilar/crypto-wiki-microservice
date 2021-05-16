@@ -23,7 +23,7 @@ function useWikiService(event) {
   // url for AJAX request
 
 
-  // let url = buildURL("bitcoin")
+  let url = buildURL("bitcoin")
   // let url = buildURL("ethereum")
   // let url = buildURL("litecoin")
   // let url = buildURL("Dai_(cryptocurrency)")
