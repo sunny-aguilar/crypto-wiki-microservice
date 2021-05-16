@@ -25,7 +25,7 @@ function getElement(event) {
 
   // get node
   const info_node_id = ele.parentNode.parentNode.nextElementSibling.id;
-  console.log(info_node_id);
+  // console.log(info_node_id);
 
 
 
@@ -36,7 +36,7 @@ $(document).ready(function(){
   const parent = document.body;
   parent.addEventListener("click", getButton, false);
   function getButton(event) {
-    console.log(event);
+    console.log("Event: ", event);
   }
 
 
