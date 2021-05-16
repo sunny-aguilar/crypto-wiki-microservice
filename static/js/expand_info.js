@@ -48,4 +48,7 @@ $(document).ready(function(){
   $("#chainlink_button").click(function(){
     $("#chainlink_info_section").toggle(400);
   });
+  $("#uniswap_button").click(function(){
+    $("#uniswap_info_section").toggle(400);
+  });
 });
