@@ -37,6 +37,8 @@ function useWikiService(event) {
   makeRequest(url, "chainlink_summary");
   url = buildURL("uniswap")
   makeRequest(url, "uniswap_summary");
+  url = buildURL("polygon")
+  makeRequest(url, "polygon_summary");
 }
 
 
