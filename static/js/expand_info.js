@@ -25,20 +25,19 @@ function getElement(event) {
 
   // get node
   const info_node_id = ele.parentNode.parentNode.nextElementSibling.id;
-  // const info_node = document.getElementById('hide-me');
   console.log(info_node_id);
 
   // toggle info section
-
+  toggle();
 
 
 }
 
 
-
-$(document).ready(function(){
-  $("input").click(function(){
-    $(".hide_info").toggle(400);
+function toggle() {
+  $(document).ready(function(){
+    $("input").click(function(){
+      $(".hide_info").toggle(400);
+    });
   });
-});
-
+}
