@@ -68,9 +68,9 @@ function makeRequest(url) {
       console.log("<<---- XHR SERVER RESPONDED");
 
       const summary = JSON.parse(xhr.responseText)
-      console.log(summary);
+      // console.log(summary);
       console.log(summary["summary"]);
-      document.getElementById("btc_summary").innerText = summary["summary"];
+      // document.getElementById("btc_summary").innerText = summary["summary"];
       updateSummary(summary["summary"], "btc_summary");
     }
     else {
