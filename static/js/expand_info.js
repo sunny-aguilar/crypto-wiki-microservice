@@ -12,11 +12,11 @@ document.addEventListener("DOMContentLoaded", runScript, false);
 // function that adds an event listener for click events
 function runScript(event) {
   const parent = document.body;
-  parent.addEventListener("click", expandRow, false);
+  parent.addEventListener("click", getElement, false);
 }
 
 // toggles additional info for coins
-function expandRow(event) {
+function getElement(event) {
   const ele = event.target;
   // filter more button clicks
   if (ele.value != "more") { return; }
