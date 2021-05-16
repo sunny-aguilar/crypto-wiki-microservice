@@ -39,7 +39,7 @@ $(document).ready(function(){
   $("#ethereum_button").click(function(){
     $("#ethereum_info_section").toggle(400);
   });
-  $("#ethereum_button").click(function(){
-    $("#ethereum_info_section").toggle(400);
+  $("#litecoin_button").click(function(){
+    $("#litecoin_info_section").toggle(400);
   });
 });
