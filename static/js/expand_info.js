@@ -43,8 +43,9 @@ $(document).ready(function(){
   }
 
 
-
+  console.log(mytarget);
   $(`#${mytarget}`).click(function(){
+    console.log('Triggered');
     $("#bitcoin_info_section").toggle(400);
   });
   // $("#btc_button").click(function(){
