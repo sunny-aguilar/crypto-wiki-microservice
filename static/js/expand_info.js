@@ -39,6 +39,9 @@ $(document).ready(function(){
   $("#dai_button").click(function(){
     $("#dai_info_section").toggle(400);
   });
+  $("#usdi_button").click(function(){
+    $("#chainlink_info_section").toggle(400);
+  });
   $("#chainlink_button").click(function(){
     $("#chainlink_info_section").toggle(400);
   });
