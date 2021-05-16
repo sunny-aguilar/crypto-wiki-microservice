@@ -42,4 +42,7 @@ $(document).ready(function(){
   $("#litecoin_button").click(function(){
     $("#litecoin_info_section").toggle(400);
   });
+  $("#dai_button").click(function(){
+    $("#dai_info_section").toggle(400);
+  });
 });
