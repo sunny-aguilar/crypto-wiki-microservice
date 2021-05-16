@@ -59,7 +59,7 @@ function buildURL(asset) {
 //  Name:       makeRequest(url)
 //  Purpose:    makes AJAX requests
 // -------------------------------------------------------------------------
-function makeRequest(url, coin) {
+function makeRequest(url, coin_id) {
   // AJAX request
   const xhr = new XMLHttpRequest();
 
@@ -72,7 +72,7 @@ function makeRequest(url, coin) {
       // console.log(summary);
       console.log(summary["summary"]);
       // document.getElementById("btc_summary").innerText = summary["summary"];
-      updateSummary(summary["summary"], "btc_summary");
+      updateSummary(summary["summary"], coin_id);
     }
     else {
       console.log("ERROR in executing AJAX");
