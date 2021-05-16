@@ -17,18 +17,12 @@ function runScript(event) {
 
 // toggles additional info for coins
 function getElement(event) {
-  const ele = event.target;
+  // const ele = event.target;
   // filter more button clicks
-  if (ele.value != "more") { return; }
-
+  // if (ele.value != "more") { return; }
   // console.log("Expand Section Button Clicked >>>>>>>>>");
-
   // get node
-  const info_node_id = ele.parentNode.parentNode.nextElementSibling.id;
-  // console.log(info_node_id);
-
-
-
+  // const info_node_id = ele.parentNode.parentNode.nextElementSibling.id;
 }
 
 
