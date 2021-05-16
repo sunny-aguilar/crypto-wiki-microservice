@@ -36,7 +36,11 @@ $(document).ready(function(){
   const parent = document.body;
   parent.addEventListener("click", getButton, false);
   function getButton(event) {
+    const ele = event.target.id;
     console.log(event.target.id);
+    $("#btc_button").click(function(){
+      $("#bitcoin_info_section").toggle(400);
+    });
   }
 
 
