@@ -36,7 +36,7 @@ $(document).ready(function(){
   const parent = document.body;
   parent.addEventListener("click", getButton, false);
   function getButton(event) {
-    console.log("Event: ", event);
+    console.log(event.target.id);
   }
 
 
