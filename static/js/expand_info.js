@@ -24,9 +24,9 @@ function getElement(event) {
   console.log("Expand Section Button Clicked >>>>>>>>>");
 
   // get node
-  const info_node = ele.parentNode.parentNode.nextElementSibling;
+  const info_node_id = ele.parentNode.parentNode.nextElementSibling.id;
   // const info_node = document.getElementById('hide-me');
-  console.log(info_node);
+  console.log(info_node_id);
 
   // toggle info section
 
