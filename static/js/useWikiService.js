@@ -71,7 +71,7 @@ function makeRequest(url) {
       console.log(summary);
       console.log(summary["summary"]);
       document.getElementById("btc_summary").innerText = summary["summary"];
-      updateSummary("btc_summary");
+      updateSummary(summary["summary"], "btc_summary");
     }
     else {
       console.log("ERROR in executing AJAX");
