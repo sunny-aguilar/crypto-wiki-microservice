@@ -33,27 +33,10 @@ function getElement(event) {
 
 
 $(document).ready(function(){
-  const parent = document.body;
-  parent.addEventListener("click", getButton, false);
-  let mytarget;
-  function getButton(event) {
-    const ele = event.target.id;
-    // console.log(event.target.id);
-    mytarget = ele;
-    console.log("triggered");
-  }
-
-  console.log('Nextee');
-  // console.log(mytarget);
-  console.log(`#${mytarget}`);
-  $(`#${mytarget}`).click(function(){
-    console.log('Triggered');
+  $("#btc_button").click(function(){
     $("#bitcoin_info_section").toggle(400);
   });
-  // $("#btc_button").click(function(){
-  //   $("#bitcoin_info_section").toggle(400);
-  // });
-  // $("#ethereum_button").click(function(){
-  //   $("#ethereum_info_section").toggle(400);
-  // });
+  $("#ethereum_button").click(function(){
+    $("#ethereum_info_section").toggle(400);
+  });
 });
