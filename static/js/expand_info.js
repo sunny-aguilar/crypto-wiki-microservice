@@ -39,7 +39,7 @@ $(document).ready(function(){
   $("#dai_button").click(function(){
     $("#dai_info_section").toggle(400);
   });
-  $("#usdi_button").click(function(){
+  $("#usdt_button").click(function(){
     $("#usdt_info_section").toggle(400);
   });
   $("#chainlink_button").click(function(){
