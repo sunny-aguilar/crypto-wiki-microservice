@@ -45,4 +45,7 @@ $(document).ready(function(){
   $("#uniswap_button").click(function(){
     $("#uniswap_info_section").toggle(400);
   });
+  $("#polygon_button").click(function(){
+    $("#polygon_info_section").toggle(400);
+  });
 });
