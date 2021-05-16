@@ -36,6 +36,6 @@ function getElement(event) {
 
 $(document).ready(function(){
   $("#btc_button").click(function(){
-    $(".hide_info").toggle(400);
+    $("#bitcoin_info_section").toggle(400);
   });
 });
