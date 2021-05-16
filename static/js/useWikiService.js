@@ -24,9 +24,9 @@ function useWikiService(event) {
 
 
   let url = buildURL("bitcoin")
-  makeRequest(url, "bitcoin");
+  makeRequest(url, "btc_summary");
   url = buildURL("ethereum")
-  makeRequest(url, "ethereum");
+  makeRequest(url, "ethereum_summary");
   // let url = buildURL("litecoin")
   // let url = buildURL("Dai_(cryptocurrency)")
   // let url = buildURL("tether_(cryptocurrency)")
@@ -59,7 +59,7 @@ function buildURL(asset) {
 //  Name:       makeRequest(url)
 //  Purpose:    makes AJAX requests
 // -------------------------------------------------------------------------
-function makeRequest(url) {
+function makeRequest(url, coin) {
   // AJAX request
   const xhr = new XMLHttpRequest();
 
