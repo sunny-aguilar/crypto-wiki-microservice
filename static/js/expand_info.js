@@ -38,12 +38,13 @@ $(document).ready(function(){
   let mytarget;
   function getButton(event) {
     const ele = event.target.id;
-    console.log(event.target.id);
+    // console.log(event.target.id);
     mytarget = ele;
+    console.log("triggered");
   }
 
-
-  console.log(mytarget);
+  console.log('Nextee');
+  // console.log(mytarget);
   console.log(`#${mytarget}`);
   $(`#${mytarget}`).click(function(){
     console.log('Triggered');
