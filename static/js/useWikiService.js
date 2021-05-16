@@ -38,7 +38,7 @@ function useWikiService(event) {
 
 // -------------------------------------------------------------------------
 //  Name:       buildURL(asset)
-//  Purpose:    makes AJAX requests
+//  Purpose:    builds URL for wiki api
 // -------------------------------------------------------------------------
 function buildURL(asset) {
   // const base_url = "http://flip3.engr.oregonstate.edu:55055/api?";  // use this URL when saving to OSU servers
