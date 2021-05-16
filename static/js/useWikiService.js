@@ -34,6 +34,7 @@ function useWikiService(event) {
   url = buildURL("tether_(cryptocurrency)")
   makeRequest(url, "usdt_summary");
   url = buildURL("Chainlink_(cryptocurrency)")
+  makeRequest(url, "usdt_summary");
   // let url = buildURL("uniswap")
 }
 
