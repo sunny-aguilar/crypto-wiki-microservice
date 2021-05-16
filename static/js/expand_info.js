@@ -28,17 +28,16 @@ function getElement(event) {
   console.log(info_node_id);
 
   // toggle info section
-  toggle(event);
-
+  toggle();
+  event.stopPropagation();
 
 }
 
 
-function toggle(event) {
+function toggle() {
   $(document).ready(function(){
     $("input").click(function(){
       $(".hide_info").toggle(400);
     });
-    event.stopPropagation();
   });
 }
