@@ -49,7 +49,7 @@ function useWikiService(event) {
   // Wikipedia does not have data on the following coins therefore the
   // data for these coins is being hardcoded.
   updateSummary(cryptoSummaries["Polygon"], "polygon_summary");
-  updateSummary(cryptoSummaries["Polygon"], "pancakeswap_summary");
+  updateSummary(cryptoSummaries["Pancakeswap"], "pancakeswap_summary");
   updateSummary(cryptoSummaries["Polygon"], "polygon_summary");
 }
 
