@@ -20,3 +20,5 @@ const cryptoData = {
   pancakebunny: {name: "Pancake Bunny", image: "/static/img/bunny.png", supply: 0},
   bnb: {name: "BNB", image: "/static/img/bnb.png", supply: 115798024}
 }
+
+cons cryptoSummaries = {};
