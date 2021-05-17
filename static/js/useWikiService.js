@@ -8,6 +8,8 @@
 //                                          script.
 // -------------------------------------------------------------------------
 
+// import module functions
+
 // event listener to wait for DOM to load before running script
 document.addEventListener("DOMContentLoaded", runScript, false);
 

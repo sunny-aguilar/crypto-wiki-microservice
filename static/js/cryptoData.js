@@ -26,3 +26,6 @@ const cryptoSummaries = {
   "Pancakeswap": "",
   "BNB": "Binance Coin is the cryptocurrency issued by Binance exchange and trades with the BNB symbol. Binance coin initially ran on the Ethereum blockchain with ERC 20 standard but has since become the native coin of the Binance chain. Binance coin has a strict maximum of 200 million BNB tokens. Every quarter, Binance uses one-fifth of its profits to repurchase and permanently destroy, or 'burn,' Binance coins held in its treasury. Binance was created as a utility token for discounted trading fees in 2017, but its uses have expanded to numerous applications, including payments for transaction fees (on the Binance Chain), travel bookings, entertainment, online services, and financial services."
 };
+
+// export functions
+export { cryptoSummaries };
