@@ -52,6 +52,6 @@ $(document).ready(function(){
     $("#polygon_info_section").toggle(400);
   });
   $("#pancakeswap_button").click(function(){
-    $("#polygon_info_section").toggle(400);
+    $("#pancake_info_section").toggle(400);
   });
 });
