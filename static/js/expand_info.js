@@ -55,6 +55,6 @@ $(document).ready(function(){
     $("#pancake_info_section").toggle(400);
   });
   $("#bnb_button").click(function(){
-    $("#pancake_info_section").toggle(400);
+    $("#bnb_info_section").toggle(400);
   });
 });
