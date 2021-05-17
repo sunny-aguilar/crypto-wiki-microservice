@@ -21,4 +21,7 @@ const cryptoData = {
   bnb: {name: "BNB", image: "/static/img/bnb.png", supply: 115798024}
 }
 
-const cryptoSummaries = {};
+const cryptoSummaries = {
+  "Polygon": "",
+  "Pancakeswap":
+};
