@@ -50,7 +50,7 @@ function useWikiService(event) {
   // data for these coins is being hardcoded.
   updateSummary(cryptoSummaries["Polygon"], "polygon_summary");
   updateSummary(cryptoSummaries["Pancakeswap"], "pancakeswap_summary");
-  updateSummary(cryptoSummaries["BNB"], "polygon_summary");
+  updateSummary(cryptoSummaries["BNB"], "bnb_info_section");
 }
 
 
