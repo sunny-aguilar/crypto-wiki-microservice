@@ -25,10 +25,10 @@ function runScript(event) {
 function useWikiService(event) {
   // url for AJAX request
 
-
-  // this section builds the URL for the GET request for the Wiki API
-  // and then sends the request to get coin summaries from the Wiki
-  // scraper micro-service.
+  // + +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+  // + this section builds the URL for the GET request for the Wiki API
+  // + and then sends the request to get coin summaries from the Wiki
+  // + scraper micro-service.
   let url = buildURL("bitcoin")
   makeRequest(url, "btc_summary");
   url = buildURL("ethereum")
