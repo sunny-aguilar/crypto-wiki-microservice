@@ -45,6 +45,10 @@ function useWikiService(event) {
   makeRequest(url, "uniswap_summary");
   url = buildURL("polygon")
   makeRequest(url, "polygon_summary");
+
+  // Wikipedia does not have data on the following coins therefore the
+  // data for these coins is being hardcoded.
+  updateSummary(cryptoSummaries["Polygon"], "polygon_summary");
 }
 
 
