@@ -54,4 +54,7 @@ $(document).ready(function(){
   $("#pancakeswap_button").click(function(){
     $("#pancake_info_section").toggle(400);
   });
+  $("#pancakeswap_button").click(function(){
+    $("#pancake_info_section").toggle(400);
+  });
 });
