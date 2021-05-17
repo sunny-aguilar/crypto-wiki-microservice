@@ -9,6 +9,7 @@
 // -------------------------------------------------------------------------
 
 // import module functions
+import { cryptoSummaries } from "/static/js/cryptoData.js";
 
 // event listener to wait for DOM to load before running script
 document.addEventListener("DOMContentLoaded", runScript, false);
