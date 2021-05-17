@@ -23,5 +23,6 @@ const cryptoData = {
 
 const cryptoSummaries = {
   "Polygon": "",
-  "Pancakeswap":
+  "Pancakeswap": "",
+  "BNB": ""
 };
