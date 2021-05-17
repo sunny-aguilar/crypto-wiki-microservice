@@ -24,5 +24,5 @@ const cryptoData = {
 const cryptoSummaries = {
   "Polygon": "",
   "Pancakeswap": "",
-  "BNB": ""
+  "BNB": "Binance Coin is the cryptocurrency issued by Binance exchange and trades with the BNB symbol. Binance coin initially ran on the Ethereum blockchain with ERC 20 standard but has since become the native coin of the Binance chain. Binance coin has a strict maximum of 200 million BNB tokens. Every quarter, Binance uses one-fifth of its profits to repurchase and permanently destroy, or 'burn,' Binance coins held in its treasury."
 };
