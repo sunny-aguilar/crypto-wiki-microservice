@@ -25,7 +25,7 @@ def clean_data(raw_data):
   print(data['data'][0]['circulating_supply'])
 
   for coin in data['data']:
-    print(coin)
+    print(coin['id'])
 
   # get price
   print(data['data'][0]['circulating_supply'])
