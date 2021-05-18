@@ -28,6 +28,7 @@ def clean_data(raw_data):
 
   # find coin data by iterating in data
   for coin in data['data']:
+    # get Bitcoin data
     if coin['id'] is 1:
       coin_specs = {}
       coin_specs["name"] = "Bitcoin"
@@ -36,9 +37,15 @@ def clean_data(raw_data):
       coin_data.append(coin_specs)
       print(coin_data)
 
-      # print('ID FOUND:', coin['id'])
-      # print('Market Cap:', coin['quote']['USD']['market_cap'])
-      # print('Circulating Supply:', coin['circulating_supply'])
+    # get Ether data
+    # get Litecoin data
+    # get Dai data
+    # get USDT data
+    # get Link data
+    # get Uniswap data
+    # get Polygon data
+    # get Cake data
+    # get BNB data
 
 
 
