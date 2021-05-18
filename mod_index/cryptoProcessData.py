@@ -44,7 +44,6 @@ def clean_data(raw_data):
       coin_specs["market_cap"] = coin['quote']['USD']['market_cap'];
       coin_specs["circulating_supply"] = coin['circulating_supply'];
       coin_data.append(coin_specs)
-  print(coin_data)
     # get Litecoin data
     # get Dai data
     # get USDT data
@@ -53,6 +52,7 @@ def clean_data(raw_data):
     # get Polygon data
     # get Cake data
     # get BNB data
+  print(coin_data)
 
 
 
