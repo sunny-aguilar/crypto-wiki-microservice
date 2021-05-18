@@ -19,10 +19,10 @@ def clean_data(raw_data):
   # CMC coin IDs
   id = [1, 1027, 2, 4943, 1975, 7083, 825, 3890, 7186, 1839]
 
-  # get marketcap
-  print(data['data'][0]['id'])
-  print(data['data'][0]['quote']['USD']['market_cap'])
-  print(data['data'][0]['circulating_supply'])
+  # get coin data from data
+  print('ID FOUND:', data['data'][0]['id'])
+  print('Market Cap:', data['data'][0]['quote']['USD']['market_cap'])
+  print('Circulating Supply:', data['data'][0]['circulating_supply'])
 
   for coin in data['data']:
     if coin['id'] is 1:
