@@ -20,12 +20,12 @@ def clean_data(raw_data):
   coin_data = []
 
   # CMC coin IDs
-  id = [1, 1027, 2, 4943, 825, 1975, 7083, 3890, 7186, 1839]
+  asset_id = [1, 1027, 2, 4943, 825, 1975, 7083, 3890, 7186, 1839]
 
   # find coin data by iterating in data
   for coin in data['data']:
 
-    for asset in id:
+    for asset in asset_id:
       if coin['id'] == asset:
         coin_specs = {}
         coin_specs["name"] = coin['name']
