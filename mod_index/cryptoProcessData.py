@@ -52,9 +52,26 @@ def clean_data(raw_data):
       coin_specs["market_cap"] = coin['quote']['USD']['market_cap'];
       coin_specs["circulating_supply"] = coin['circulating_supply'];
       coin_data.append(coin_specs)
+
     # get Dai data
+    if coin['id'] == 4943:
+      coin_specs = {}
+      coin_specs["name"] = coin['name']
+      coin_specs["market_cap"] = coin['quote']['USD']['market_cap'];
+      coin_specs["circulating_supply"] = coin['circulating_supply'];
+      coin_data.append(coin_specs)
+
     # get USDT data
+    if coin['id'] == 1975:
+      coin_specs = {}
+      coin_specs["name"] = coin['name']
+      coin_specs["market_cap"] = coin['quote']['USD']['market_cap'];
+      coin_specs["circulating_supply"] = coin['circulating_supply'];
+      coin_data.append(coin_specs)
+
     # get Link data
+
+
     # get Uniswap data
     # get Polygon data
     # get Cake data
