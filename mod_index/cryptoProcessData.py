@@ -111,7 +111,7 @@ def clean_data(raw_data):
       coin_data.append(coin_specs)
 
     # get BNB data
-    if coin['id'] == 3890:
+    if coin['id'] == 1839:
       coin_specs = {}
       coin_specs["name"] = coin['name']
       coin_specs["id"] = coin['id']
