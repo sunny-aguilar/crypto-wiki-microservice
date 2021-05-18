@@ -44,7 +44,14 @@ def clean_data(raw_data):
       coin_specs["market_cap"] = coin['quote']['USD']['market_cap'];
       coin_specs["circulating_supply"] = coin['circulating_supply'];
       coin_data.append(coin_specs)
+
     # get Litecoin data
+    if coin['id'] == 2:
+      coin_specs = {}
+      coin_specs["name"] = coin['name']
+      coin_specs["market_cap"] = coin['quote']['USD']['market_cap'];
+      coin_specs["circulating_supply"] = coin['circulating_supply'];
+      coin_data.append(coin_specs)
     # get Dai data
     # get USDT data
     # get Link data
