@@ -29,95 +29,104 @@ def clean_data(raw_data):
 
   # find coin data by iterating in data
   for coin in data['data']:
-    # get Bitcoin data
-    if coin['id'] == 1:
-      coin_specs = {}
-      coin_specs["name"] = coin['name']
-      coin_specs["id"] = coin['id']
-      coin_specs["market_cap"] = coin['quote']['USD']['market_cap'];
-      coin_specs["circulating_supply"] = coin['circulating_supply'];
-      coin_data.append(coin_specs)
 
-    # get Ether data
-    if coin['id'] == 1027:
-      coin_specs = {}
-      coin_specs["name"] = coin['name']
-      coin_specs["id"] = coin['id']
-      coin_specs["market_cap"] = coin['quote']['USD']['market_cap'];
-      coin_specs["circulating_supply"] = coin['circulating_supply'];
-      coin_data.append(coin_specs)
+    for asset in id:
+      if coin['id'] == asset:
+        coin_specs = {}
+        coin_specs["name"] = coin['name']
+        coin_specs["id"] = coin['id']
+        coin_specs["market_cap"] = coin['quote']['USD']['market_cap'];
+        coin_specs["circulating_supply"] = coin['circulating_supply'];
+        coin_data.append(coin_specs)
+    # # get Bitcoin data
+    # if coin['id'] == 1:
+    #   coin_specs = {}
+    #   coin_specs["name"] = coin['name']
+    #   coin_specs["id"] = coin['id']
+    #   coin_specs["market_cap"] = coin['quote']['USD']['market_cap'];
+    #   coin_specs["circulating_supply"] = coin['circulating_supply'];
+    #   coin_data.append(coin_specs)
 
-    # get Litecoin data
-    if coin['id'] == 2:
-      coin_specs = {}
-      coin_specs["name"] = coin['name']
-      coin_specs["id"] = coin['id']
-      coin_specs["market_cap"] = coin['quote']['USD']['market_cap'];
-      coin_specs["circulating_supply"] = coin['circulating_supply'];
-      coin_data.append(coin_specs)
+    # # get Ether data
+    # if coin['id'] == 1027:
+    #   coin_specs = {}
+    #   coin_specs["name"] = coin['name']
+    #   coin_specs["id"] = coin['id']
+    #   coin_specs["market_cap"] = coin['quote']['USD']['market_cap'];
+    #   coin_specs["circulating_supply"] = coin['circulating_supply'];
+    #   coin_data.append(coin_specs)
 
-    # get Dai data
-    if coin['id'] == 4943:
-      coin_specs = {}
-      coin_specs["name"] = coin['name']
-      coin_specs["id"] = coin['id']
-      coin_specs["market_cap"] = coin['quote']['USD']['market_cap'];
-      coin_specs["circulating_supply"] = coin['circulating_supply'];
-      coin_data.append(coin_specs)
+    # # get Litecoin data
+    # if coin['id'] == 2:
+    #   coin_specs = {}
+    #   coin_specs["name"] = coin['name']
+    #   coin_specs["id"] = coin['id']
+    #   coin_specs["market_cap"] = coin['quote']['USD']['market_cap'];
+    #   coin_specs["circulating_supply"] = coin['circulating_supply'];
+    #   coin_data.append(coin_specs)
 
-    # get USDT data
-    if coin['id'] == 825:
-      coin_specs = {}
-      coin_specs["name"] = coin['name']
-      coin_specs["id"] = coin['id']
-      coin_specs["market_cap"] = coin['quote']['USD']['market_cap'];
-      coin_specs["circulating_supply"] = coin['circulating_supply'];
-      coin_data.append(coin_specs)
+    # # get Dai data
+    # if coin['id'] == 4943:
+    #   coin_specs = {}
+    #   coin_specs["name"] = coin['name']
+    #   coin_specs["id"] = coin['id']
+    #   coin_specs["market_cap"] = coin['quote']['USD']['market_cap'];
+    #   coin_specs["circulating_supply"] = coin['circulating_supply'];
+    #   coin_data.append(coin_specs)
 
-    # get Link data
-    if coin['id'] == 1975:
-      coin_specs = {}
-      coin_specs["name"] = coin['name']
-      coin_specs["id"] = coin['id']
-      coin_specs["market_cap"] = coin['quote']['USD']['market_cap'];
-      coin_specs["circulating_supply"] = coin['circulating_supply'];
-      coin_data.append(coin_specs)
+    # # get USDT data
+    # if coin['id'] == 825:
+    #   coin_specs = {}
+    #   coin_specs["name"] = coin['name']
+    #   coin_specs["id"] = coin['id']
+    #   coin_specs["market_cap"] = coin['quote']['USD']['market_cap'];
+    #   coin_specs["circulating_supply"] = coin['circulating_supply'];
+    #   coin_data.append(coin_specs)
 
-    # get Uniswap data
-    if coin['id'] == 7083:
-      coin_specs = {}
-      coin_specs["name"] = coin['name']
-      coin_specs["id"] = coin['id']
-      coin_specs["market_cap"] = coin['quote']['USD']['market_cap'];
-      coin_specs["circulating_supply"] = coin['circulating_supply'];
-      coin_data.append(coin_specs)
+    # # get Link data
+    # if coin['id'] == 1975:
+    #   coin_specs = {}
+    #   coin_specs["name"] = coin['name']
+    #   coin_specs["id"] = coin['id']
+    #   coin_specs["market_cap"] = coin['quote']['USD']['market_cap'];
+    #   coin_specs["circulating_supply"] = coin['circulating_supply'];
+    #   coin_data.append(coin_specs)
 
-    # get Polygon data
-    if coin['id'] == 3890:
-      coin_specs = {}
-      coin_specs["name"] = coin['name']
-      coin_specs["id"] = coin['id']
-      coin_specs["market_cap"] = coin['quote']['USD']['market_cap'];
-      coin_specs["circulating_supply"] = coin['circulating_supply'];
-      coin_data.append(coin_specs)
+    # # get Uniswap data
+    # if coin['id'] == 7083:
+    #   coin_specs = {}
+    #   coin_specs["name"] = coin['name']
+    #   coin_specs["id"] = coin['id']
+    #   coin_specs["market_cap"] = coin['quote']['USD']['market_cap'];
+    #   coin_specs["circulating_supply"] = coin['circulating_supply'];
+    #   coin_data.append(coin_specs)
 
-    # get Cake data
-    if coin['id'] == 7186:
-      coin_specs = {}
-      coin_specs["name"] = coin['name']
-      coin_specs["id"] = coin['id']
-      coin_specs["market_cap"] = coin['quote']['USD']['market_cap'];
-      coin_specs["circulating_supply"] = coin['circulating_supply'];
-      coin_data.append(coin_specs)
+    # # get Polygon data
+    # if coin['id'] == 3890:
+    #   coin_specs = {}
+    #   coin_specs["name"] = coin['name']
+    #   coin_specs["id"] = coin['id']
+    #   coin_specs["market_cap"] = coin['quote']['USD']['market_cap'];
+    #   coin_specs["circulating_supply"] = coin['circulating_supply'];
+    #   coin_data.append(coin_specs)
 
-    # get BNB data
-    if coin['id'] == 1839:
-      coin_specs = {}
-      coin_specs["name"] = coin['name']
-      coin_specs["id"] = coin['id']
-      coin_specs["market_cap"] = coin['quote']['USD']['market_cap'];
-      coin_specs["circulating_supply"] = coin['circulating_supply'];
-      coin_data.append(coin_specs)
+    # # get Cake data
+    # if coin['id'] == 7186:
+    #   coin_specs = {}
+    #   coin_specs["name"] = coin['name']
+    #   coin_specs["id"] = coin['id']
+    #   coin_specs["market_cap"] = coin['quote']['USD']['market_cap'];
+    #   coin_specs["circulating_supply"] = coin['circulating_supply'];
+    #   coin_data.append(coin_specs)
+
+    # # get BNB data
+    # if coin['id'] == 1839:
+    #   coin_specs = {}
+    #   coin_specs["name"] = coin['name']
+    #   coin_specs["id"] = coin['id']
+    #   coin_specs["market_cap"] = coin['quote']['USD']['market_cap'];
+    #   coin_specs["circulating_supply"] = coin['circulating_supply'];
+    #   coin_data.append(coin_specs)
 
   print(coin_data)
 
