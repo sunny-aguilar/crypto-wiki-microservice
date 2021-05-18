@@ -16,9 +16,11 @@
 def clean_data(raw_data):
   data = raw_data
 
+  # CMC coin IDs
   id = [1, 1027, 2, 4943, 1975, 7083, 825, 3890, 7186, 1839]
 
   # get marketcap
+  print(data['data'][0]['quote']['USD'])
   print(data['data'][0]['circulating_supply'])
 
   # get price
