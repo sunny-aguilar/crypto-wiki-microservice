@@ -16,7 +16,7 @@
 def clean_data(raw_data):
   data = raw_data
 
-  id = [1, ]
+  id = [1, 1027, ]
 
   # get marketcap
   print(data['data'][0]['circulating_supply'])
