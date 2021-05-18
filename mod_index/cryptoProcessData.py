@@ -66,7 +66,7 @@ def clean_data(raw_data):
       coin_data.append(coin_specs)
 
     # get USDT data
-    if coin['id'] == 1975:
+    if coin['id'] == 7083:
       coin_specs = {}
       coin_specs["name"] = coin['name']
       coin_specs["id"] = coin['id']
