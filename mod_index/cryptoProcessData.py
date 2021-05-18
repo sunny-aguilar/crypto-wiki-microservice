@@ -20,6 +20,7 @@ def clean_data(raw_data):
   id = [1, 1027, 2, 4943, 1975, 7083, 825, 3890, 7186, 1839]
 
   # get marketcap
+  print(data['data']['id'])
   print(data['data'][0]['quote']['USD']['market_cap'])
   print(data['data'][0]['circulating_supply'])
 
