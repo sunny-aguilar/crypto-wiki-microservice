@@ -16,7 +16,14 @@
 def clean_data(raw_data):
   data = raw_data
 
-  print(data['data'][0]['max_supply'])
+  # get marketcap
+  print(data['data'][0]['circulating_supply'])
+
+  # get price
+  print(data['data'][0]['circulating_supply'])
+
+  # get circulating supply
+  print(data['data'][0]['circulating_supply'])
 
 
 
