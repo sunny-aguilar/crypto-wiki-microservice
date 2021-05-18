@@ -24,6 +24,9 @@ def clean_data(raw_data):
   print(data['data'][0]['quote']['USD']['market_cap'])
   print(data['data'][0]['circulating_supply'])
 
+  for coin in data['data']:
+    print(coin)
+
   # get price
   print(data['data'][0]['circulating_supply'])
 
