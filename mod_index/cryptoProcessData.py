@@ -33,6 +33,7 @@ def clean_data(raw_data):
     if coin['id'] == 1:
       coin_specs = {}
       coin_specs["name"] = coin['name']
+      coin_specs["id"] = coin['id']
       coin_specs["market_cap"] = coin['quote']['USD']['market_cap'];
       coin_specs["circulating_supply"] = coin['circulating_supply'];
       coin_data.append(coin_specs)
@@ -41,6 +42,7 @@ def clean_data(raw_data):
     if coin['id'] == 1027:
       coin_specs = {}
       coin_specs["name"] = coin['name']
+      coin_specs["id"] = coin['id']
       coin_specs["market_cap"] = coin['quote']['USD']['market_cap'];
       coin_specs["circulating_supply"] = coin['circulating_supply'];
       coin_data.append(coin_specs)
@@ -49,6 +51,7 @@ def clean_data(raw_data):
     if coin['id'] == 2:
       coin_specs = {}
       coin_specs["name"] = coin['name']
+      coin_specs["id"] = coin['id']
       coin_specs["market_cap"] = coin['quote']['USD']['market_cap'];
       coin_specs["circulating_supply"] = coin['circulating_supply'];
       coin_data.append(coin_specs)
@@ -57,6 +60,7 @@ def clean_data(raw_data):
     if coin['id'] == 4943:
       coin_specs = {}
       coin_specs["name"] = coin['name']
+      coin_specs["id"] = coin['id']
       coin_specs["market_cap"] = coin['quote']['USD']['market_cap'];
       coin_specs["circulating_supply"] = coin['circulating_supply'];
       coin_data.append(coin_specs)
@@ -65,6 +69,7 @@ def clean_data(raw_data):
     if coin['id'] == 1975:
       coin_specs = {}
       coin_specs["name"] = coin['name']
+      coin_specs["id"] = coin['id']
       coin_specs["market_cap"] = coin['quote']['USD']['market_cap'];
       coin_specs["circulating_supply"] = coin['circulating_supply'];
       coin_data.append(coin_specs)
