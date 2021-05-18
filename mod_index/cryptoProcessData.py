@@ -41,12 +41,6 @@ def clean_data(raw_data):
       # print('Circulating Supply:', coin['circulating_supply'])
 
 
-  # get price
-  print(data['data'][0]['circulating_supply'])
-
-  # get circulating supply
-  print(data['data'][0]['circulating_supply'])
-
 
 
   return data
