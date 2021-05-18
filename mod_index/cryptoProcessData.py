@@ -20,7 +20,7 @@ def clean_data(raw_data):
   coin_data = []
 
   # CMC coin IDs
-  id = [1, 1027, 2, 4943, 1975, 7083, 825, 3890, 7186, 1839]
+  id = [1, 1027, 2, 4943, 825, 1975, 7083, 825, 3890, 7186, 1839]
 
   # get coin data from data
   # print('ID FOUND:', data['data'][0]['id'])
