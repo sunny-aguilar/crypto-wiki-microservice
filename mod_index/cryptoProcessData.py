@@ -22,11 +22,6 @@ def clean_data(raw_data):
   # CMC coin IDs
   id = [1, 1027, 2, 4943, 825, 1975, 7083, 3890, 7186, 1839]
 
-  # get coin data from data
-  # print('ID FOUND:', data['data'][0]['id'])
-  # print('Market Cap:', data['data'][0]['quote']['USD']['market_cap'])
-  # print('Circulating Supply:', data['data'][0]['circulating_supply'])
-
   # find coin data by iterating in data
   for coin in data['data']:
 
