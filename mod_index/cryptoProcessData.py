@@ -40,7 +40,7 @@ def clean_data(raw_data):
     # get Ether data
     if coin['id'] is 1027:
       coin_specs = {}
-      coin_specs["name"] = "Ethereum"
+      coin_specs["name"] = coin['name']
       coin_specs["market_cap"] = coin['quote']['USD']['market_cap'];
       coin_specs["circulating_supply"] = coin['circulating_supply'];
       coin_data.append(coin_specs)
