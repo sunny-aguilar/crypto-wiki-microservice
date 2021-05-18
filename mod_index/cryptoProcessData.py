@@ -16,7 +16,7 @@
 def clean_data(raw_data):
   data = raw_data
 
-  print(data)
+  print(data["data"][0])
 
 
 
