@@ -102,9 +102,22 @@ def clean_data(raw_data):
       coin_data.append(coin_specs)
 
     # get Cake data
+    if coin['id'] == 7186:
+      coin_specs = {}
+      coin_specs["name"] = coin['name']
+      coin_specs["id"] = coin['id']
+      coin_specs["market_cap"] = coin['quote']['USD']['market_cap'];
+      coin_specs["circulating_supply"] = coin['circulating_supply'];
+      coin_data.append(coin_specs)
 
     # get BNB data
-
+    if coin['id'] == 3890:
+      coin_specs = {}
+      coin_specs["name"] = coin['name']
+      coin_specs["id"] = coin['id']
+      coin_specs["market_cap"] = coin['quote']['USD']['market_cap'];
+      coin_specs["circulating_supply"] = coin['circulating_supply'];
+      coin_data.append(coin_specs)
 
   print(coin_data)
 
