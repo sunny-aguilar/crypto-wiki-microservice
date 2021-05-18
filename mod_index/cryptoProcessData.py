@@ -39,6 +39,7 @@ def clean_data(raw_data):
       print(coin_data)
 
     # get Ether data
+    if coin['id'] is 1027:
     # get Litecoin data
     # get Dai data
     # get USDT data
