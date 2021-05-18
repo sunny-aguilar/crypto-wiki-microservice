@@ -20,7 +20,7 @@ def clean_data(raw_data):
   coin_data = []
 
   # CMC coin IDs
-  id = [1, 1027, 2, 4943, 825, 1975, 7083, 825, 3890, 7186, 1839]
+  id = [1, 1027, 2, 4943, 825, 1975, 7083, 3890, 7186, 1839]
 
   # get coin data from data
   # print('ID FOUND:', data['data'][0]['id'])
@@ -84,7 +84,7 @@ def clean_data(raw_data):
       coin_data.append(coin_specs)
 
     # get Uniswap data
-    if coin['id'] == 1975:
+    if coin['id'] == 7083:
       coin_specs = {}
       coin_specs["name"] = coin['name']
       coin_specs["id"] = coin['id']
@@ -93,7 +93,13 @@ def clean_data(raw_data):
       coin_data.append(coin_specs)
 
     # get Polygon data
-
+    if coin['id'] == 3890:
+      coin_specs = {}
+      coin_specs["name"] = coin['name']
+      coin_specs["id"] = coin['id']
+      coin_specs["market_cap"] = coin['quote']['USD']['market_cap'];
+      coin_specs["circulating_supply"] = coin['circulating_supply'];
+      coin_data.append(coin_specs)
 
     # get Cake data
 
