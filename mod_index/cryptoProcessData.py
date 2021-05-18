@@ -36,9 +36,9 @@ def clean_data(raw_data):
       coin_data.append(coin_specs)
       print(coin_data)
 
-      print('ID FOUND:', coin['id'])
-      print('Market Cap:', coin['quote']['USD']['market_cap'])
-      print('Circulating Supply:', coin['circulating_supply'])
+      # print('ID FOUND:', coin['id'])
+      # print('Market Cap:', coin['quote']['USD']['market_cap'])
+      # print('Circulating Supply:', coin['circulating_supply'])
 
 
   # get price
