@@ -30,7 +30,7 @@ def clean_data(raw_data):
   # find coin data by iterating in data
   for coin in data['data']:
     # get Bitcoin data
-    if coin['id'] is 1:
+    if coin['id'] == 1:
       coin_specs = {}
       coin_specs["name"] = coin['name']
       coin_specs["market_cap"] = coin['quote']['USD']['market_cap'];
@@ -38,7 +38,7 @@ def clean_data(raw_data):
       coin_data.append(coin_specs)
 
     # get Ether data
-    if coin['id'] is 1027:
+    if coin['id'] == 1027:
       coin_specs = {}
       coin_specs["name"] = coin['name']
       coin_specs["market_cap"] = coin['quote']['USD']['market_cap'];
