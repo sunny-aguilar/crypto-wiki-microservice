@@ -75,7 +75,13 @@ def clean_data(raw_data):
       coin_data.append(coin_specs)
 
     # get Link data
-
+    if coin['id'] == 1975:
+      coin_specs = {}
+      coin_specs["name"] = coin['name']
+      coin_specs["id"] = coin['id']
+      coin_specs["market_cap"] = coin['quote']['USD']['market_cap'];
+      coin_specs["circulating_supply"] = coin['circulating_supply'];
+      coin_data.append(coin_specs)
 
     # get Uniswap data
     # get Polygon data
