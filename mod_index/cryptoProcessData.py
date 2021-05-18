@@ -27,8 +27,8 @@ def clean_data(raw_data):
   for coin in data['data']:
     if coin['id'] is 1:
       print('ID FOUND:', coin['id'])
-      print(coin['Market Cap:', 'quote']['USD']['market_cap'])
-      print(coin['circulating_supply'])
+      print('Market Cap:', coin['quote']['USD']['market_cap'])
+      print('Circulating Supply:', coin['circulating_supply'])
 
 
   # get price
