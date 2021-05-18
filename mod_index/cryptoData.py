@@ -15,7 +15,7 @@ import json
 def get_crypto_data():
   url = 'https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest'
   parameters = {
-    'symbol':'BTC,ETH',
+    # 'symbol':'BTC,ETH',
     # 'limit':'10',
     # 'convert':'USD'
   }
