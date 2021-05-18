@@ -29,6 +29,10 @@ def clean_data(raw_data):
   # find coin data by iterating in data
   for coin in data['data']:
     if coin['id'] is 1:
+      coin_specs = {}
+      coin_specs["market_cap"] = coin['quote']['USD']['market_cap'];
+      coin_specs["circulating_supply"] = coin['circulating_supply'];
+
       print('ID FOUND:', coin['id'])
       print('Market Cap:', coin['quote']['USD']['market_cap'])
       print('Circulating Supply:', coin['circulating_supply'])
