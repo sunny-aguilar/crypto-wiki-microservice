@@ -127,4 +127,4 @@ def clean_data(raw_data):
     #   coin_specs["market_cap"] = coin['quote']['USD']['market_cap'];
     #   coin_specs["circulating_supply"] = coin['circulating_supply'];
     #   coin_data.append(coin_specs)
-  return data
+  return coin_data
