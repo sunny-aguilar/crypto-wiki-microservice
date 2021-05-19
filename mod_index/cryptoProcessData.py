@@ -24,7 +24,7 @@ def clean_data(raw_data):
 
   # find coin data by iterating in data
   for coin in data['data']:
-
+    # push coin data into object and append to coin_data array
     for asset in asset_id:
       if coin['id'] == asset:
         coin_specs = {}
