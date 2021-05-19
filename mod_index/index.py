@@ -22,4 +22,4 @@ def index():
   data = clean_data(json_crypto_data)
   print(data)
 
-  return render_template('home.html', home_menu=home)
+  return render_template('home.html', home_menu=home, coin_data=data)
