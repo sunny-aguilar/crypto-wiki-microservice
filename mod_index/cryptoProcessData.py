@@ -33,5 +33,13 @@ def clean_data(raw_data):
         coin_specs["market_cap"] = format(coin['quote']['USD']['market_cap'], ',')
         coin_specs["circulating_supply"] = format(coin['circulating_supply'], ',')
         coin_data.append(coin_specs)
+  for asset in asset_id:
+    if coin['id'] == asset:
+      coin_specs = {}
+      coin_specs["name"] = coin['name']
+      coin_specs["id"] = coin['id']
+      coin_specs["market_cap"] = format(coin['quote']['USD']['market_cap'], ',')
+      coin_specs["circulating_supply"] = format(coin['circulating_supply'], ',')
+      coin_data.append(coin_specs)
 
   return coin_data
