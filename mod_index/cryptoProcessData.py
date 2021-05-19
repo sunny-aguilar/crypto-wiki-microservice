@@ -41,6 +41,6 @@ def clean_data(raw_data):
         coin_specs["id"] = coin['id']
         coin_specs["market_cap"] = format(coin['quote']['USD']['market_cap'], ',')
         coin_specs["circulating_supply"] = format(coin['circulating_supply'], ',')
-        coin_data[coin['name'] = (coin_specs)
+        coin_data[coin['name']] = (coin_specs)
 
   return coin_data
