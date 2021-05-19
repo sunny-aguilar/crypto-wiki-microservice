@@ -59,7 +59,11 @@
           <th scope="row">1</th>
           <td><img class="float-start assets" src="/static/img/asset-img/btc.png" alt=""> BTC</td>
           <td>$56,814.75</td>
-          <td>$</td>
+          {% for coin in coin_data %}
+            {% if coin[''] %}
+              <td>coin_data['bitcoin']</td>
+            {% endif %}
+          {% endfor %}
           <td>18,696,643</td>
           <td><input type="button" class="btn btn-outline-secondary" id="btc_button" value="more"> </td>
         </tr>
