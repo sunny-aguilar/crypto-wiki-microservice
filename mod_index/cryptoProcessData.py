@@ -17,7 +17,8 @@ def clean_data(raw_data):
   data = raw_data
 
   # save coin data in array that will hold objects of coin data
-  coin_data = []
+  # coin_data = []
+  coin_data = {}
 
   # CMC coin IDs
   asset_id = [1, 1027, 2, 4943, 825, 1975, 7083, 3890, 7186, 1839]
