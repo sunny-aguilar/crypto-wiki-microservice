@@ -55,7 +55,7 @@ function useWikiService(event) {
 
 // -------------------------------------------------------------------------
 //  Name:       buildURL(asset)
-//  Purpose:    builds URL for wiki api
+//  Purpose:    builds URL for wiki scraper microservice HTTP request.
 // -------------------------------------------------------------------------
 function buildURL(asset) {
   // const base_url = "http://flip3.engr.oregonstate.edu:55055/api?";  // use this URL when saving to OSU servers
@@ -73,7 +73,7 @@ function buildURL(asset) {
 
 // -------------------------------------------------------------------------
 //  Name:       makeRequest(url)
-//  Purpose:    makes AJAX requests
+//  Purpose:    makes AJAX requests to the Wiki microservice.
 // -------------------------------------------------------------------------
 function makeRequest(url, coin_id) {
   // AJAX request

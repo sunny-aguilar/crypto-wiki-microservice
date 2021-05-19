@@ -25,22 +25,16 @@ def clean_data(raw_data):
 
   # find coin data by iterating in data
   for coin in data['data']:
-    # push coin data into object and append to coin_data array
-    # for asset in asset_id:
-    #   if coin['id'] == asset:
-    #     coin_specs = {}
-    #     coin_specs["name"] = coin['name']
-    #     coin_specs["id"] = coin['id']
-    #     coin_specs["market_cap"] = format(coin['quote']['USD']['market_cap'], ',')
-    #     coin_specs["circulating_supply"] = format(coin['circulating_supply'], ',')
-    #     coin_data.append(coin_specs)
+    # push coin data into object and append to coin_data object
     for asset in asset_id:
       if coin['id'] == asset:
         coin_specs = {}
-        coin_specs["name"] = coin['name']
-        coin_specs["id"] = coin['id']
-        coin_specs["market_cap"] = format(coin['quote']['USD']['market_cap'], ',')
-        coin_specs["circulating_supply"] = format(coin['circulating_supply'], ',')
+        coin_specs['name'] = coin['name']
+        coin_specs['id'] = coin['id']
+        coin_specs['market_cap'] = format(int(coin['quote']['USD']['market_cap']), ',')
+        coin_specs['circulating_supply'] = format(int(coin['circulating_supply']), ',')
+        # coin_specs['max_supply'] = format(int(coin['max_supply']), ',')
+        coin_specs['max_supply'] = format(int(coin['max_supply']), ',') if coin['max_supply'] != None else "Unlimited"
         coin_data[coin['name']] = (coin_specs)
 
   return coin_data

@@ -49,26 +49,30 @@
           <th scope="col">#</th>
           <th scope="col">Name</th>
           <th scope="col">Price</th>
-          <th scope="col">Market Cap</th>
-          <th scope="col">Circulating Supply</th>
+          <th scope="col">Market Cap <i class="lni lni-question-circle" data-bs-toggle="tooltip" data-bs-placement="top" title="Refers to the number of cryptocurrency coins or tokens that are publicly available and circulating in the market"></i></i></th>
+          <th scope="col">Circulating Supply <i class="lni lni-question-circle"" data-bs-toggle="tooltip" data-bs-placement="top" title="Refers to the number of cryptocurrency coins or tokens that are publicly available and circulating in the market"></i></th>
           <th scope="col">More</th>
         </tr>
       </thead>
       <tbody>
         <tr class="align-middle"><!-- Bitcoin Row -->
           <th scope="row">1</th>
-          <td><img class="float-start assets" src="/static/img/asset-img/btc.png" alt=""> BTC</td>
-          <td>$56,814.75</td>
+          <td><img class="float-start assets" src="/static/img/asset-img/btc.png" alt=""> Bitcoin</td>
+          <td>$00,000.00</td>
           <td>
           {% for key, value in coin_data.items() %}
-            <!-- {% if coin['name'] == "Bitcoin" %}
-              {{ coin['market_cap'] }}
-            {% endif %} -->
-            {{ coin['name'] }}
-            <!-- {{ coin }} -->
+            {% if key == "Bitcoin" %}
+              {{ value.market_cap }}
+            {% endif %}
+          {% endfor %}
+        </td>
+        <td>
+          {% for key, value in coin_data.items() %}
+            {% if key == "Bitcoin" %}
+              {{ value.circulating_supply }}
+            {% endif %}
           {% endfor %}
           </td>
-          <td>18,696,643</td>
           <td><input type="button" class="btn btn-outline-secondary" id="btc_button" value="more"></td>
         </tr>
         <tr class="hide_info text-start" id="bitcoin_info_section">
@@ -78,10 +82,17 @@
                 <div class="d-grid col-6 gap-2">
                   <button class="btn btn-primary" type="button"><a href="https://bitcoin.org/en/" class="link-light" target="_blank">Bitcoin.org</a></button>
                   <button class="btn btn-primary" type="button"><a href="https://www.blockchain.com/explorer" class="link-light" target="_blank">Block Explorer</a></button>
+                  <span class="badge bg-secondary" data-bs-toggle="tooltip" data-bs-placement="right" title="Max coins that will ever exist">Max Supply:<br>
+                    {% for key, value in coin_data.items() %}
+                      {% if key == "Bitcoin" %}
+                        {{ value.max_supply }}
+                      {% endif %}
+                    {% endfor %}
+                  </span>
                 </div>
               </div>
               <div class="col-8">
-                <span class="badge bg-primary">Bitcoin</span>
+                <span class="badge bg-primary">Bitcoin Summary</span>
                 <p id="btc_summary"></p>
               </div>
             </div>
@@ -90,9 +101,21 @@
         <tr class="align-middle"><!-- Ethereum Row -->
           <th scope="row">2</th>
           <td><img class="float-start assets" src="/static/img/asset-img/eth.png" alt=""> Ethereum</td>
-          <td>Price</td>
-          <td>Market Cap</td>
-          <td>Circulating Supply</td>
+          <td>$00,000.00</td>
+          <td>
+            {% for key, value in coin_data.items() %}
+              {% if key == "Ethereum" %}
+                {{ value.market_cap }}
+              {% endif %}
+            {% endfor %}
+          </td>
+          <td>
+            {% for key, value in coin_data.items() %}
+              {% if key == "Ethereum" %}
+                {{ value.circulating_supply }}
+              {% endif %}
+            {% endfor %}
+            </td>
           <td><input type="button" class="btn btn-outline-secondary" id="ethereum_button" value="more"> </td>
         </tr>
         <tr class="hide_info text-start" id="ethereum_info_section">
@@ -102,10 +125,17 @@
                 <div class="d-grid col-6 gap-2">
                   <button class="btn btn-primary" type="button"><a href="https://ethereum.org/en/" class="link-light" target="_blank">Ethereum.org</a></button>
                   <button class="btn btn-primary" type="button"><a href="https://etherscan.io/" class="link-light" target="_blank">Etherscan</a></button>
+                  <span class="badge bg-secondary" data-bs-toggle="tooltip" data-bs-placement="right" title="Max coins that will ever exist">Max Supply:<br>
+                    {% for key, value in coin_data.items() %}
+                      {% if key == "Ethereum" %}
+                        {{ value.max_supply }}
+                      {% endif %}
+                    {% endfor %}
+                  </span>
                 </div>
               </div>
               <div class="col-8">
-                <span class="badge bg-primary">Ethereum</span>
+                <span class="badge bg-primary">Ethereum Summary</span>
                 <p id="ethereum_summary"></p>
               </div>
             </div>
@@ -114,9 +144,21 @@
         <tr class="align-middle"><!-- Litecoin Row -->
           <th scope="row">3</th>
           <td><img class="float-start assets" src="/static/img/asset-img/ltc.png" alt=""> Litecoin</td>
-          <td>Price</td>
-          <td>Market Cap</td>
-          <td>Circulating Supply</td>
+          <td>$00,000.00</td>
+          <td>
+            {% for key, value in coin_data.items() %}
+              {% if key == "Litecoin" %}
+                {{ value.market_cap }}
+              {% endif %}
+            {% endfor %}
+          </td>
+          <td>
+            {% for key, value in coin_data.items() %}
+              {% if key == "Litecoin" %}
+                {{ value.circulating_supply }}
+              {% endif %}
+            {% endfor %}
+            </td>
           <td><input type="button" class="btn btn-outline-secondary" id="litecoin_button" value="more"> </td>
         </tr>
         <tr class="hide_info text-start" id="litecoin_info_section">
@@ -126,10 +168,17 @@
                 <div class="d-grid col-6 gap-2">
                   <button class="btn btn-primary" type="button"><a href="https://litecoin.org/" class="link-light" target="_blank">Litecoin.org</a></button>
                   <button class="btn btn-primary" type="button"><a href="https://blockchair.com/litecoin" class="link-light" target="_blank">Block Explorer</a></button>
+                  <span class="badge bg-secondary" data-bs-toggle="tooltip" data-bs-placement="right" title="Max coins that will ever exist">Max Supply:<br>
+                    {% for key, value in coin_data.items() %}
+                      {% if key == "Litecoin" %}
+                        {{ value.max_supply }}
+                      {% endif %}
+                    {% endfor %}
+                  </span>
                 </div>
               </div>
               <div class="col-8">
-                <span class="badge bg-primary">Litecoin</span>
+                <span class="badge bg-primary">Litecoin Summary</span>
                 <p id="litecoin_summary"></p>
               </div>
             </div>
@@ -138,9 +187,21 @@
         <tr class="align-middle"><!-- Dai Row -->
           <th scope="row">4</th>
           <td><img class="float-start assets" src="/static/img/asset-img/dai.png" alt=""> Dai</td>
-          <td>Price</td>
-          <td>Market Cap</td>
-          <td>Circulating Supply</td>
+          <td>$00,000.00</td>
+          <td>
+            {% for key, value in coin_data.items() %}
+              {% if key == "Dai" %}
+                {{ value.market_cap }}
+              {% endif %}
+            {% endfor %}
+          </td>
+          <td>
+            {% for key, value in coin_data.items() %}
+              {% if key == "Dai" %}
+                {{ value.circulating_supply }}
+              {% endif %}
+            {% endfor %}
+            </td>
           <td><input type="button" class="btn btn-outline-secondary" id="dai_button" value="more"> </td>
         </tr>
         <tr class="hide_info text-start" id="dai_info_section">
@@ -150,10 +211,17 @@
                 <div class="d-grid col-6 gap-2">
                   <button class="btn btn-primary" type="button"><a href="https://makerdao.com/en/" class="link-light" target="_blank">Makerdao.com</a></button>
                   <button class="btn btn-primary" type="button"><a href="https://etherscan.io/token/0x6b175474e89094c44da98b954eedeac495271d0f" class="link-light" target="_blank">Etherscan</a></button>
+                  <span class="badge bg-secondary" data-bs-toggle="tooltip" data-bs-placement="right" title="Max coins that will ever exist">Max Supply:<br>
+                    {% for key, value in coin_data.items() %}
+                      {% if key == "Dai" %}
+                        {{ value.max_supply }}
+                      {% endif %}
+                    {% endfor %}
+                  </span>
                 </div>
               </div>
               <div class="col-8">
-                <span class="badge bg-primary">Dai</span>
+                <span class="badge bg-primary">Dai Summary</span>
                 <p id="dai_summary"></p>
               </div>
             </div>
@@ -162,9 +230,21 @@
         <tr class="align-middle"><!-- USDT Row -->
           <th scope="row">5</th>
           <td><img class="float-start assets" src="/static/img/asset-img/usdt.png" alt=""> USDT</td>
-          <td>Price</td>
-          <td>Market Cap</td>
-          <td>Circulating Supply</td>
+          <td>$00,000.00</td>
+          <td>
+            {% for key, value in coin_data.items() %}
+              {% if key == "Tether" %}
+                {{ value.market_cap }}
+              {% endif %}
+            {% endfor %}
+          </td>
+          <td>
+            {% for key, value in coin_data.items() %}
+              {% if key == "Tether" %}
+                {{ value.circulating_supply }}
+              {% endif %}
+            {% endfor %}
+            </td>
           <td><input type="button" class="btn btn-outline-secondary" id="usdt_button" value="more"> </td>
         </tr>
         <tr class="hide_info text-start" id="usdt_info_section">
@@ -174,10 +254,17 @@
                 <div class="d-grid col-6 gap-2">
                   <button class="btn btn-primary" type="button"><a href="https://tether.to/" class="link-light" target="_blank">Tether.com</a></button>
                   <button class="btn btn-primary" type="button"><a href="https://etherscan.io/token/0xdac17f958d2ee523a2206206994597c13d831ec7" class="link-light" target="_blank">Etherscan</a></button>
+                  <span class="badge bg-secondary" data-bs-toggle="tooltip" data-bs-placement="right" title="Max coins that will ever exist">Max Supply:<br>
+                    {% for key, value in coin_data.items() %}
+                      {% if key == "Tether" %}
+                        {{ value.max_supply }}
+                      {% endif %}
+                    {% endfor %}
+                  </span>
                 </div>
               </div>
               <div class="col-8">
-                <span class="badge bg-primary">USDT (Tether)</span>
+                <span class="badge bg-primary">USDT (Tether) Summary</span>
                 <p id="usdt_summary"></p>
               </div>
             </div>
@@ -186,9 +273,21 @@
         <tr class="align-middle"><!-- Chainlink Row -->
           <th scope="row">6</th>
           <td><img class="float-start assets" src="/static/img/asset-img/link.png" alt=""> Chainlink</td>
-          <td>Price</td>
-          <td>Market Cap</td>
-          <td>Circulating Supply</td>
+          <td>$00,000.00</td>
+          <td>
+            {% for key, value in coin_data.items() %}
+              {% if key == "Chainlink" %}
+                {{ value.market_cap }}
+              {% endif %}
+            {% endfor %}
+          </td>
+          <td>
+            {% for key, value in coin_data.items() %}
+              {% if key == "Chainlink" %}
+                {{ value.circulating_supply }}
+              {% endif %}
+            {% endfor %}
+            </td>
           <td><input type="button" class="btn btn-outline-secondary" id="chainlink_button" value="more"> </td>
         </tr>
         <tr class="hide_info text-start" id="chainlink_info_section">
@@ -198,10 +297,17 @@
                 <div class="d-grid col-6 gap-2">
                   <button class="btn btn-primary" type="button"><a href="https://chain.link/" class="link-light" target="_blank">Chain.link</a></button>
                   <button class="btn btn-primary" type="button"><a href="https://explorer.chain.link/" class="link-light" target="_blank">Block Explorer</a></button>
+                  <span class="badge bg-secondary" data-bs-toggle="tooltip" data-bs-placement="right" title="Max coins that will ever exist">Max Supply:<br>
+                    {% for key, value in coin_data.items() %}
+                      {% if key == "Chainlink" %}
+                        {{ value.max_supply }}
+                      {% endif %}
+                    {% endfor %}
+                  </span>
                 </div>
               </div>
               <div class="col-8">
-                <span class="badge bg-primary">Chainlink</span>
+                <span class="badge bg-primary">Chainlink Summary</span>
                 <p id="chainlink_summary"></p>
               </div>
             </div>
@@ -210,9 +316,21 @@
         <tr class="align-middle"><!-- Uniswap Row -->
           <th scope="row">7</th>
           <td><img class="float-start assets" src="/static/img/asset-img/uni.png" alt=""> Uniswap</td>
-          <td>Price</td>
-          <td>Market Cap</td>
-          <td>Circulating Supply</td>
+          <td>$00,000.00</td>
+          <td>
+            {% for key, value in coin_data.items() %}
+              {% if key == "Uniswap" %}
+                {{ value.market_cap }}
+              {% endif %}
+            {% endfor %}
+          </td>
+          <td>
+            {% for key, value in coin_data.items() %}
+              {% if key == "Uniswap" %}
+                {{ value.circulating_supply }}
+              {% endif %}
+            {% endfor %}
+            </td>
           <td><input type="button" class="btn btn-outline-secondary" id="uniswap_button" value="more"> </td>
         </tr>
         <tr class="hide_info text-start" id="uniswap_info_section">
@@ -222,10 +340,17 @@
                 <div class="d-grid col-6 gap-2">
                   <button class="btn btn-primary" type="button"><a href="https://uniswap.org/" class="link-light" target="_blank">Uniswap.org</a></button>
                   <button class="btn btn-primary" type="button"><a href="https://etherscan.io/token/0x1f9840a85d5af5bf1d1762f925bdaddc4201f984" class="link-light" target="_blank">Etherscan</a></button>
+                  <span class="badge bg-secondary" data-bs-toggle="tooltip" data-bs-placement="right" title="Max coins that will ever exist">Max Supply:<br>
+                    {% for key, value in coin_data.items() %}
+                      {% if key == "Uniswap" %}
+                        {{ value.max_supply }}
+                      {% endif %}
+                    {% endfor %}
+                  </span>
                 </div>
               </div>
               <div class="col-8">
-                <span class="badge bg-primary">Uniswap</span>
+                <span class="badge bg-primary">Uniswap Summary</span>
                 <p id="uniswap_summary"></p>
               </div>
             </div>
@@ -234,9 +359,21 @@
         <tr class="align-middle"><!-- Polygon Row -->
           <th scope="row">8</th>
           <td><img class="float-start assets" src="/static/img/asset-img/poly.png" alt=""> Polygon</td>
-          <td>Price</td>
-          <td>Market Cap</td>
-          <td>Circulating Supply</td>
+          <td>$00,000.00</td>
+          <td>
+            {% for key, value in coin_data.items() %}
+              {% if key == "Polygon" %}
+                {{ value.market_cap }}
+              {% endif %}
+            {% endfor %}
+          </td>
+          <td>
+            {% for key, value in coin_data.items() %}
+              {% if key == "Polygon" %}
+                {{ value.circulating_supply }}
+              {% endif %}
+            {% endfor %}
+            </td>
           <td><input type="button" class="btn btn-outline-secondary" id="polygon_button" value="more"> </td>
         </tr>
         <tr class="hide_info text-start" id="polygon_info_section">
@@ -246,10 +383,17 @@
                 <div class="d-grid col-6 gap-2">
                   <button class="btn btn-primary" type="button"><a href="https://polygon.io/" class="link-light" target="_blank">Polygon.org</a></button>
                   <button class="btn btn-primary" type="button"><a href="https://polygon-explorer-mainnet.chainstacklabs.com/" class="link-light" target="_blank">Polygon Explorer</a></button>
+                  <span class="badge bg-secondary" data-bs-toggle="tooltip" data-bs-placement="right" title="Max coins that will ever exist">Max Supply:<br>
+                    {% for key, value in coin_data.items() %}
+                      {% if key == "Polygon" %}
+                        {{ value.max_supply }}
+                      {% endif %}
+                    {% endfor %}
+                  </span>
                 </div>
               </div>
               <div class="col-8">
-                <span class="badge bg-primary">Polygon</span>
+                <span class="badge bg-primary">Polygon Summary</span>
                 <p id="polygon_summary"></p>
               </div>
             </div>
@@ -258,9 +402,21 @@
         <tr class="align-middle"><!-- Pancakeswap Row -->
           <th scope="row">9</th>
           <td><img class="float-start assets" src="/static/img/asset-img/cake.png" alt=""> Pancakeswap</td>
-          <td>Price</td>
-          <td>Market Cap</td>
-          <td>Circulating Supply</td>
+          <td>$00,000.00</td>
+          <td>
+            {% for key, value in coin_data.items() %}
+              {% if key == "PancakeSwap" %}
+                {{ value.market_cap }}
+              {% endif %}
+            {% endfor %}
+          </td>
+          <td>
+            {% for key, value in coin_data.items() %}
+              {% if key == "PancakeSwap" %}
+                {{ value.circulating_supply }}
+              {% endif %}
+            {% endfor %}
+            </td>
           <td><input type="button" class="btn btn-outline-secondary" id="pancakeswap_button" value="more"> </td>
         </tr>
         <tr class="hide_info text-start" id="pancake_info_section">
@@ -270,10 +426,17 @@
                 <div class="d-grid col-6 gap-2">
                   <button class="btn btn-primary" type="button"><a href="https://pancakeswap.finance/" class="link-light" target="_blank">Pancakeswap.finance</a></button>
                   <button class="btn btn-primary" type="button"><a href="https://bscscan.com/token/0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82" class="link-light" target="_blank">BCS Explorer</a></button>
+                  <span class="badge bg-secondary" data-bs-toggle="tooltip" data-bs-placement="right" title="Max coins that will ever exist">Max Supply:<br>
+                    {% for key, value in coin_data.items() %}
+                      {% if key == "PancakeSwap" %}
+                        {{ value.max_supply }}
+                      {% endif %}
+                    {% endfor %}
+                  </span>
                 </div>
               </div>
               <div class="col-8">
-                <span class="badge bg-primary">Pancakeswap</span>
+                <span class="badge bg-primary">Pancakeswap Summary</span>
                 <p id="pancakeswap_summary"></p>
               </div>
             </div>
@@ -282,9 +445,21 @@
         <tr class="align-middle"><!-- BNB Row -->
           <th scope="row">10</th>
           <td><img class="float-start assets" src="/static/img/asset-img/bnb.png" alt=""> Bnb</td>
-          <td>Price</td>
-          <td>Market Cap</td>
-          <td>Circulating Supply</td>
+          <td>$00,000.00</td>
+          <td>
+            {% for key, value in coin_data.items() %}
+              {% if key == "Binance Coin" %}
+                {{ value.market_cap }}
+              {% endif %}
+            {% endfor %}
+          </td>
+          <td>
+            {% for key, value in coin_data.items() %}
+              {% if key == "Binance Coin" %}
+                {{ value.circulating_supply }}
+              {% endif %}
+            {% endfor %}
+            </td>
           <td><input type="button" class="btn btn-outline-secondary" id="bnb_button" value="more"> </td>
         </tr>
         <tr class="hide_info text-start" id="bnb_info_section">
@@ -292,12 +467,19 @@
             <div class="row">
               <div class="col-4">
                 <div class="d-grid col-6 gap-2">
-                  <button class="btn btn-primary" type="button"><a href="https://www.binance.com/en" class="link-light" target="_blank">Pancakeswap.finance</a></button>
+                  <button class="btn btn-primary" type="button"><a href="https://www.binance.com/en" class="link-light" target="_blank">Binance</a></button>
                   <button class="btn btn-primary" type="button"><a href="https://binance.mintscan.io/" class="link-light" target="_blank">BNB Explorer</a></button>
+                  <span class="badge bg-secondary" data-bs-toggle="tooltip" data-bs-placement="right" title="Max coins that will ever exist">Max Supply:<br>
+                    {% for key, value in coin_data.items() %}
+                      {% if key == "Binance Coin" %}
+                        {{ value.max_supply }}
+                      {% endif %}
+                    {% endfor %}
+                  </span>
                 </div>
               </div>
               <div class="col-8">
-                <span class="badge bg-primary">Bnb</span>
+                <span class="badge bg-primary">Bnb Summary</span>
                 <p id="bnb_summary"></p>
               </div>
             </div>

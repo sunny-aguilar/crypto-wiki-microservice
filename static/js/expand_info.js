@@ -11,8 +11,15 @@ document.addEventListener("DOMContentLoaded", runScript, false);
 
 // function that adds an event listener for click events
 function runScript(event) {
-  const parent = document.body;
-  parent.addEventListener("click", getElement, false);
+  // Tooltips for Bootstraip
+  var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+  var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+    return new bootstrap.Tooltip(tooltipTriggerEl)
+  })
+
+
+  // const parent = document.body;
+  // parent.addEventListener("click", getElement, false);
 }
 
 // toggles additional info for coins
