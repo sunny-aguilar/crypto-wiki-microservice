@@ -61,9 +61,10 @@
           <td>$56,814.75</td>
           <td>
           {% for coin in coin_data %}
-            {% if coin['name'] == "Bitcoin" %}
+            <!-- {% if coin['name'] == "Bitcoin" %}
               coin['market_cap']
-            {% endif %}
+            {% endif %} -->
+            coin['name']
           {% endfor %}
           </td>
           <td>18,696,643</td>
