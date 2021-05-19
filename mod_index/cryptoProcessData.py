@@ -11,6 +11,7 @@
 
 #-------------------------------------------------------------------------
 # import the required libraries for the web app and other modules
+import re, datetime
 
 
 def clean_data(raw_data):
@@ -33,8 +34,8 @@ def clean_data(raw_data):
         coin_specs['id'] = coin['id']
         coin_specs['market_cap'] = format(int(coin['quote']['USD']['market_cap']), ',')
         coin_specs['circulating_supply'] = format(int(coin['circulating_supply']), ',')
-        # coin_specs['max_supply'] = format(int(coin['max_supply']), ',')
         coin_specs['max_supply'] = format(int(coin['max_supply']), ',') if coin['max_supply'] != None else "Unlimited"
         coin_data[coin['name']] = (coin_specs)
+  coin_data['last_updated'] = datetime.datetime(*map(int, re.split('[^\d]', coin['quote']['USD']['last_updated'])[:-1]))
 
   return coin_data
