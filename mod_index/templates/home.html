@@ -60,7 +60,7 @@
           <td><img class="float-start assets" src="/static/img/asset-img/btc.png" alt=""> BTC</td>
           <td>$56,814.75</td>
           {% for coin in coin_data %}
-            {% if coin['Bitcoin'] %}
+            {% if coin['name'] == "Bitcoin" %}
               <td>coin['market_cap']</td>
             {% endif %}
           {% endfor %}
