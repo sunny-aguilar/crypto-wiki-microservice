@@ -46,7 +46,72 @@
     <div class="container mt-3 alert alert-warning" role="alert"">{{ msg }}</div>
     {% endif %}
     <div class="mt-4">
-      <p class="text-danger">This GUI is to practice learning how to make GET requests to the Wiki Scraper with a GUI. Ideally, your software should make HTTP requests to the API directly. See the <a href="/docs">Docs</a> section to learn how to use the API.</p>
+      <p class="text-danger">This GUI is to practice learning how to make GET requests to the Wiki Scraper with a GUI. Ideally, your software should make HTTP requests to the API directly using code. See the <a href="/docs">Docs</a> section to learn how to use the API.</p>
+    </div>
+
+    <!-- accordion section -->
+    <div class="mt-4">
+      <h4>Code Implementation</h4>
+      <p>Provided here are code snippets of how you would implement the Wiki Scraper API into your project:</p>
+      <div class="accordion" id="accordionPanelsStayOpenExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+              JavaScript Implementation
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+            <div class="accordion-body">
+              <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              <pre>
+                <code class="language-css">
+    // build URL
+    const base_url = "https://crypto-wiki.herokuapp.com/api?";
+
+    // URL parameter settings
+    const search_term = `search_term=${asset}&`;
+    const summary_param = "summary=on";
+    const url = base_url + search_term + summary_param;
+
+
+    // AJAX request
+    const xhr = new XMLHttpRequest();
+
+
+    // even listener for request
+    xhr.addEventListener("load", () => {
+      if (xhr.status === 200 && xhr.readyState == 4) {
+        console.log("<<---- XHR SERVER RESPONDED");
+        const responseText = JSON.parse(xhr.responseText)
+        // call function here and pass it useMe that contains the Wiki API JSON responseText
+        doStuff(responseText);
+      }
+      else {
+        console.log("ERROR in executing AJAX");
+      }
+    });
+
+    // send GET request
+    xhr.open("GET", url, true);
+    xhr.send(null);
+                </code>
+              </pre>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+              Python Implementation
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+            <div class="accordion-body">
+              <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </main>
 
@@ -54,4 +119,6 @@
   {% endblock %}
 
   <!-- custom script -->
-  {% block scripts %}{% endblock %}
+  {% block scripts %}
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/prism.min.js"></script>
+  {% endblock %}
