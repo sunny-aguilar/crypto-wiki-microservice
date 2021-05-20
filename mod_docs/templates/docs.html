@@ -49,6 +49,80 @@
         <p><span class="badge bg-secondary">links</span> is a parameter that when set, returns all of the links found on the Wikipedia page containing the info on the search term.</p>
         <h5 class="mt-5" id="pdf_links">pdf_links parameter</h5>
         <p><span class="badge bg-secondary">pdf_links</span> is a parameter that when set, returns all of the links that link to PDF documents in the page returned by the search term.</p>
+
+        <!-- accordion section -->
+        <div class="mt-4">
+          <h4>Code Implementation</h4>
+          <p>Provided here are code snippets of how you would implement the Wiki Scraper API into your project:</p>
+          <div class="accordion" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                  JavaScript Implementation
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                <div class="accordion-body">
+                  <strong>This is an example code snippet using JavaScript.</strong> This example shows how to build a GET request by appending to the base URL parameters. The Wiki API returns JSON and the parameters indicate whether you want certain items included. For example, <code>text=on</code> will return the entire text content of the Wikipedia page.
+                  <pre>
+                    <code class="language-javascript">
+        // build URL
+        const base_url = "https://crypto-wiki.herokuapp.com/api?";
+
+        // URL parameter settings
+        const search_term = `search_term=${asset}&`;
+        const summary_param = "summary=on";
+        const url = base_url + search_term + summary_param;
+
+        // AJAX request
+        const xhr = new XMLHttpRequest();
+
+        // event listener for request
+        xhr.addEventListener("load", () => {
+          if (xhr.status === 200 && xhr.readyState == 4) {
+            const responseText = JSON.parse(xhr.responseText)
+            // call helper function to do something with Wiki API response text
+            doStuff(responseText);
+          }
+          else {
+            console.log("ERROR in executing AJAX");
+          }
+        });
+
+        // send GET request
+        xhr.open("GET", url, true);
+        xhr.send(null);
+                    </code>
+                  </pre>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                  Python Implementation
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                <div class="accordion-body">
+                  <strong>This is an example code snippet using Python.</strong> It is much less verbose then JavaScript and can be used within any Flask webapp to make API calls to the Wiki API. Although not shown in this example, the base URL has <code>parameters</code> already appended indicating a possible combination of requested items to be returned.
+                  <pre>
+                    <code class="language-javascript">
+        # use requests module
+        import requests
+
+        # make request
+        r =requests.get('http://localhost:55055/api?search_term=dogs&title=on&summary=on')
+
+        # do something with Wiki API response text
+        doSomething(r)
+                    </code>
+                  </pre>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -59,4 +133,6 @@
 
 
   <!-- custom script -->
-  {% block scripts %}{% endblock %}
+  {% block scripts %}
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/prism.min.js"></script>
+  {% endblock %}
