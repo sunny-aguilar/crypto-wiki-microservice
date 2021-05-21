@@ -31,7 +31,7 @@ def clean_data(raw_data):
 
   # get coin prices
   coin_prices = get_prices('crypto1=BTC&curr1=USD&crypto2=ETH&curr2=USD&crypto3=ltc&curr3=USD&crypto4=dai&curr4=USD&crypto5=usdt&curr5=USD')
-  get_prices('crypto1=BTC&curr1=USD&crypto2=ETH&curr2=USD&crypto3=ltc&curr3=USD&crypto4=dai&curr4=USD&crypto5=usdt&curr5=USD')
+  coin_prices = get_prices('crypto1=BTC&curr1=USD&crypto2=ETH&curr2=USD&crypto3=ltc&curr3=USD&crypto4=dai&curr4=USD&crypto5=usdt&curr5=USD')
 
   # find coin data by iterating in data
   for coin in data['data']:
