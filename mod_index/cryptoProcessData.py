@@ -42,5 +42,5 @@ def clean_data(raw_data):
         coin_specs['max_supply'] = format(int(coin['max_supply']), ',') if coin['max_supply'] != None else "Unlimited"
         coin_data[coin['name']] = (coin_specs)
   coin_data['last_updated'] = datetime.datetime(*map(int, re.split('[^\d]', coin['quote']['USD']['last_updated'])[:-1]))
-
+  get_prices()
   return coin_data
