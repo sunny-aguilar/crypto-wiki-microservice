@@ -114,7 +114,8 @@
         r =requests.get('http://localhost:55055/api?search_term=dogs&title=on&summary=on')
 
         # do something with Wiki API response text
-        doSomething(r)
+        if r.status_code == 200:
+          doSomething(r.text)
                     </code>
                   </pre>
                 </div>
