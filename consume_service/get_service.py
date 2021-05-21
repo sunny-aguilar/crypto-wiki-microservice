@@ -11,13 +11,12 @@
 from requests import Request
 import requests
 
-def get_prices():
+def get_prices(coins):
+  # base URL
   base_url = 'https://triviabot-converter.herokuapp.com/convert?'
-  param_1 = 'crypto1=BTC&curr1=USD&crypto2=ETH&curr2=USD&crypto3=ltc&curr3=USD&crypto4=dai&curr4=USD&crypto5=usdt&curr5=USD'
-  param_2 = 'crypto1=BTC&curr1=USD&crypto2=ETH&curr2=USD&crypto3=ltc&curr3=USD&crypto4=dai&curr4=USD&crypto5=usdt&curr5=USD'
 
   # make GET request to microservice
-  r = requests.get(base_url+param_1)
+  r = requests.get(base_url+coins)
 
   # parse server response
   response = ''

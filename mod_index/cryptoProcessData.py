@@ -29,6 +29,9 @@ def clean_data(raw_data):
   # CMC coin IDs
   asset_id = [1, 1027, 2, 4943, 825, 1975, 7083, 3890, 7186, 1839]
 
+  # get coin prices
+  get_prices(crypto1=BTC&curr1=USD&crypto2=ETH&curr2=USD&crypto3=ltc&curr3=USD&crypto4=dai&curr4=USD&crypto5=usdt&curr5=USD)
+
   # find coin data by iterating in data
   for coin in data['data']:
     # push coin data into object and append to coin_data object
@@ -42,5 +45,4 @@ def clean_data(raw_data):
         coin_specs['max_supply'] = format(int(coin['max_supply']), ',') if coin['max_supply'] != None else "Unlimited"
         coin_data[coin['name']] = (coin_specs)
   coin_data['last_updated'] = datetime.datetime(*map(int, re.split('[^\d]', coin['quote']['USD']['last_updated'])[:-1]))
-  get_prices()
   return coin_data
