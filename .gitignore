@@ -3,5 +3,6 @@ mod_index/__pycache__
 mod_gui/__pycache__
 mod_api/__pycache__
 mod_docs/__pycache__
+consume_service/__pycache__
 static/.DS_Store
 .DS_Store
