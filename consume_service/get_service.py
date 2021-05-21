@@ -1,13 +1,10 @@
 # Authors:                                Sandro Aguilar
-# Date:                                   May 9, 2021
+# Date:                                   May 21, 2021
 # Class:                                  CS 361
-# Description:                            This module processes the data obtained
-#                                         from the CMC api to obtain the following
-#                                         data:
-#                                         - coin names
-#                                         - symbols
-#                                         - total supply
-#
+# Description:                            This module consumes the BTC converter service from my
+#                                         group member Garrett B. His API requires a GET request
+#                                         and a JSON response is received that returns the prices
+#                                         of crypto assets.
 
 #-------------------------------------------------------------------------
 # import the required libraries for the web app and other modules
