@@ -13,6 +13,11 @@
 # import the required libraries for the web app and other modules
 import re, datetime
 
+#-------------------------------------------------------------------------
+# this imports the module that contains the microservice I am consuming
+# from another group member via HTTP
+from consume_service.get_service import get_prices
+
 
 def clean_data(raw_data):
   data = raw_data
