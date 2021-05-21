@@ -30,8 +30,10 @@ def clean_data(raw_data):
   asset_id = [1, 1027, 2, 4943, 825, 1975, 7083, 3890, 7186, 1839]
 
   # get coin prices
-  coin_prices = get_prices('crypto1=BTC&curr1=USD&crypto2=ETH&curr2=USD&crypto3=ltc&curr3=USD&crypto4=dai&curr4=USD&crypto5=usdt&curr5=USD')
-  coin_prices = get_prices('crypto1=BTC&curr1=USD&crypto2=ETH&curr2=USD&crypto3=ltc&curr3=USD&crypto4=dai&curr4=USD&crypto5=usdt&curr5=USD')
+  coin_prices = get_prices('crypto1=BTC&curr1=USD&crypto2=ETH&curr2=USD&crypto3=LTC&curr3=USD&crypto4=DAI&curr4=USD&crypto5=USDT&curr5=USD')
+  print(coin_prices)
+  coin_prices = get_prices('LINK=BTC&curr1=USD&crypto2=UNI&curr2=USD&crypto3=MATIC&curr3=USD&crypto4=CAKE&curr4=USD&crypto5=BNB&curr5=USD')
+  print(coin_prices)
 
   # find coin data by iterating in data
   for coin in data['data']:
