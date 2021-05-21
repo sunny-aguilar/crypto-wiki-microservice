@@ -18,8 +18,13 @@ def get_prices():
 
   # make GET request to microservice
   r = requests.get(base_url+param_1)
-  print('Status code:',r.status_code)
-  print('Response text:',r.text)
-  if r.status_code == 200:
 
-  return 0
+  # parse server response
+  response = ''
+  if r.status_code == 200:
+    response = r.text
+  else:
+    response = 'server unresponsive'
+
+  # return server response
+  return response
