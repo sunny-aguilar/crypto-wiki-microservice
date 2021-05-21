@@ -19,5 +19,6 @@ def get_prices():
   # make GET request to microservice
   r = requests.get(base_url+param_1)
   print('Status code:',r.status_code)
+  print('Response text:',r.text)
 
   return 0
