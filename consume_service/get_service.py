@@ -11,5 +11,8 @@
 from requests import Request
 
 def get_prices():
-  #https://triviabot-converter.herokuapp.com/convert?crypto1=BTC&curr1=USD&crypto2=ETH&curr2=USD&crypto3=ltc&curr3=USD&crypto4=dai&curr4=USD&crypto5=usdt&curr5=USD
+  base_url = 'https://triviabot-converter.herokuapp.com/convert?'
+  param_1 = 'crypto1=BTC&curr1=USD&crypto2=ETH&curr2=USD&crypto3=ltc&curr3=USD&crypto4=dai&curr4=USD&crypto5=usdt&curr5=USD'
+  param_2 = 'crypto1=BTC&curr1=USD&crypto2=ETH&curr2=USD&crypto3=ltc&curr3=USD&crypto4=dai&curr4=USD&crypto5=usdt&curr5=USD'
+  
   return 0
