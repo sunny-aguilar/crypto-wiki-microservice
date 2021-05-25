@@ -9,10 +9,6 @@
 #                                         from another team member that provides crypto asset
 #                                         price information. The website is located at:
 #                                         https://crypto-wiki.herokuapp.com/
-# The software you write will need
-#                                         to communicate (request data, receive data, receive
-#                                         requests, and send data) with software your teammates
-#                                         write.
 
 #-------------------------------------------------------------------------
 from mod_index.index import index
