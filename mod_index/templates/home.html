@@ -313,7 +313,14 @@
         <tr class="align-middle"><!-- Chainlink Row -->
           <th scope="row">6</th>
           <td><img class="float-start assets" src="/static/img/asset-img/link.png" alt=""> Chainlink</td>
-          <td>$00,000.00</td>
+          <td>$
+            {% for key, value in coin_data.items() %}
+              {% if key == "prices" %}
+                {% if value['USDT'] %}
+                  {{ value['USDT']['USD'] }}
+                {% endif %}
+              {% endif %}
+            {% endfor %}</td>
           <td>
             {% for key, value in coin_data.items() %}
               {% if key == "Chainlink" %}
