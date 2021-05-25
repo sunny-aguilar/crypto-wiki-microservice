@@ -3,7 +3,7 @@
 # Class:                                  CS 361
 # Description:                            Pproject that implements a microservices strategy with
 #                                         my other team members. The main project consists of a
-#                                         website that provides crypto asset information.
+#                                         website that provides crypto asset information. It also
 #
 # The software you write will need
 #                                         to communicate (request data, receive data, receive
