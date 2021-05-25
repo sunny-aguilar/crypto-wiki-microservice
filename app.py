@@ -5,7 +5,7 @@
 #                                         my other team members. The main project consists of a
 #                                         website that provides crypto asset information. It also
 #                                         implements a microservice that provides a Wiki Scraping
-#                                         service via HTTP.
+#                                         service via HTTP. Lastly, 
 # The software you write will need
 #                                         to communicate (request data, receive data, receive
 #                                         requests, and send data) with software your teammates
