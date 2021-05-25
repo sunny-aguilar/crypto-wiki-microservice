@@ -316,7 +316,7 @@
           <td>$
           {% for key, value in coin_data.items() %}
             {% if key == "prices" %}
-              {% if value['USDT'] %}
+              {% if value['Chainlink'] %}
                 {{ value['USDT']['USD'] }}
               {% endif %}
             {% endif %}
