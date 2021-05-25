@@ -4,6 +4,7 @@
 # Description:                            This module processes the data obtained
 #                                         from the CMC api to obtain the following
 #                                         data:
+#                                         - coin price 
 #                                         - coin names
 #                                         - symbols
 #                                         - total supply
