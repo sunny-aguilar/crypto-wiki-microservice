@@ -211,7 +211,15 @@
         <tr class="align-middle"><!-- Dai Row -->
           <th scope="row">4</th>
           <td><img class="float-start assets" src="/static/img/asset-img/dai.png" alt=""> Dai</td>
-          <td>$00,000.00</td>
+          <td>$
+          {% for key, value in coin_data.items() %}
+            {% if key == "prices" %}
+              {% if value['DAI'] %}
+                {{ value['BTC']['USD'] }}
+              {% endif %}
+            {% endif %}
+          {% endfor %}
+          </td>
           <td>
             {% for key, value in coin_data.items() %}
               {% if key == "Dai" %}
