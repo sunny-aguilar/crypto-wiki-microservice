@@ -7,7 +7,7 @@
 #                                         implements a microservice that provides a Wiki Scraping
 #                                         service via HTTP. Lastly, my website consumes a micro
 #                                         from another team member that provides crypto asset
-#                                         price information.
+#                                         price information. The website is located on 
 #                                         
 # The software you write will need
 #                                         to communicate (request data, receive data, receive
