@@ -364,7 +364,15 @@
         <tr class="align-middle"><!-- Uniswap Row -->
           <th scope="row">7</th>
           <td><img class="float-start assets" src="/static/img/asset-img/uni.png" alt=""> Uniswap</td>
-          <td>$00,000.00</td>
+          <td>$
+            {% for key, value in coin_data.items() %}
+              {% if key == "prices" %}
+                {% if value['LINK'] %}
+                  {{ value['LINK']['USD'] }}
+                {% endif %}
+              {% endif %}
+            {% endfor %}
+          </td>
           <td>
             {% for key, value in coin_data.items() %}
               {% if key == "Uniswap" %}
