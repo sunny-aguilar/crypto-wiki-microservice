@@ -2,7 +2,7 @@
 # Date:                                   April 5, 2021
 # Class:                                  CS 361
 # Description:                            Pproject that implements a microservices strategy with
-#                                         my other team members. The main project consists
+#                                         my other team members. The main project consists of
 #
 #
 # The software you write will need
