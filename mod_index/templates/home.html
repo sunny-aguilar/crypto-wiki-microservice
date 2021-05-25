@@ -164,7 +164,7 @@
           {% for key, value in coin_data.items() %}
             {% if key == "prices" %}
               {% if value['LTC'] %}
-                ${{ value['LTC']['USD'] }}
+                {{ value['LTC']['USD'] }}
               {% endif %}
             {% endif %}
           {% endfor %}
