@@ -53,7 +53,7 @@ def server_error(error):
 #-------------------------------------------------------------------------
 # Start Web App
 if __name__ == "__main__":
-    app.run(host='localhost', port=55055, debug=True)
+    app.run(host='localhost', port=55056, debug=True)
 
 # OSU - run from osu servers using gunicorn
 # gunicorn -b 0.0.0.0:55055 -D app:app

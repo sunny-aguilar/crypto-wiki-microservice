@@ -58,7 +58,15 @@
         <tr class="align-middle"><!-- Bitcoin Row -->
           <th scope="row">1</th>
           <td><img class="float-start assets" src="/static/img/asset-img/btc.png" alt=""> Bitcoin</td>
-          <td>$00,000.00</td>
+          <td>
+          {% for key, value in coin_data.items() %}
+            {% if key == "prices" %}
+              {% if value['BTC'] %}
+                {{ value['BTC']['USD'] }}
+              {% endif %}
+            {% endif %}
+          {% endfor %}
+          </td>
           <td>
           {% for key, value in coin_data.items() %}
             {% if key == "Bitcoin" %}
@@ -101,7 +109,15 @@
         <tr class="align-middle"><!-- Ethereum Row -->
           <th scope="row">2</th>
           <td><img class="float-start assets" src="/static/img/asset-img/eth.png" alt=""> Ethereum</td>
-          <td>$00,000.00</td>
+          <td>
+          {% for key, value in coin_data.items() %}
+            {% if key == "prices" %}
+              {% if value['ETH'] %}
+                {{ value['ETH']['USD'] }}
+              {% endif %}
+            {% endif %}
+          {% endfor %}
+          </td>
           <td>
             {% for key, value in coin_data.items() %}
               {% if key == "Ethereum" %}

@@ -9,7 +9,7 @@
 #-------------------------------------------------------------------------
 # import the required libraries for the web app and other modules
 from requests import Request
-import requests
+import requests, json
 
 def get_prices(coins):
   # base URL
@@ -26,4 +26,4 @@ def get_prices(coins):
     response = 'server unresponsive'
 
   # return server response
-  return response
+  return json.loads(response)

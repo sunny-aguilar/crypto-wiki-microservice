@@ -22,6 +22,7 @@ from consume_service.get_service import get_prices
 def clean_data(raw_data):
   data = raw_data
 
+
   # save coin data in array that will hold objects of coin data
   # coin_data = []
   coin_data = {}
@@ -30,10 +31,11 @@ def clean_data(raw_data):
   asset_id = [1, 1027, 2, 4943, 825, 1975, 7083, 3890, 7186, 1839]
 
   # get coin prices
-  coin_prices = get_prices('crypto1=BTC&curr1=USD&crypto2=ETH&curr2=USD&crypto3=LTC&curr3=USD&crypto4=DAI&curr4=USD&crypto5=USDT&curr5=USD')
-  print(coin_prices)
-  coin_prices = get_prices('crypto1=LINK&curr1=USD&crypto2=UNI&curr2=USD&crypto3=MATIC&curr3=USD&crypto4=CAKE&curr4=USD&crypto5=BNB&curr5=USD')
-  print(coin_prices)
+  coin_prices_1 = get_prices('crypto1=BTC&curr1=USD&crypto2=ETH&curr2=USD&crypto3=LTC&curr3=USD&crypto4=DAI&curr4=USD&crypto5=USDT&curr5=USD')
+  coin_prices_2 = get_prices('crypto1=LINK&curr1=USD&crypto2=UNI&curr2=USD&crypto3=MATIC&curr3=USD&crypto4=CAKE&curr4=USD&crypto5=BNB&curr5=USD')
+  merged_coins = {**coin_prices_1, **coin_prices_2}
+  print(merged_coins)
+
 
   # find coin data by iterating in data
   for coin in data['data']:
@@ -48,4 +50,5 @@ def clean_data(raw_data):
         coin_specs['max_supply'] = format(int(coin['max_supply']), ',') if coin['max_supply'] != None else "Unlimited"
         coin_data[coin['name']] = (coin_specs)
   coin_data['last_updated'] = datetime.datetime(*map(int, re.split('[^\d]', coin['quote']['USD']['last_updated'])[:-1]))
+  coin_data['prices'] = merged_coins
   return coin_data
