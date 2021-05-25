@@ -419,7 +419,7 @@
           {% for key, value in coin_data.items() %}
             {% if key == "prices" %}
               {% if value['MATIC'] %}
-                {{ value['LINK']['USD'] }}
+                {{ value['MATIC']['USD'] }}
               {% endif %}
             {% endif %}
           {% endfor %}
