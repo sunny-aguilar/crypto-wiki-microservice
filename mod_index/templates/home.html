@@ -466,7 +466,14 @@
         <tr class="align-middle"><!-- Pancakeswap Row -->
           <th scope="row">9</th>
           <td><img class="float-start assets" src="/static/img/asset-img/cake.png" alt=""> Pancakeswap</td>
-          <td>$00,000.00</td>
+          <td>$
+            {% for key, value in coin_data.items() %}
+              {% if key == "prices" %}
+                {% if value['MATIC'] %}
+                  {{ value['MATIC']['USD'] }}
+                {% endif %}
+              {% endif %}
+            {% endfor %}</td>
           <td>
             {% for key, value in coin_data.items() %}
               {% if key == "PancakeSwap" %}
