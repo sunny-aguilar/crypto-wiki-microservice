@@ -518,13 +518,13 @@
           <th scope="row">10</th>
           <td><img class="float-start assets" src="/static/img/asset-img/bnb.png" alt=""> Bnb</td>
           <td>$
-            {% for key, value in coin_data.items() %}
-              {% if key == "prices" %}
-                {% if value['CAKE'] %}
-                  {{ value['CAKE']['USD'] }}
-                {% endif %}
+          {% for key, value in coin_data.items() %}
+            {% if key == "prices" %}
+              {% if value['CAKE'] %}
+                {{ value['CAKE']['USD'] }}
               {% endif %}
-            {% endfor %}
+            {% endif %}
+          {% endfor %}
           </td>
           <td>
             {% for key, value in coin_data.items() %}
