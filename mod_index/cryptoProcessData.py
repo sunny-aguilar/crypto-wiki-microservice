@@ -35,7 +35,7 @@ def clean_data(raw_data):
   coin_prices_2 = get_prices('crypto1=LINK&curr1=USD&crypto2=UNI&curr2=USD&crypto3=MATIC&curr3=USD&crypto4=CAKE&curr4=USD&crypto5=BNB&curr5=USD')
   merged_coins = {**coin_prices_1, **coin_prices_2}
   # print micro-service response
-  print(merged_coins)
+  # print(merged_coins)
 
 
   # find coin data by iterating in data
