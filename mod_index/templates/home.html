@@ -317,7 +317,7 @@
           {% for key, value in coin_data.items() %}
             {% if key == "prices" %}
               {% if value['Chainlink'] %}
-                {{ value['USDT']['USD'] }}
+                {{ value['Chainlink']['USD'] }}
               {% endif %}
             {% endif %}
           {% endfor %}
