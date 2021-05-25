@@ -415,7 +415,14 @@
         <tr class="align-middle"><!-- Polygon Row -->
           <th scope="row">8</th>
           <td><img class="float-start assets" src="/static/img/asset-img/poly.png" alt=""> Polygon</td>
-          <td>$00,000.00</td>
+          <td>$
+            {% for key, value in coin_data.items() %}
+              {% if key == "prices" %}
+                {% if value['LINK'] %}
+                  {{ value['LINK']['USD'] }}
+                {% endif %}
+              {% endif %}
+            {% endfor %}</td>
           <td>
             {% for key, value in coin_data.items() %}
               {% if key == "Polygon" %}
