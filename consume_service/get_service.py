@@ -4,7 +4,7 @@
 # Description:                            This module consumes the BTC converter service from my
 #                                         group member Garrett B. His API requires a GET request
 #                                         and a JSON response is received that returns the prices
-#                                         of crypto assets.
+#                                         of crypto assets requested.
 
 #-------------------------------------------------------------------------
 # import the required libraries for the web app and other modules
