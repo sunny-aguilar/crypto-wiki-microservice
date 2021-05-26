@@ -64,7 +64,7 @@ def api():
       # create dictionary to store wiki scraper results
       page_data = {}
 
-      # store data in dictionary
+      # store wiki scraper data in dictionary
       if url:
         page_data['url'] = page.fullurl
 
