@@ -61,7 +61,6 @@ def api():
     if (page.exists()):
       print('Page Exists: %s' % page.exists())
 
-
       # create dictionary to store page data
       page_data = {}
 
