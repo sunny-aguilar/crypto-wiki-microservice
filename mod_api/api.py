@@ -96,7 +96,6 @@ def api():
           link_arr.append(title)
         return link_arr
 
-
       # gets links from Wiki page
       get_pdf_links = False
       if links:
