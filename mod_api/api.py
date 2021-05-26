@@ -65,13 +65,13 @@ def api():
       page_data = {}
 
       # store wiki scraper data in dictionary
-      if url:
+      if url:   # save page url
         page_data['url'] = page.fullurl
 
-      if title:
+      if title: # save page title
         page_data['title'] = page.title
 
-      if summary:
+      if summary: # save page short summary
         page_data['summary'] = page.summary
 
       # get page sections
@@ -84,8 +84,7 @@ def api():
       if sections:
         page_data['sections'] = get_sections(page.sections)
 
-      # get page text
-      if text:
+      if text:  # get page text
         page_data['text'] = page.text
         print(page_data)
 
