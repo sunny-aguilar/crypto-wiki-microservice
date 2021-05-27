@@ -23,10 +23,7 @@ function getElement(event) {
   // const ele = event.target;
   // filter more button clicks
   // if (ele.value != "more") { return; }
-  // console.log("Expand Section Button Clicked >>>>>>>>>");
-  // get node
-  // const info_node_id = ele.parentNode.parentNode.nextElementSibling.id;
-}
+
 
 
 $(document).ready(function(){
