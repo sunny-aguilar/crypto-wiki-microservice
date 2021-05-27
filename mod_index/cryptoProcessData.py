@@ -23,9 +23,7 @@ from consume_service.get_service import get_prices
 def clean_data(raw_data):
   data = raw_data
 
-
   # save coin data in array that will hold objects of coin data
-  # coin_data = []
   coin_data = {}
 
   # CMC coin IDs
@@ -52,3 +50,5 @@ def clean_data(raw_data):
   coin_data['prices'] = merged_coins
 
   return coin_data
+
+
