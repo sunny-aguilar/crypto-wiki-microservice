@@ -19,9 +19,7 @@ function runScript(event) {
 }
 
 
-
-
-
+// add toggle functionality to main page
 $(document).ready(function(){
   $("#btc_button").click(function(){
     $("#bitcoin_info_section").toggle(400);
