@@ -29,7 +29,6 @@ def api():
     if search_term is '':
       msg = 'Enter a search term.'
       data = {"error": "no search term provided"}
-      # return jsonify(page_data)
       return render_template('gui.html', msg=msg)
 
     url = req.get('url')

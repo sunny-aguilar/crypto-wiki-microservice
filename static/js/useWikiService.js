@@ -16,8 +16,6 @@ document.addEventListener("DOMContentLoaded", runScript, false);
 
 // function that adds an event listener for click events
 function runScript(event) {
-  const parent = document.body;
-  // parent.addEventListener("load", useWikiService, false);
   useWikiService(event);
 }
 
