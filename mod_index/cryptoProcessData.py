@@ -31,9 +31,6 @@ def clean_data(raw_data):
   # CMC coin IDs
   asset_id = [1, 1027, 2, 4943, 825, 1975, 7083, 3890, 7186, 1839]
 
-  # get coin prices from microservice
-  merged_coins = use_microservice()
-
   # find coin data by iterating in data
   coin_data = sort_coin_data(asset_id, data)
 
