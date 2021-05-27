@@ -85,7 +85,6 @@ function makeRequest(url, coin_id) {
       const summary = JSON.parse(xhr.responseText)
       // console.log(summary);
       console.log(summary["summary"]);
-      // document.getElementById("btc_summary").innerText = summary["summary"];
       updateSummary(summary["summary"], coin_id);
     }
     else {
