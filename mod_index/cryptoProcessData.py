@@ -64,6 +64,9 @@ def use_microservice():
 #-------------------------------------------------------------------------
 # uses team member's microservie that provides crypto asset prices
 def sort_coin_data(asset_id, coin):
+  # save coin data in array that will hold objects of coin data
+  coin_data = {}
+
   for coin in data['data']:
   # push coin data into object and append to coin_data object
     for asset in asset_id:
