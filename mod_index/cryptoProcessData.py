@@ -52,3 +52,9 @@ def clean_data(raw_data):
   return coin_data
 
 
+def use_microservice():
+  # get coin prices
+  coin_prices_1 = get_prices('crypto1=BTC&curr1=USD&crypto2=ETH&curr2=USD&crypto3=LTC&curr3=USD&crypto4=DAI&curr4=USD&crypto5=USDT&curr5=USD')
+  coin_prices_2 = get_prices('crypto1=LINK&curr1=USD&crypto2=UNI&curr2=USD&crypto3=MATIC&curr3=USD&crypto4=CAKE&curr4=USD&crypto5=BNB&curr5=USD')
+  merged_coins = {**coin_prices_1, **coin_prices_2}
+  return 0
