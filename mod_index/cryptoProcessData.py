@@ -80,3 +80,4 @@ def sort_coin_data(asset_id, data):
 
 def format_currency(coin_prices):
   print(coin_prices)
+  print(coin_prices['prices'])
