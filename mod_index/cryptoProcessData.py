@@ -46,8 +46,7 @@ def use_microservice():
   coin_prices_1 = get_prices(list_1)
   coin_prices_2 = get_prices(list_2)
   merged_coins = {**coin_prices_1, **coin_prices_2}
-  # add $ sign and commas to dollar amounts
-  format_currency(merged_coins)
+
   return merged_coins
 
 

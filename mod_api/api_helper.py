@@ -13,7 +13,6 @@ import requests
 # implement function that returns links
 #-------------------------------------------------------------------------
 def get_links(url, get_pdfs = False):
-  URL = url
   r = requests.get(url)
 
   content = r.content
