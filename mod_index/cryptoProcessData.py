@@ -20,6 +20,8 @@ import re, datetime
 from consume_service.get_service import get_prices
 
 
+#-------------------------------------------------------------------------
+# prepares crypto data collected into an object that is used by Jinja
 def clean_data(raw_data):
   data = raw_data
 
