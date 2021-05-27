@@ -57,8 +57,8 @@ function useWikiService(event) {
 // -------------------------------------------------------------------------
 function buildURL(asset) {
   // const base_url = "http://flip3.engr.oregonstate.edu:55055/api?";  // use this URL when saving to OSU servers
-  const base_url = "https://crypto-wiki.herokuapp.com/api?";   // for Heroku
   // const base_url = "http://localhost:55055/api?";   // update to heroku
+  const base_url = "https://crypto-wiki.herokuapp.com/api?";   // for Heroku
 
   // URL parameter settings
   const search_term = `search_term=${asset}&`;
