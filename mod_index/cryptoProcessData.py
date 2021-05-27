@@ -82,3 +82,5 @@ def format_currency(coin_prices):
   print('<---------------------------')
   print(coin_prices)
   print(coin_prices.get('BTC').get('USD'))
+  for key in coin_prices:
+    print(key, '->', coin_prices[key])
