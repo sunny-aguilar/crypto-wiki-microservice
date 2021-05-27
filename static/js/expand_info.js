@@ -18,11 +18,7 @@ function runScript(event) {
   })
 }
 
-// toggles additional info for coins
-function getElement(event) {
-  // const ele = event.target;
-  // filter more button clicks
-  // if (ele.value != "more") { return; }
+
 
 
 
