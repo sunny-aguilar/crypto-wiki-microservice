@@ -4,7 +4,7 @@
 # Description:                            This module holds the api endpoint for the web app
 #                                         and is a separate blueprint module. This API
 #                                         end-point is to access a Wikipedia webscraper.
-# Base URL:                               http://localhost:55055/api
+# Base URL:                               https://crypto-wiki.herokuapp.com/api?
 
 #-------------------------------------------------------------------------
 # import the required libraries for the web app and other modules
