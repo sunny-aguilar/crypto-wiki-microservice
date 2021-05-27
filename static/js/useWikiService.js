@@ -83,7 +83,6 @@ function makeRequest(url, coin_id) {
       console.log("<<---- XHR SERVER RESPONDED");
 
       const summary = JSON.parse(xhr.responseText)
-      // console.log(summary);
       console.log(summary["summary"]);
       updateSummary(summary["summary"], coin_id);
     }
