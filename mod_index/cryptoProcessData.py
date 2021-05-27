@@ -83,4 +83,5 @@ def sort_coin_data(asset_id, data):
         coin_data[coin['name']] = (coin_specs)
   coin_data['last_updated'] = datetime.datetime(*map(int, re.split('[^\d]', coin['quote']['USD']['last_updated'])[:-1]))
   coin_data['prices'] = merged_coins
+
   return coin_data
