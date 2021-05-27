@@ -33,7 +33,7 @@ def clean_data(raw_data):
   merged_coins = use_microservice()
 
   # find coin data by iterating in data
-  coin_data = sort_coin_data(asset_id, data)
+  # coin_data = sort_coin_data(asset_id, data)
   for coin in data['data']:
     # push coin data into object and append to coin_data object
     for asset in asset_id:
