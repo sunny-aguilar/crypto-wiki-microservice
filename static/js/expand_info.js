@@ -16,10 +16,6 @@ function runScript(event) {
   var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
     return new bootstrap.Tooltip(tooltipTriggerEl)
   })
-
-
-  // const parent = document.body;
-  // parent.addEventListener("click", getElement, false);
 }
 
 // toggles additional info for coins
