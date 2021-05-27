@@ -33,20 +33,20 @@ def clean_data(raw_data):
   merged_coins = use_microservice()
 
   # find coin data by iterating in data
-  # coin_data = sort_coin_data(asset_id, data)
-  for coin in data['data']:
-    # push coin data into object and append to coin_data object
-    for asset in asset_id:
-      if coin['id'] == asset:
-        coin_specs = {}
-        coin_specs['name'] = coin['name']
-        coin_specs['id'] = coin['id']
-        coin_specs['market_cap'] = format(int(coin['quote']['USD']['market_cap']), ',')
-        coin_specs['circulating_supply'] = format(int(coin['circulating_supply']), ',')
-        coin_specs['max_supply'] = format(int(coin['max_supply']), ',') if coin['max_supply'] != None else "Unlimited"
-        coin_data[coin['name']] = (coin_specs)
-  coin_data['last_updated'] = datetime.datetime(*map(int, re.split('[^\d]', coin['quote']['USD']['last_updated'])[:-1]))
-  coin_data['prices'] = merged_coins
+  coin_data = sort_coin_data(asset_id, data)
+  # for coin in data['data']:
+  #   # push coin data into object and append to coin_data object
+  #   for asset in asset_id:
+  #     if coin['id'] == asset:
+  #       coin_specs = {}
+  #       coin_specs['name'] = coin['name']
+  #       coin_specs['id'] = coin['id']
+  #       coin_specs['market_cap'] = format(int(coin['quote']['USD']['market_cap']), ',')
+  #       coin_specs['circulating_supply'] = format(int(coin['circulating_supply']), ',')
+  #       coin_specs['max_supply'] = format(int(coin['max_supply']), ',') if coin['max_supply'] != None else "Unlimited"
+  #       coin_data[coin['name']] = (coin_specs)
+  # coin_data['last_updated'] = datetime.datetime(*map(int, re.split('[^\d]', coin['quote']['USD']['last_updated'])[:-1]))
+  # coin_data['prices'] = merged_coins
 
   return coin_data
 
