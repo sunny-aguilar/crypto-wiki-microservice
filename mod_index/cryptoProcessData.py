@@ -58,3 +58,22 @@ def use_microservice():
   coin_prices_2 = get_prices('crypto1=LINK&curr1=USD&crypto2=UNI&curr2=USD&crypto3=MATIC&curr3=USD&crypto4=CAKE&curr4=USD&crypto5=BNB&curr5=USD')
   merged_coins = {**coin_prices_1, **coin_prices_2}
   return merged_coins
+
+
+#-------------------------------------------------------------------------
+# uses team member's microservie that provides crypto asset prices
+def sort_coin_data(coin):
+    for coin in data['data']:
+    # push coin data into object and append to coin_data object
+    for asset in asset_id:
+      if coin['id'] == asset:
+        coin_specs = {}
+        coin_specs['name'] = coin['name']
+        coin_specs['id'] = coin['id']
+        coin_specs['market_cap'] = format(int(coin['quote']['USD']['market_cap']), ',')
+        coin_specs['circulating_supply'] = format(int(coin['circulating_supply']), ',')
+        coin_specs['max_supply'] = format(int(coin['max_supply']), ',') if coin['max_supply'] != None else "Unlimited"
+        coin_data[coin['name']] = (coin_specs)
+  coin_data['last_updated'] = datetime.datetime(*map(int, re.split('[^\d]', coin['quote']['USD']['last_updated'])[:-1]))
+  coin_data['prices'] = merged_coins
+  return 0
