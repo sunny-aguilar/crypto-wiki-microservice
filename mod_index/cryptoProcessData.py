@@ -59,6 +59,7 @@ def sort_coin_data(asset_id, data):
 
   # get coin prices from microservice
   merged_coins = use_microservice()
+  format_currency(merged_coins)
 
   for coin in data['data']:
   # push coin data into object and append to coin_data object
@@ -77,5 +78,5 @@ def sort_coin_data(asset_id, data):
   return coin_data
 
 
-  def format_currency():
-    return 0
+def format_currency(coin_prices):
+  print(coin_prices)
