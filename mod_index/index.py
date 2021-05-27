@@ -20,6 +20,6 @@ def index():
   home = 'active'
   json_crypto_data = get_crypto_data()
   data = clean_data(json_crypto_data)
-  print(data)
+  # print(data)
 
   return render_template('home.html', home_menu=home, coin_data=data)
