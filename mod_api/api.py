@@ -44,7 +44,6 @@ def api():
       msg = 'Select at least one search parameters.'
       return render_template('gui.html', msg=msg)
 
-
     # set up wikipedia search API
     wiki_wiki = wikipediaapi.Wikipedia(
         language='en',
