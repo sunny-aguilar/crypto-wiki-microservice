@@ -17,4 +17,3 @@ gui_bp = Blueprint('gui_bp', __name__, template_folder='templates')
 def gui():
   gui = 'active'
   return render_template('gui.html', gui_menu=gui)
-  
