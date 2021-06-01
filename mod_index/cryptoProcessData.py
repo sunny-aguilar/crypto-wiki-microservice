@@ -52,6 +52,7 @@ def use_microservice():
             'crypto3=MATIC&curr3=USD'
             '&crypto4=CAKE&curr4=USD'
             '&crypto5=BNB&curr5=USD')
+            
   coin_prices_1 = get_prices(list_1)
   coin_prices_2 = get_prices(list_2)
   merged_coins = {**coin_prices_1, **coin_prices_2}
