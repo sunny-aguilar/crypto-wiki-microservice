@@ -48,7 +48,7 @@ def use_microservice():
             '&crypto5=USDT&curr5=USD')
 
   list_2 = ('crypto1=LINK&curr1=USD'
-            '&crypto2=UNI&curr2=USD
+            '&crypto2=UNI&curr2=USD'
             '&crypto3=MATIC&curr3=USD'
             '&crypto4=CAKE&curr4=USD'
             '&crypto5=BNB&curr5=USD')
