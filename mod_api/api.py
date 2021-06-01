@@ -6,6 +6,7 @@
 #                                         end-point is to access a Wikipedia webscraper.
 # Base URL:                               https://crypto-wiki.herokuapp.com/api?
 
+
 #-------------------------------------------------------------------------
 # import the required libraries for the web app and other modules
 from flask import redirect, url_for, request, render_template, Blueprint, jsonify
