@@ -40,7 +40,7 @@ def clean_data(raw_data):
 #-------------------------------------------------------------------------
 # uses team member's microservie that provides crypto asset prices
 def use_microservice():
-  # get coin prices
+  # list coins to get
   list_1 = ('crypto1=BTC&curr1=USD'
             '&crypto2=ETH&curr2=USD'
             '&crypto3=LTC&curr3=USD'
