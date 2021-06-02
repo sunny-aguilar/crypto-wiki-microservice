@@ -61,6 +61,7 @@ def use_microservice():
   return merged_coins
 
 
+
 #-------------------------------------------------------------------------
 # uses team member's microservie that provides crypto asset prices
 def sort_coin_data(asset_id, data):
