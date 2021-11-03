@@ -21,7 +21,7 @@ def get_crypto_data():
   }
   headers = {
     'Accepts': 'application/json',
-    'X-CMC_PRO_API_KEY': '8fa33cd2-e221-4b18-81f5-58344e93b3e7',
+    'X-CMC_PRO_API_KEY': '8fa33cd2-e221-4b18-81f5-58344e93b3e77',
   }
 
   session = Session()
